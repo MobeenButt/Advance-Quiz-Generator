@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
-11407045341
+3543932905
 
-6772756234
+8994288384
 198-1431420039
-MainWindow.xaml;
+AdminPanel.xaml;LoginPanel.xaml;MainWindow.xaml;
 
-False
+True
 

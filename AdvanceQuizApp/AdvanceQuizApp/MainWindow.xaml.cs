@@ -31,5 +31,13 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Navigating to About page...");
         }
+
+        private void Button_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Logging out...");
+            this.Hide();
+            LoginPanel loginPanel=new LoginPanel();
+            loginPanel.Show();
+        }
     }
 }
