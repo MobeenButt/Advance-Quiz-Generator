@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
-        Title="Advanced Quiz Generator" Height="450" Width="800">
+        Title="Advanced Quiz Generator" Height="450" Width="800"
+         WindowState="Maximized">
     <Window.Resources>
         <Style x:Key="SidebarButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#34495E"/>
@@ -66,7 +67,7 @@
                        Margin="10"/>
             <Separator Margin="10"/>
 
-            <Button Content="Create Quiz" 
+            <Button Content="Previous Progress" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_CreateQuiz_Click"/>
             <Button Content="Manage Quizzes" 
@@ -78,6 +79,9 @@
             <Button Content="About" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_About_Click"/>
+            <Button Content="Logout" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_Logout_Click"/>
         </StackPanel>
 
         <Grid Grid.Column="1" Background="#ECF0F1">
