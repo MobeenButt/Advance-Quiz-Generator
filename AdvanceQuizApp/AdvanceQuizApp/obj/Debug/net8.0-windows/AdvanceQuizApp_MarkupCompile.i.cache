@@ -10,11 +10,19 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance Quiz Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+<<<<<<< HEAD
 11407045341
 
 6772756234
 198155382431
 MainWindow.xaml;
+=======
+2-1237412593
+
+7-1450795514
+198155382431
+BrowseQuestions.xaml;MainWindow.xaml;
+>>>>>>> main
 
 True
 
