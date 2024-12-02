@@ -6,50 +6,7 @@
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
         Title="Advanced Quiz Generator" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="SidebarButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#34495E"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Padding" Value="10"/>
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="HorizontalAlignment" Value="Stretch"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                CornerRadius="10">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#1ABC9C"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#16A085"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="FadeInTextBlockStyle" TargetType="TextBlock">
-            <Style.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:1"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
+    
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -65,13 +22,15 @@
                        HorizontalAlignment="Center" 
                        Margin="10"/>
             <Separator Margin="10"/>
-
             <Button Content="Create Quiz" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_CreateQuiz_Click"/>
             <Button Content="Manage Quizzes" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_ManageQuizzes_Click"/>
+            <Button Content="Browse Questions" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_BrowseQuestions_Click"/>
             <Button Content="Settings" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_Settings_Click"/>
@@ -80,13 +39,6 @@
                     Click="Button_About_Click"/>
         </StackPanel>
 
-        <Grid Grid.Column="1" Background="#ECF0F1">
-            <TextBlock Text="Welcome to the Quiz Generator!" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="24" 
-                       Foreground="#34495E" 
-                       Style="{StaticResource FadeInTextBlockStyle}"/>
-        </Grid>
+        <Frame Name="MainContent" Grid.Column="1"/>
     </Grid>
 </Window>
