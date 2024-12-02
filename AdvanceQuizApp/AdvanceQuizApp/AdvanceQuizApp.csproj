@@ -8,12 +8,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
-    <PackageReference Include="MaterialDesignColors" Version="3.1.0" />
-    <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
-    <PackageReference Include="MaterialDesignThemes.MahApps" Version="3.1.0" />
-    <PackageReference Include="MaterialDesignThemes.Wpf" Version="1.0.1" />
-  </ItemGroup>
-
 </Project>
