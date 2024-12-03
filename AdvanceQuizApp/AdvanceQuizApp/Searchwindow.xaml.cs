@@ -25,7 +25,7 @@ namespace AdvanceQuizApp
             }
         private void SearchButton_Click(object sender, RoutedEventArgs e)
             {
-            //test
+            //testing
             }
         }
     }
