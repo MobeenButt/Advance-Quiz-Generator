@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Media.Effects;
 
 namespace AdvanceQuizApp
 {
@@ -30,14 +31,31 @@ namespace AdvanceQuizApp
         private void Button_About_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Navigating to About page...");
-        }
+            }
 
         private void Button_Logout_Click(object sender, RoutedEventArgs e)
-        {
+            {
             MessageBox.Show("Logging out...");
             this.Hide();
-            LoginPanel loginPanel=new LoginPanel();
+            LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
+            }
+        private void Button_SearchQuestions_Click(object sender, RoutedEventArgs e)
+            {
+            var blurEffect = new BlurEffect
+                {
+                Radius = 10
+                };
+
+            this.Effect = blurEffect;
+
+            Searchwindow searchWindow = new Searchwindow
+                {
+                Owner = this 
+                };
+            searchWindow.ShowDialog();
+
+            this.Effect = null;
+            }
         }
     }
-}
