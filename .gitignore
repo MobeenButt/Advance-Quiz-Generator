@@ -1,0 +1,19 @@
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build directories and files
+/obj/
+/bin/
+
+# Design time build files
+*.dtbcache.v2
+*.DocumentLayout.json
+*.DocumentLayout.backup.json
+
+# Other unnecessary files
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
