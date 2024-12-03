@@ -7,21 +7,51 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Admin Pages\DeletePanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin Pages\EditQuizPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin Pages\ManageQuestionBankPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AdminPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BrowseQuestions.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Searchwindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Admin Pages\DeletePanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin Pages\EditQuizPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin Pages\ManageQuestionBankPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AdminPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BrowseQuestions.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Searchwindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

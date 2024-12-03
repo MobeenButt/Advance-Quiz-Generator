@@ -66,10 +66,22 @@
                        HorizontalAlignment="Center" 
                        Margin="10"/>
             <Separator Margin="10"/>
-
-            <Button Content="Previous Progress" 
+            <Button Content="Search Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_CreateQuiz_Click"/>
+                    Click="Button_SearchQuestions_Click"/>
+
+            <Button Content="Previous Tests" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_SearchQuestions_Click"/>
+            <Button Content="Last Test" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_SearchQuestions_Click"/>
+            <Button Content="Create Test" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_SearchQuestions_Click"/>
+            <Button Content="Browse Questions" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_BrowseQuestions_Click"/>
             <Button Content="Manage Quizzes" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_ManageQuizzes_Click"/>
