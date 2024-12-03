@@ -59,7 +59,7 @@ namespace AdvanceQuizApp {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/AdvanceQuizApp;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AdvanceQuizApp;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
