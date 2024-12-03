@@ -53,7 +53,7 @@ namespace AdvanceQuizApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AdvanceQuizApp;component/browsequestions.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AdvanceQuizApp;V1.0.0.0;component/browsequestions.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BrowseQuestions.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
