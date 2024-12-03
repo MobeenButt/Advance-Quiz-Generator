@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvanceQuizApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42587986f1758bab5f95173f760f2c6ce86149b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56bc734002ec549a2247b224c1288e3bd65b9067")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvanceQuizApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvanceQuizApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
