@@ -1,0 +1,10 @@
+# Visual Studio specific
+.vs/
+*.suo
+*.cache
+*.bin
+*.lref
+
+# Build and intermediate files
+/obj/
+/bin/

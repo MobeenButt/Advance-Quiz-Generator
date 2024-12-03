@@ -79,6 +79,9 @@
                     Click="Button_Settings_Click"/>
             <Button Content="About" Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_About_Click"/>
+            
+            
+            
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="20">
@@ -93,11 +96,44 @@
                 <Button Content="Search" Width="100" Height="30" Background="#1ABC9C" Foreground="White"/>
             </StackPanel>
 
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="300">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="600">
                 <StackPanel>
                     <!-- Placeholder for topics -->
                     <Button Content="Topic 1" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
                     <Button Content="Topic 2" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
+                    <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
                     <Button Content="Topic 3" Style="{StaticResource SidebarButtonStyle}" Margin="0,5"/>
                 </StackPanel>
             </ScrollViewer>

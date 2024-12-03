@@ -71,6 +71,9 @@
             <Button Content="Edit Quiz" Style="{StaticResource SidebarButtonStyle}" Click="EditQuiz_Click"/>
             <Button Content="Delete Quiz" Style="{StaticResource SidebarButtonStyle}" Click="DeleteQuiz_Click"/>
             <Button Content="View Categories" Style="{StaticResource SidebarButtonStyle}" Click="ViewCategories_Click"/>
+            <Button Content="Manage Questions" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_ManageQuestions_Click"/>
             <Button Content="View All Quizzes" Style="{StaticResource SidebarButtonStyle}" Click="ViewAll_Click"/>
         </StackPanel>
         <Grid Grid.Row="1" Grid.Column="1" Background="#ECF0F1">

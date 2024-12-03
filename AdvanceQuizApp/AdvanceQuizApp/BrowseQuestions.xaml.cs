@@ -48,5 +48,10 @@ namespace AdvanceQuizApp
         {
 
         }
+        private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        
     }
 }
