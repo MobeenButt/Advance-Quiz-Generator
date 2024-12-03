@@ -1,19 +1,10 @@
+# Ignore build artifacts
+bin/
+obj/
+
+# Ignore Visual Studio settings
 .vs/
-.vscode/
-*.suo
+
+# Ignore user-specific files
 *.user
-*.userosscache
-*.sln.docstates
-
-# Build directories and files
-/obj/
-/bin/
-
-# Design time build files
-*.dtbcache.v2
-*.DocumentLayout.json
-*.DocumentLayout.backup.json
-
-# Other unnecessary files
-*.AssemblyInfo.cs
-*.AssemblyInfoInputs.cache
+*.suo
