@@ -1,15 +1,19 @@
-# Ignore Visual Studio files and folders
 .vs/
+.vscode/
 *.suo
 *.user
-*.cache
-*.db
+*.userosscache
+*.sln.docstates
 
-# Ignore build output directories
-bin/
-obj/
+# Build directories and files
+/obj/
+/bin/
 
-# Ignore specific temporary or backup files
+# Design time build files
 *.dtbcache.v2
 *.DocumentLayout.json
 *.DocumentLayout.backup.json
+
+# Other unnecessary files
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
