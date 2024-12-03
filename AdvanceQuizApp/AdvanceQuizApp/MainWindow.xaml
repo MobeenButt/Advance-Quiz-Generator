@@ -78,7 +78,7 @@
                     Click="Button_SearchQuestions_Click"/>
             <Button Content="Create Test" 
                     Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
+                    Click="Button_CreateTest_Click"/>
             <Button Content="Browse Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_BrowseQuestions_Click"/>

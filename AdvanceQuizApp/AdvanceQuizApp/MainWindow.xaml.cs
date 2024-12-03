@@ -31,14 +31,22 @@ namespace AdvanceQuizApp
         private void Button_About_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Navigating to About page...");
-        }
+            }
         private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
-        {
+            {
             Window br = new BrowseQuestions();
             br.Show();
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
-        }
+            }
+        private void Button_CreateTest_Click(object sender, RoutedEventArgs e)
+            {
+            Window br = new CreateTest();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Visibility = Visibility.Hidden;
+            }
+
 
         private void Button_Logout_Click(object sender, RoutedEventArgs e)
         {
