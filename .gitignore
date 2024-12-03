@@ -1,0 +1,15 @@
+# Ignore Visual Studio files and folders
+.vs/
+*.suo
+*.user
+*.cache
+*.db
+
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore specific temporary or backup files
+*.dtbcache.v2
+*.DocumentLayout.json
+*.DocumentLayout.backup.json
