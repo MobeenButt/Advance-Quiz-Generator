@@ -1,5 +1,6 @@
 ﻿using System.Windows;
-
+using System.Windows.Controls;
+using AdvanceQuizApp.Admin_Pages;
 namespace AdvanceQuizApp
 {
     /// <summary>
@@ -19,12 +20,6 @@ namespace AdvanceQuizApp
             LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
         }
-
-        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Create Quiz clicked!");
-        }
-
         private void EditQuiz_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Edit Quiz clicked!");
@@ -32,7 +27,9 @@ namespace AdvanceQuizApp
 
         private void DeleteQuiz_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Delete Quiz clicked!");
+           this.Hide();
+            DeletePanel deletePanel = new DeletePanel();   
+            deletePanel.Show();
         }
 
         private void ViewCategories_Click(object sender, RoutedEventArgs e)
@@ -44,6 +41,25 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("View All Quizzes clicked!");
         }
+<<<<<<< HEAD
+
+        private void ManageQuestionBank_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            ManageQuestionBankPage manageQuestionBankPage = new ManageQuestionBankPage();
+            manageQuestionBankPage.Show();
+
+        }
+
+        private void GenerateReports_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ViewStatistics_Click(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show("View Statistics clicked!");
+=======
         private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
         {
             Window br = new ManageQuestions();
@@ -58,6 +74,7 @@ namespace AdvanceQuizApp
         private void Button_AddTopic_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("adding top...");
+>>>>>>> origin/main
         }
     }
 }
