@@ -41,6 +41,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("View All Quizzes clicked!");
         }
+<<<<<<< HEAD
 
         private void ManageQuestionBank_Click(object sender, RoutedEventArgs e)
         {
@@ -58,6 +59,22 @@ namespace AdvanceQuizApp
         private void ViewStatistics_Click(object sender, RoutedEventArgs e)
         {
             //MessageBox.Show("View Statistics clicked!");
+=======
+        private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new ManageQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Visibility = Visibility.Hidden;
+        }
+        private void Button_AddQuestion_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("adding qe...");
+        }
+        private void Button_AddTopic_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("adding top...");
+>>>>>>> origin/main
         }
     }
 }
