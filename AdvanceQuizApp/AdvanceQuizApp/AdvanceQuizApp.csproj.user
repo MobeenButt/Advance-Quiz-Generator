@@ -16,7 +16,7 @@
     <Compile Update="LoginPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Searchwindow.xaml.cs">
+    <Compile Update="ManageQuestions.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,7 +33,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Searchwindow.xaml">
+    <Page Update="ManageQuestions.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
