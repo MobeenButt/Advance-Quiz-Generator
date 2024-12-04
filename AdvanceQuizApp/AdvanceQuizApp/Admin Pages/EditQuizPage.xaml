@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp.Admin_Pages"
         mc:Ignorable="d"
-        Title="EditQuizPage" Height="450" Width="800">
-    <Grid>
-        
+        Title="Edit Quiz" Height="719" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Back" Width="100" Height="40" HorizontalAlignment="Right" Margin="10,10,0,0" Click="Button_Click"/>
+        <TextBlock Text="Edit Quiz" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,10,0,20"/>
+
+         <StackPanel Grid.Row="1" Margin="0,20,0,20">
+              <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                <TextBlock Text="Quiz Name:" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Name="QuizNameTextBox" Width="400" Height="30"/>
+            </StackPanel>
+
+                   <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                <TextBlock Text="Questions:" FontWeight="Bold" Margin="0,0,0,5"/>
+                <ListView Name="QuestionsListView" Width="400" Height="200" Margin="0,0,0,10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Question" Width="250" DisplayMemberBinding="{Binding QuestionText}"/>
+                            <GridViewColumn Header="Answer" Width="150" DisplayMemberBinding="{Binding CorrectAnswer}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button Content="Add Question" Width="120" Height="30" HorizontalAlignment="Left" Margin="0,5,0,0"/>
+            </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                <TextBlock Text="Correct Answers:" FontWeight="Bold" Margin="0,0,0,5"/>
+                <ListBox Name="AnswersListBox" Width="400" Height="150"/>
+            </StackPanel>
+        </StackPanel>
+
+           <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10">
+            <Button Content="Save" Width="100" Height="40" Margin="10,0"/>
+            <Button Content="Cancel" Width="100" Height="40"/>
+        </StackPanel>
     </Grid>
 </Window>

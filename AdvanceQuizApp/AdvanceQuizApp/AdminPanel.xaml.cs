@@ -22,7 +22,10 @@ namespace AdvanceQuizApp
         }
         private void EditQuiz_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Edit Quiz clicked!");
+
+            this.Hide();
+            EditQuizPage editQuizPage = new EditQuizPage();
+            editQuizPage.Show();
         }
 
         private void DeleteQuiz_Click(object sender, RoutedEventArgs e)
@@ -41,7 +44,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("View All Quizzes clicked!");
         }
-<<<<<<< HEAD
+
 
         private void ManageQuestionBank_Click(object sender, RoutedEventArgs e)
         {
@@ -59,7 +62,7 @@ namespace AdvanceQuizApp
         private void ViewStatistics_Click(object sender, RoutedEventArgs e)
         {
             //MessageBox.Show("View Statistics clicked!");
-=======
+        }
         private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
         {
             Window br = new ManageQuestions();
@@ -74,7 +77,7 @@ namespace AdvanceQuizApp
         private void Button_AddTopic_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("adding top...");
->>>>>>> origin/main
+
         }
     }
 }

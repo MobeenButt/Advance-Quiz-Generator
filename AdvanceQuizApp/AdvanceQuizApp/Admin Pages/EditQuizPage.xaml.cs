@@ -23,5 +23,12 @@ namespace AdvanceQuizApp.Admin_Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Show();
+        }
     }
 }
