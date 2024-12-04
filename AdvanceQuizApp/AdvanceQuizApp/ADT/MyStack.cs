@@ -7,10 +7,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AdvanceQuizApp.ADT { 
     public class Node<T>
@@ -57,17 +53,6 @@ namespace AdvanceQuizApp.ADT {
                 throw new InvalidOperationException("Stack is empty.");
             }
             return top.value;
-        }
-        public int Count()
-        {
-            int count = 0;
-            Node<T> current = top;
-            while (current != null)
-            {
-                count++;
-                current = current.next;
-            }
-            return count;
         }
     }
 }
