@@ -33,7 +33,7 @@
                 <Button Content="Back" Width="120" Margin="5" Background="#3498DB" Foreground="White" Click="Back_Click"/>
             </StackPanel>
 
-            <DataGrid Grid.Row="1" Name="QuestionDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,10,0,0">
+            <DataGrid Grid.Row="1" Name="QuestionDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,10,0,0" SelectionChanged="QuestionDataGrid_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="50"/>
                     <DataGridTextColumn Header="Question Text" Binding="{Binding Text}" Width="*"/>

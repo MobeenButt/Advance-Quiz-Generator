@@ -40,5 +40,10 @@ namespace AdvanceQuizApp.Admin_Pages
             AdminPanel adminPanel = new AdminPanel();
             adminPanel.Show();
         }
+
+        private void QuestionDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -8,33 +8,48 @@ namespace AdvanceQuizApp
     /// </summary>
     public partial class LoginPanel : Window
     {
+        private LoginManager manager;
         public LoginPanel()
         {
             InitializeComponent();
+            manager = new LoginManager();
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            string username = UsernameTextBox.Text;
+            string name = UsernameTextBox.Text;
             string password = PasswordBox.Password;
-
-            if (username == "admin" && password == "password")
+            manager.AddUser(name, password);
+            string result= manager.ProcessLogin();
+            if(result== "1")
             {
                 AdminPanel adminPanel = new AdminPanel();
                 adminPanel.Show();
-                this.Hide();
+            }
+            else if (result == "2")
+            {
+                MainWindow userPanel = new MainWindow();
+                userPanel.Show();
             }
             else
             {
-                MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(result, "Login Failed", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
+            
         }
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Hide();
+            string name = UsernameTextBox.Text;
+            string password = PasswordBox.Password;
+            if(manager.RegisterUser(name, password))
+            {
+                MessageBox.Show("Registration successful.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Username already exists.", "Registration Failed", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }
