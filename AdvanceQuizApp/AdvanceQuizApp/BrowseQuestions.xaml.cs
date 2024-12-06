@@ -48,5 +48,12 @@ namespace AdvanceQuizApp
         {
 
         }
+
+        private void Button_Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
     }
 }

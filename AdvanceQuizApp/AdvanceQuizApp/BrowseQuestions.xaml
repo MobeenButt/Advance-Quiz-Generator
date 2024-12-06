@@ -79,6 +79,8 @@
                     Click="Button_Settings_Click"/>
             <Button Content="About" Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_About_Click"/>
+            <Button Content="Back" Style="{StaticResource SidebarButtonStyle}"
+                    Click="Button_Back_Click"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="20">

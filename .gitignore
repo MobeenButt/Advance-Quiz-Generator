@@ -1,19 +1,18 @@
-.vs/
-.vscode/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Build directories and files
-/obj/
+# Ignore build directories
 /bin/
+/obj/
+/.vs/
 
-# Design time build files
-*.dtbcache.v2
-*.DocumentLayout.json
-*.DocumentLayout.backup.json
+# Ignore user-specific files
+*.user
+*.cache
 
-# Other unnecessary files
-*.AssemblyInfo.cs
-*.AssemblyInfoInputs.cache
+# Ignore binary files
+*.dll
+*.exe
+*.pdb
+
+# Ignore auto-generated files
+*.baml
+*.g.i.cs
+*.g.cs
