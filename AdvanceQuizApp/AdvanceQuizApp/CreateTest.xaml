@@ -1,0 +1,56 @@
+﻿ <Window x:Class="AdvanceQuizApp.CreateTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvanceQuizApp"
+        mc:Ignorable="d"
+        Title="CreateTest" Height="450" Width="800">
+    <Grid>
+        <!-- Top bar with navigation buttons -->
+        <DockPanel  Height="55" VerticalAlignment="Top" Background="RoyalBlue">
+            <!-- Buttons aligned to the right -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5,10,0">
+                <Button Width="40" Height="40" ToolTip="Previous Question">
+                    <!-- Dummy Icon for Previous -->
+                    <TextBlock Text="&lt;" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="40" Height="40" ToolTip="Next Question">
+                    <!-- Dummy Icon for Next -->
+                    <TextBlock Text="&gt;" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="40" Height="40" ToolTip="Mark Question">
+                    <!-- Dummy Icon for Mark -->
+                    <TextBlock Text="♡" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="40" Height="40" ToolTip="Stop Quiz">
+                    <!-- Dummy Icon for Stop -->
+                    <TextBlock Text="■" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="40" Height="40" ToolTip="Stop Quiz" Click="Button_ReturnButtton_Click">
+                    <!-- Dummy Icon for Stop -->
+                    <TextBlock Text="←" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- Question Number Display -->
+        <TextBlock FontSize="16" FontWeight="Bold" Margin="10,60,10,0" HorizontalAlignment="Center" Text="Question 17 of 40"/>
+
+        <!-- Question Text -->
+        <TextBlock FontSize="18" TextWrapping="Wrap" Margin="20,100,20,0" TextAlignment="Left" VerticalAlignment="Top">
+            A 12-year-old boy is brought to the emergency department with severe chest pain...
+        </TextBlock>
+
+        <!-- Answer Options -->
+        <StackPanel VerticalAlignment="Top" Margin="20,250,20,0">
+            <RadioButton GroupName="Answers" Content="A. Asparagine" FontSize="16" Margin="5"/>
+            <RadioButton GroupName="Answers" Content="B. Cysteine" FontSize="16" Margin="5"/>
+            <RadioButton GroupName="Answers" Content="C. Isoleucine" FontSize="16" Margin="5"/>
+            <RadioButton GroupName="Answers" Content="D. Leucine" FontSize="16" Margin="5"/>
+            <RadioButton GroupName="Answers" Content="E. Tyrosine" FontSize="16" Margin="5"/>
+            <RadioButton GroupName="Answers" Content="F. Valine" FontSize="16" Margin="5"/>
+        </StackPanel>
+    </Grid>
+
+</Window>
