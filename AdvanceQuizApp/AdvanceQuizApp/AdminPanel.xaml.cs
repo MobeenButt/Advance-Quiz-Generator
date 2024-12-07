@@ -12,7 +12,10 @@ namespace AdvanceQuizApp
         {
             InitializeComponent();
         }
-
+        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
+            {
+            //hsflashfl
+            }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logging out...");
