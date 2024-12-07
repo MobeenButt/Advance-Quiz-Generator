@@ -23,11 +23,13 @@ namespace AdvanceQuizApp
             string result= manager.ProcessLogin();
             if(result== "1")
             {
+                this.Hide();
                 AdminPanel adminPanel = new AdminPanel();
                 adminPanel.Show();
             }
             else if (result == "2")
             {
+                this.Hide();
                 MainWindow userPanel = new MainWindow();
                 userPanel.Show();
             }
