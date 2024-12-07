@@ -17,10 +17,11 @@
                 <Button Width="40" Height="40" ToolTip="Next Question" Click="NextQuestion_Click">
                     <TextBlock Text="&gt;" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
-                <Button Width="40" Height="40" ToolTip="Mark Question">
-                    <TextBlock Text="♡" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Button Width="40" Height="40" ToolTip="Mark Favourite Question" Click="MarkFavorite_Click">
+                    <TextBlock Name="FavouriteIcon" Text="♡" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </Button>
-                <Button Width="40" Height="40" ToolTip="Stop Quiz">
+
+                <Button Width="40" Height="40" ToolTip="Stop Quiz" Click="StopQuizButton_Click">
                     <TextBlock Text="■" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
                 <Button Width="40" Height="40" ToolTip="Return" Click="Button_ReturnButtton_Click">
@@ -46,7 +47,7 @@
             <!-- "Check Answer" Button -->
             <Button Name="CheckAnswerButton" Content="Check Answer" Width="150" Height="40" Click="CheckAnswerButton_Click" />
             <!-- Correct Answer Display -->
-            <TextBlock Name="CorrectAnswerTextBlock" FontSize="16" FontWeight="Bold" Foreground="Green" Margin="10,0,0,0" Visibility="Collapsed" />
+            <TextBlock Name="CorrectAnswerTextBlock" FontSize="16" FontWeight="Bold" Margin="10,0,0,0" Visibility="Collapsed" />
         </StackPanel>
     </Grid>
 </Window>

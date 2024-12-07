@@ -45,14 +45,17 @@ namespace AdvanceQuizApp.Admin_Pages
             {
                 id = questions.Count + 1,
                 text =QuestionTextBox.Text,
-                options = new List<string> {Option1TextBox.Text,
+                options = new List<string> {
+                Option1TextBox.Text,
                 Option2TextBox.Text,
                 Option3TextBox.Text,
                 Option4TextBox.Text
                 },
                 correctAnswer = CorrectAnswerTextBox.Text,
                 topic = TopicTextBox.Text,
-                difficulty = DifficultyTextBox.Text
+                difficulty = DifficultyTextBox.Text,
+                favourite = 0
+
             };
             questions.Add(newquestion);
             QuestionsListView.Items.Refresh();
