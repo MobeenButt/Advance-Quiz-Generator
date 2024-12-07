@@ -2,94 +2,30 @@
   "questions": [
     {
       "id": 1,
-      "text": "1",
+      "text": "what is your name ",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "saahi",
+        "anas",
+        "faiz ",
+        "chaudhary"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "saahi",
+      "topic": "name",
+      "difficulty": "1"
     },
     {
       "id": 2,
-      "text": "1",
+      "text": "what is your second name ",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "saahi",
+        "anas",
+        "faiz ",
+        "chaudhary"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
-    },
-    {
-      "id": 3,
-      "text": "1",
-      "options": [
-        "1",
-        "1",
-        "1",
-        "1"
-      ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
-    },
-    {
-      "id": 4,
-      "text": "1",
-      "options": [
-        "1",
-        "1",
-        "1",
-        "1"
-      ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
-    },
-    {
-      "id": 5,
-      "text": "1",
-      "options": [
-        "1",
-        "1",
-        "1",
-        "1"
-      ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
-    },
-    {
-      "id": 6,
-      "text": "1",
-      "options": [
-        "1",
-        "1",
-        "1",
-        "1"
-      ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
-    },
-    {
-      "id": 7,
-      "text": "1",
-      "options": [
-        "1",
-        "1",
-        "1",
-        "1"
-      ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "Anas",
+      "topic": "name",
+      "difficulty": "2"
     }
+    
   ]
 }
