@@ -1,10 +1,18 @@
-# Visual Studio specific
-.vs/
-*.suo
-*.cache
-*.bin
-*.lref
-
-# Build and intermediate files
-/obj/
+# Ignore build directories
 /bin/
+/obj/
+/.vs/
+
+# Ignore user-specific files
+*.user
+*.cache
+
+# Ignore binary files
+*.dll
+*.exe
+*.pdb
+
+# Ignore auto-generated files
+*.baml
+*.g.i.cs
+*.g.cs
