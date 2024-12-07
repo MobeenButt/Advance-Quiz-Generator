@@ -1,9 +1,0 @@
-﻿<Application x:Class="AdvanceQuizApp.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AdvanceQuizApp"
-             StartupUri="LoginPanel.xaml" ShutdownMode="OnLastWindowClose">
-    <Application.Resources>
-        <!-- Resources can go here -->
-    </Application.Resources>
-</Application>
