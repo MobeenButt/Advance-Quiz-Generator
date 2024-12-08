@@ -56,8 +56,8 @@
         </DockPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0" Background="#2C3E50">
-            <Button Content="Manage Question Bank" Style="{StaticResource SidebarButtonStyle}" Click="ManageQuestionBank_Click"/>
-            <Button Content="Edit Existing Quiz" Style="{StaticResource SidebarButtonStyle}" Click="EditQuiz_Click"/>
+            <Button Content="Manage Users" Style="{StaticResource SidebarButtonStyle}" Click="ManageQuestionBank_Click"/>
+            <Button Content="Add Questions" Style="{StaticResource SidebarButtonStyle}" Click="EditQuiz_Click"/>
             <Button Content="Delete Quiz" Style="{StaticResource SidebarButtonStyle}" Click="DeleteQuiz_Click"/>
             <Button Content="View Categories" Style="{StaticResource SidebarButtonStyle}" Click="ViewCategories_Click"/>
             <Button Content="Manage Questions" 
