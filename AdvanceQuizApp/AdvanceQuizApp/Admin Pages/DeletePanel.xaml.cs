@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 using AdvanceQuizApp.DataBank;
 using Newtonsoft.Json;
 
@@ -11,11 +10,11 @@ namespace AdvanceQuizApp.Admin_Pages
     /// </summary>
     public partial class DeletePanel : Window
     {
-        private List<Question> Quizzes = new List<Question>();
+        private List<Question> Questions = new List<Question>();
         public DeletePanel()
         {
             InitializeComponent();
-            LoadQuizzes();
+            LoadQuestions();
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -24,59 +23,60 @@ namespace AdvanceQuizApp.Admin_Pages
             AdminPanel admin = new AdminPanel();
             admin.Show();
         }
-        private void QuizDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DeleteQuestion_Click(object sender, RoutedEventArgs e)
         {
-            
-        }
-
-        private void LoadQuizzes()
-        {
-            string filepath = "quizdata.json";
-            if (File.Exists(filepath))
+            var selectedquestion = (Question)QuestionDataGrid.SelectedItem;
+            if (selectedquestion != null)
             {
-                string json = File.ReadAllText(filepath);
-                var quizData = JsonConvert.DeserializeObject<Dictionary<string, List<Question>>>(json);
-                if (quizData != null && quizData.ContainsKey("questions"))
+                RemoveSelectedQuestion(selectedquestion.id);
+                QuestionDataGrid.ItemsSource = null;
+                QuestionDataGrid.ItemsSource = LoadQuestions();
+            }
+        }
+        private List<Question> LoadQuestions()
+        {
+            string file = "quizdata.json";
+            if (File.Exists(file))
+            {
+                var json = File.ReadAllText(file);
+                var data = JsonConvert.DeserializeObject<Dictionary<string, List<Question>>>(json);
+                if (data != null && data.ContainsKey("questions"))
                 {
-                    Quizzes = quizData["questions"];
+                    Questions.Clear();
+                    Questions.AddRange(data["questions"]);
+                    return Questions;
+                }
+
+            }
+            return new List<Question>();
+        }
+        private void RemoveSelectedQuestion(int questionId)
+        {
+            string filePath = "quizdata.json";
+            var jsonData = File.ReadAllText(filePath);
+            var data = JsonConvert.DeserializeObject<Dictionary<string, List<Question>>>(jsonData);
+
+            if (data != null && data.ContainsKey("questions"))
+            {
+                var questions = data["questions"];
+                var questionToRemove = questions.FirstOrDefault(q => q.id == questionId);
+
+                if (questionToRemove != null)
+                {
+                    questions.Remove(questionToRemove);
+                    File.WriteAllText(filePath, JsonConvert.SerializeObject(data, Formatting.Indented));
+                    MessageBox.Show("Question deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Question not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
-            QuizDataGrid.ItemsSource = Quizzes;
-        }
-        private void DeleteQuiz_Click(object sender, RoutedEventArgs e)
-        {
-            var selectedQuiz = QuizDataGrid.SelectedItem as Question;
-
-            if (selectedQuiz != null)
-            {
-                var result = MessageBox.Show($"Are you sure you want to delete the quiz '{selectedQuiz.topic}'?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
-                if (result == MessageBoxResult.Yes)
-                {
-                    // Remove the selected quiz from the list
-                    Quizzes.Remove(selectedQuiz);
-
-                    // Update the JSON file
-                    SaveQuizzesToFile();
-
-                    // Refresh the DataGrid
-                    QuizDataGrid.ItemsSource = null;
-                    QuizDataGrid.ItemsSource = Quizzes;
-
-                    MessageBox.Show("Quiz deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please select a quiz to delete.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
 
-        private void SaveQuizzesToFile()
+        private void Refresh_Click(object sender, RoutedEventArgs e)
         {
-            var quizData = new Dictionary<string, List<Question>> { { "questions", Quizzes } };
-            string json = JsonConvert.SerializeObject(quizData, Formatting.Indented);
-            File.WriteAllText("quizdata.json", json);
+            QuestionDataGrid.ItemsSource=LoadQuestions();
         }
     }
 
