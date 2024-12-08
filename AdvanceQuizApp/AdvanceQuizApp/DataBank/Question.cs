@@ -8,6 +8,8 @@
         public string correctAnswer { get; set; }
         public string topic { get; set; }
         public string difficulty { get; set; }
+
+        public int favourite { get; set; }
     }
     public class Topic
     {

@@ -2,30 +2,45 @@
   "questions": [
     {
       "id": 1,
-      "text": "what is your name ",
+      "text": "what is happening in this world rn?",
       "options": [
-        "saahi",
-        "anas",
-        "faiz ",
-        "chaudhary"
+        "masacars  ",
+        "growth",
+        "wars",
+        "injustice"
       ],
-      "correctAnswer": "saahi",
-      "topic": "name",
-      "difficulty": "1"
+      "correctAnswer": "masacars",
+      "topic": "world",
+      "difficulty": "2",
+      "favourite": 1
     },
     {
       "id": 2,
-      "text": "what is your second name ",
+      "text": "what is happening in this world rn?",
       "options": [
-        "saahi",
-        "anas",
-        "faiz ",
-        "chaudhary"
+        "masacars",
+        "growth",
+        "wars",
+        "injustice"
       ],
-      "correctAnswer": "Anas",
-      "topic": "name",
-      "difficulty": "2"
+      "correctAnswer": "wars",
+      "topic": "world",
+      "difficulty": "2",
+      "favourite": 1
+    },
+    {
+      "id": 3,
+      "text": "what is happening in this world rn?",
+      "options": [
+        "masacars",
+        "growth",
+        "wars",
+        "injustice"
+      ],
+      "correctAnswer": "injustice",
+      "topic": "world",
+      "difficulty": "2",
+      "favourite": 0
     }
-    
   ]
 }
