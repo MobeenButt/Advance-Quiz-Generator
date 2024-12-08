@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
-10-1874531113
+111644469573
 
-171355029445
+18796455698
 199504281495
-Admin Pages\DeletePanel.xaml;Admin Pages\EditQuizPage.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;LoginPanel.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;
+Admin Pages\DeletePanel.xaml;Admin Pages\EditQuizPage.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;LoginPanel.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;TestResult.xaml;
 
 False
 

@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace AdvanceQuizApp
 {
@@ -9,13 +10,15 @@ namespace AdvanceQuizApp
     {
         private List<AdvanceQuizApp.DataBank.Question> questions;
         private int currentQuestionIndex;
-
+        private DateTime quizStartTime;
+        private int correctAnswers = 0;
+        //
         public CreateTest()
         {
             InitializeComponent();
             LoadQuestions();
             DisplayQuestion(0);
-
+            quizStartTime = DateTime.Now;
         }
         private void Button_ReturnButtton_Click(object sender, RoutedEventArgs e)
         {
@@ -28,7 +31,7 @@ namespace AdvanceQuizApp
         {
             try
             {
-                string jsonPath = "quizdata.json"; // Path to your JSON file
+                string jsonPath = "quizdata.json";
                 string jsonString = File.ReadAllText(jsonPath);
                 var questionData = JsonSerializer.Deserialize<QuestionData>(jsonString);
                 questions = questionData.questions;
@@ -77,8 +80,39 @@ namespace AdvanceQuizApp
 
             // Hide Correct Answer Display
             CorrectAnswerTextBlock.Visibility = Visibility.Collapsed;
+            FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
         }
 
+        private void MarkFavorite_Click(object sender, RoutedEventArgs e)
+        {
+            if (questions == null || currentQuestionIndex < 0 || currentQuestionIndex >= questions.Count)
+            {
+                MessageBox.Show("Invalid question index.");
+                return;
+            }
+
+            var question = questions[currentQuestionIndex];
+
+            // Toggle the favourite value
+            question.favourite = question.favourite == 0 ? 1 : 0;
+
+            // Update the icon
+            FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
+
+            // Save changes back to the JSON file
+            try
+            {
+                string jsonPath = "quizdata.json";
+                var questionData = new QuestionData { questions = questions };
+                string updatedJson = JsonSerializer.Serialize(questionData, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(jsonPath, updatedJson);
+                MessageBox.Show("Favorite status updated successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving favorite status: {ex.Message}");
+            }
+        }
 
 
         // Event Handler for Next Button
@@ -116,9 +150,46 @@ namespace AdvanceQuizApp
                 return;
             }
 
-            var correctAnswer = questions[currentQuestionIndex].correctAnswer;
-            CorrectAnswerTextBlock.Text = $"Correct Answer: {correctAnswer}";
-            CorrectAnswerTextBlock.Visibility = Visibility.Visible; // Show the correct answer
+            // Get the correct answer
+            var correctAnswer = questions[currentQuestionIndex].correctAnswer.Trim();
+
+            // Check if an option is selected
+            RadioButton selectedOption = OptionsStackPanel.Children.OfType<RadioButton>().FirstOrDefault(r => r.IsChecked == true);
+
+            if (selectedOption == null)
+            {
+                MessageBox.Show("Please select an option before checking the answer.");
+                return;
+            }
+
+            // Check if the selected option matches the correct answer
+            if (selectedOption.Content.ToString().Trim() == correctAnswer)
+            {
+                CorrectAnswerTextBlock.Text = $"Correct Answer: {correctAnswer}";
+                CorrectAnswerTextBlock.Foreground = Brushes.Green; // Display in green
+                correctAnswers++;
+            }
+            else
+            {
+                CorrectAnswerTextBlock.Text = $"Incorrect. Correct Answer: {correctAnswer}";
+                CorrectAnswerTextBlock.Foreground = Brushes.Red; // Display in red
+            }
+
+            // Show the correct answer
+            CorrectAnswerTextBlock.Visibility = Visibility.Visible;
+        }
+        private void StopQuizButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Calculate elapsed time
+            TimeSpan elapsedTime = DateTime.Now - quizStartTime;
+
+            // Show the results window
+            int totalQuestions = questions?.Count ?? 0;
+            TestResult endTestWindow = new TestResult(totalQuestions, correctAnswers, elapsedTime);
+            endTestWindow.ShowDialog();
+
+            // Close the quiz window after showing results
+            this.Close();
         }
     }
     public class QuestionData

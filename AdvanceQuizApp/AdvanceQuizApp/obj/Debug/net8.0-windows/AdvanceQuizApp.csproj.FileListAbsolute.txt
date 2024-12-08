@@ -192,3 +192,5 @@ D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\bin\Debug\net8.0-windows
 D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\bin\Debug\net8.0-windows\AdvanceQuizApp.pdb
 D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdvanceQuizApp.genruntimeconfig.cache
 D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\ref\AdvanceQuizApp.dll
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TestResult.g.cs
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TestResult.baml
