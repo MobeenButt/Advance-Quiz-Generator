@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
-111644469573
+12873469990
 
-21-1446337811
+22-447489826
 199-1857524334
-Admin Pages\DeletePanel.xaml;Admin Pages\EditQuizPage.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;LoginPanel.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;TestResult.xaml;
+Admin Pages\DeletePanel.xaml;Admin Pages\EditQuizPage.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;LoginPanel.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;
 
 False
 

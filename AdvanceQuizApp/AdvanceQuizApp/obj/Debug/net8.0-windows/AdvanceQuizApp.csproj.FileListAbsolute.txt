@@ -209,3 +209,5 @@ G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Qu
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Searchwindow.baml
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TestResult.baml
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdvanceQ.A21B78BA.Up2Date
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Settings.g.cs
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Settings.baml

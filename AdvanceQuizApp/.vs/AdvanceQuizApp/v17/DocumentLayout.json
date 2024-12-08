@@ -3,11 +3,55 @@
   "WorkspaceRootPath": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\loginpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\loginpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\loginpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\loginpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\createtest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\createtest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\browsequestions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\browsequestions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\testresult.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\testresult.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\testresult.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\testresult.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\adt\\priorityqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\adt\\priorityqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\editquizpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\admin pages\\editquizpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\editquizpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\createtest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\createtest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\createtest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\createtest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\databank\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,28 +83,8 @@
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\browsequestions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\browsequestions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\loginpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\loginpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\managequestions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -80,10 +100,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\adt\\mystack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\adt\\mystack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\loginpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\loginpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\admin pages\\deletepanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -120,6 +136,190 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Settings.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Settings.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:29:39.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginManager.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginManager.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\LoginManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:39.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginPanel.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginPanel.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\LoginPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:18:39.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:20:51.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:32:57.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPanel.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginPanel.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\LoginPanel.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:38.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Settings.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-08T18:27:46.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateTest.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateTest.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:29:56.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BrowseQuestions.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\BrowseQuestions.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\BrowseQuestions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:18:39.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TestResult.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\TestResult.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\TestResult.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:26:55.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestResult.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\TestResult.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\TestResult.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-08T18:26:43.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\App.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:18:39.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ManageQuestions.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ManageQuestions.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\ManageQuestions.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ManageQuestions.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\ManageQuestions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:20:48.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\App.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:39.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Question.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\DataBank\\Question.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\DataBank\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T09:22:18.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PriorityQueue.cs",
               "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ADT\\PriorityQueue.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\ADT\\PriorityQueue.cs",
@@ -132,43 +332,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateTest.xaml.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateTest.xaml.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswCEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:31:22.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditQuizPage.xaml.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditQuizPage.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
+              "DocumentIndex": 25,
+              "Title": "DeletePanel.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.056Z"
+              "WhenOpened": "2024-12-06T16:18:39.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "AdminPanel.xaml",
               "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\AdminPanel.xaml",
@@ -179,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\AssemblyInfo.cs",
@@ -191,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "BrowseQuestions.xaml.cs",
               "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\BrowseQuestions.xaml.cs",
@@ -203,119 +378,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateTest.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateTest.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:29:56.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\App.xaml.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Question.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\DataBank\\Question.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\DataBank\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:22:18.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAswDAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:32:57.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ManageQuestions.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ManageQuestions.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\ManageQuestions.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ManageQuestions.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\ManageQuestions.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:20:48.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:20:51.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Microsoft.WinFX.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-12-06T16:19:26.892Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "LoginPanel.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginPanel.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\LoginPanel.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.048Z"
+              "Title": "CreateTest.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateTest.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswCEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:31:22.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginManager.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginManager.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\LoginManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.045Z"
+              "DocumentIndex": 13,
+              "Title": "EditQuizPage.xaml",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:18:39.056Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "App.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\App.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.072Z"
+              "Title": "EditQuizPage.xaml.cs",
+              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
+              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\EditQuizPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:39.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "Searchwindow.xaml",
               "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Searchwindow.xaml",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\Searchwindow.xaml",
@@ -326,29 +424,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DeletePanel.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.059Z"
+              "DocumentIndex": 23,
+              "Title": "Microsoft.WinFX.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-12-06T16:19:26.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BrowseQuestions.xaml",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\BrowseQuestions.xaml",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\BrowseQuestions.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "MyStack.cs",
               "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ADT\\MyStack.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\ADT\\MyStack.cs",
@@ -360,19 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LoginPanel.xaml.cs",
-              "DocumentMoniker": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginPanel.xaml.cs",
-              "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginPanel.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\LoginPanel.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:38.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Admin.g.cs",
               "DocumentMoniker": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admin\\Admin.g.cs",
               "ToolTip": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admin\\Admin.g.cs",
@@ -381,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Admin.g.i.cs",
               "DocumentMoniker": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admins\\Admin.g.i.cs",
               "ToolTip": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admins\\Admin.g.i.cs",
