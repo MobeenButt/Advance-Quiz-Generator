@@ -59,14 +59,6 @@ namespace AdvanceQuizApp
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
         }
-        private void Button_AddQuestion_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("adding qe...");
-        }
-        private void Button_AddTopic_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("adding top...");
 
-        }
     }
 }
