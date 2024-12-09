@@ -46,12 +46,14 @@ namespace AdvanceQuizApp.Admin_Pages
                 {
                 id = questions.Count + 1,
                 text = QuestionTextBox.Text,
+
                 options = new List<string> {
                 Option1TextBox.Text,
                 Option2TextBox.Text,
                 Option3TextBox.Text,
                 Option4TextBox.Text
                 },
+                
                 correctAnswer = CorrectAnswerTextBox.Text,
                 topic = TopicTextBox.Text,
                 difficulty = (DifficultyComboBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
