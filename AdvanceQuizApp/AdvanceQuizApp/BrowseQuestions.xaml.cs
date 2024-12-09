@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AdvanceQuizApp.ADT;
+using AdvanceQuizApp.DataBank;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +21,62 @@ namespace AdvanceQuizApp
     /// </summary>
     public partial class BrowseQuestions
     {
+        private TopicBST topicBST;
+        private List<string> topics;
+
         public BrowseQuestions()
         {
-
             InitializeComponent();
-            WindowState = WindowState.Maximized;
+            topicBST = new TopicBST();
+            LoadTopics();
+            GenerateTopicButtons();
+        }
+
+        private void LoadTopics()
+        {
+            // Load questions from the JSON file
+            string filePath = "quizdata.json"; // Ensure this path is correct
+            var questions = QuestionLoader.LoadQuestions(filePath);
+
+            // Add topics to the BST
+            foreach (var question in questions)
+            {
+                if (!string.IsNullOrWhiteSpace(question.topic))
+                    topicBST.Insert(question.topic);
+            }
+
+            topics = topicBST.GetSortedTopics();
+            
+        }
+
+        private void GenerateTopicButtons()
+        {
+            StackPanel topicPanel = new StackPanel();
+            foreach (var topic in topics)
+            {
+                Button topicButton = new Button
+                {
+                    Content = topic,
+                    Style = this.Resources["SidebarButtonStyle"] as Style
+                };
+                topicButton.Click += TopicButton_Click;
+                topicPanel.Children.Add(topicButton);
+            }
+
+            // Add buttons to the ScrollViewer
+            ScrollViewer scrollViewer = this.FindName("scrollViewer") as ScrollViewer;
+            scrollViewer.Content = topicPanel;
+        }
+
+        private void TopicButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            MessageBox.Show($"You clicked on topic: {clickedButton.Content}");
+        }
+
+        private void Button_Search_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
         private void Button_CreateQuiz_Click(object sender, RoutedEventArgs e)
         {
@@ -54,6 +107,17 @@ namespace AdvanceQuizApp
             this.Hide();
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+        }
+
+        private void Search(object sender, RoutedEventArgs e)
+        {
+            TextBox searchBox = this.FindName("searchBox") as TextBox;
+            string searchTopic = searchBox.Text;
+
+            if (topicBST.Search(searchTopic))
+                MessageBox.Show($"Topic '{searchTopic}' found!");
+            else
+                MessageBox.Show($"Topic '{searchTopic}' not found!");
         }
     }
 }
