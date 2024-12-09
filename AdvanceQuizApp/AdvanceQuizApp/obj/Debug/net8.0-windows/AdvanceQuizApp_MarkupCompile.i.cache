@@ -9,12 +9,13 @@ AdvanceQuizApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
-12873469990
 
-231486708276
-199-1857524334
-Admin Pages\DeletePanel.xaml;Admin Pages\EditQuizPage.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;LoginPanel.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+12-974993729
+
+22842306862
+199-598269392
+Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;LoginPanel.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;
 
 True
 
