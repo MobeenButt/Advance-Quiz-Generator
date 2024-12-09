@@ -28,6 +28,10 @@ namespace AdvanceQuizApp.DataBank
             subtopics = new List<Topic>();
         }
     }
+    public class QuizData
+    {
+        public List<Question> Questions { get; set; }
+    }
     public class QuestionLoader
     {
         public static List<Question> LoadQuestions(string filePath)

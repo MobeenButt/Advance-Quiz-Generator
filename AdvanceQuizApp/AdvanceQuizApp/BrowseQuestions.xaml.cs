@@ -70,8 +70,12 @@ namespace AdvanceQuizApp
 
         private void TopicButton_Click(object sender, RoutedEventArgs e)
         {
-            Button clickedButton = sender as Button;
-            MessageBox.Show($"You clicked on topic: {clickedButton.Content}");
+            Button button = sender as Button;
+            string topic = button.Content.ToString();
+
+            // Open TopicQuestions window
+            TopicQuestions topicQuestionsWindow = new TopicQuestions(topic);
+            topicQuestionsWindow.ShowDialog();
         }
 
         private void Button_Search_Click(object sender, RoutedEventArgs e)
@@ -115,7 +119,11 @@ namespace AdvanceQuizApp
             string searchTopic = searchBox.Text;
 
             if (topicBST.Search(searchTopic))
+            {
                 MessageBox.Show($"Topic '{searchTopic}' found!");
+                TopicQuestions topicQuestionsWindow = new TopicQuestions(searchTopic);
+                topicQuestionsWindow.ShowDialog();
+            }
             else
                 MessageBox.Show($"Topic '{searchTopic}' not found!");
         }
