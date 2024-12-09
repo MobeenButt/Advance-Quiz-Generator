@@ -12,16 +12,6 @@
 *.exe
 *.pdb
 
-# Visual Studio-specific
-.vs/
-*.suo
-*.cache
-*.bin
-*.dll
-*.exe
-*.pdb
-*.json
-
 # Ignore auto-generated files
 *.baml
 *.g.i.cs
