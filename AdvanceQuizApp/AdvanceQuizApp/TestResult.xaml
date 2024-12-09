@@ -1,0 +1,32 @@
+﻿<Window x:Class="AdvanceQuizApp.TestResult"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvanceQuizApp"
+        mc:Ignorable="d"
+        Title="Quiz Results" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <!-- Title -->
+        <TextBlock Text="Quiz Results" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,20"/>
+
+        <!-- Result Details -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Total Questions -->
+            <TextBlock Name="TotalQuestionsTextBlock" FontSize="16" Margin="0,5" />
+
+            <!-- Correct Answers -->
+            <TextBlock Name="CorrectAnswersTextBlock" FontSize="16" Margin="0,5"/>
+
+            <!-- Total Score -->
+            <TextBlock Name="TotalScoreTextBlock" FontSize="16" Margin="0,5" />
+
+            <!-- Elapsed Time -->
+            <TextBlock Name="ElapsedTimeTextBlock" FontSize="16" Margin="0,5" />
+        </StackPanel>
+
+        <!-- Close Button -->
+        <Button Content="Close" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,10" Click="CloseButton_Click"/>
+    </Grid>
+
+</Window>

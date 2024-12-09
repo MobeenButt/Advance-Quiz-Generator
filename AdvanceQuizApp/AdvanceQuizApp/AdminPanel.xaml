@@ -1,4 +1,4 @@
-﻿<Window x:Class="AdvanceQuizApp.AdminPanel"
+<Window x:Class="AdvanceQuizApp.AdminPanel"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Admin Panel" Height="450" Width="800"
@@ -60,9 +60,6 @@
             <Button Content="Edit Existing Quiz" Style="{StaticResource SidebarButtonStyle}" Click="EditQuiz_Click"/>
             <Button Content="Delete Quiz" Style="{StaticResource SidebarButtonStyle}" Click="DeleteQuiz_Click"/>
             <Button Content="View Categories" Style="{StaticResource SidebarButtonStyle}" Click="ViewCategories_Click"/>
-            <Button Content="Manage Questions" 
-                Style="{StaticResource SidebarButtonStyle}" 
-                Click="Button_ManageQuestions_Click"/>
             <Button Content="View All Quizzes" Style="{StaticResource SidebarButtonStyle}" Click="ViewAll_Click"/>
             <Button Content="Generate Reports" Style="{StaticResource SidebarButtonStyle}" Click="GenerateReports_Click"/>
             <Button Content="View Quiz Statistics" Style="{StaticResource SidebarButtonStyle}" Click="ViewStatistics_Click"/>

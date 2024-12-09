@@ -2,94 +2,1571 @@
   "questions": [
     {
       "id": 1,
-      "text": "1",
+      "text": "Which of the following compounds has the highest % age of oxygen by weight?",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "CH3OH",
+        "C2H5OH",
+        "HCOOH",
+        "H2O"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "H2O",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
     },
     {
       "id": 2,
-      "text": "1",
+      "text": "Formula mass of MgSO4 is g/mole:",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "150",
+        "120",
+        "130",
+        "140"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "120",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
     },
     {
       "id": 3,
-      "text": "1",
+      "text": "Electrometer is also called:",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "Voltmeter",
+        "Avometer",
+        "Ion collector",
+        "Galvanometer"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "Ion collector",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
     },
     {
       "id": 4,
-      "text": "1",
+      "text": "In combustion analysis H2O vapors are absorbed by:",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "50% KOH",
+        "Mg(ClO4)2",
+        "NaOH",
+        "MgCl2"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "Mg(ClO4)2",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Hard",
+      "favourite": 0
     },
     {
       "id": 5,
-      "text": "1",
+      "text": "Height of peak in mass spectrum shows:",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "Number of isotopes",
+        "Mass number",
+        "Relative abundance",
+        "Number of protons"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "Relative abundance",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
     },
     {
       "id": 6,
-      "text": "1",
+      "text": "The volume occupied by 1.4 g of N2 at S.T.P is:",
       "options": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "2.24 dm3",
+        "22.4 dm3",
+        "1.12 dm3",
+        "112 dm3"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "1.12 dm3",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
     },
     {
       "id": 7,
-      "text": "1",
+      "text": "Molecular mass of CaCO3 is:",
+      "options": [
+        "100",
+        "90",
+        "120",
+        "106"
+      ],
+      "correctAnswer": "100",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 8,
+      "text": "Percentage of oxygen in water is:",
+      "options": [
+        "80%",
+        "88.89%",
+        "8.8%",
+        "9.8%"
+      ],
+      "correctAnswer": "88.89%",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 9,
+      "text": "A limiting reactant is one which:",
+      "options": [
+        "Is taken in lesser quantity in grams as compared to other reactants",
+        "Is taken in lesser quantity in volume as compared to other reactants",
+        "Gives maximum amount of product",
+        "Gives minimum amount of product"
+      ],
+      "correctAnswer": "Gives minimum amount of product",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 10,
+      "text": "Tin has isotopes:",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "5"
+      ],
+      "correctAnswer": "9",
+      "topic": "Basic Concepts of Chemistry",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 11,
+      "text": "In paper chromatography, the point to which the solvent rises to maximum extent is called:",
+      "options": [
+        "Eluent",
+        "Chromatogram",
+        "Solvent front",
+        "Base line"
+      ],
+      "correctAnswer": "Solvent front",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 12,
+      "text": "Which one of the following substances is used as decolorizing agent:",
+      "options": [
+        "Animal charcoal",
+        "Conc. H2SO4",
+        "CaCl2",
+        "Silica gel"
+      ],
+      "correctAnswer": "Animal charcoal",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 13,
+      "text": "The iodine present in water can be separated by which one of the following techniques:",
+      "options": [
+        "Sublimation",
+        "Chromatography",
+        "Filtration",
+        "Solvent extraction"
+      ],
+      "correctAnswer": "Solvent extraction",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 14,
+      "text": "Chromatography in which the stationary phase is liquid is called:",
+      "options": [
+        "Adsorption chromatography",
+        "Partition chromatography",
+        "Column chromatography",
+        "None of these"
+      ],
+      "correctAnswer": "Partition chromatography",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 15,
+      "text": "Rate of filtration can be increased using:",
+      "options": [
+        "Desiccator",
+        "Chromatographic tank",
+        "Cold finger",
+        "Suction flask"
+      ],
+      "correctAnswer": "Suction flask",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 16,
+      "text": "A component having small value of K (distribution coefficient) mostly remains in:",
+      "options": [
+        "Stationary phase",
+        "Mobile phase",
+        "Chromatographic tank",
+        "None of these"
+      ],
+      "correctAnswer": "Mobile phase",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 17,
+      "text": "Direct conversion of solid into vapors is called:",
+      "options": [
+        "Crystallization",
+        "Sublimation",
+        "Distribution",
+        "Vaporization"
+      ],
+      "correctAnswer": "Sublimation",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 18,
+      "text": "Which of the following is purified by sublimation:",
+      "options": [
+        "Naphthalene",
+        "Benzoic acid",
+        "Ammonium chloride",
+        "All of these"
+      ],
+      "correctAnswer": "All of these",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 19,
+      "text": "Substance that does not show the process of sublimation is:",
+      "options": [
+        "K2Cr2O7",
+        "Iodine",
+        "Naphthalene",
+        "NH4Cl"
+      ],
+      "correctAnswer": "K2Cr2O7",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 20,
+      "text": "Solvent extraction is an equilibrium process and is controlled by:",
+      "options": [
+        "Distribution law",
+        "The amount of solvent used",
+        "Law of mass action",
+        "The amount of solute"
+      ],
+      "correctAnswer": "Distribution law",
+      "topic": "Experimental Techniques in Chemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 21,
+      "text": "Which one is the example of cubic crystals?",
+      "options": [
+        "Graphite",
+        "Sugar",
+        "Borax",
+        "Diamond"
+      ],
+      "correctAnswer": "Diamond",
+      "topic": "Liquids and Solids",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 22,
+      "text": "The boiling point of the halogens:",
+      "options": [
+        "Increase down the group",
+        "Decrease down the group",
+        "Remains constant",
+        "Can’t be predicted"
+      ],
+      "correctAnswer": "Increase down the group",
+      "topic": "Liquids and Solids",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 23,
+      "text": "Vapor pressure of a liquid in a closed container depends upon:",
+      "options": [
+        "Surface area of container",
+        "Temperature",
+        "Amount of liquid",
+        "All of these"
+      ],
+      "correctAnswer": "Temperature",
+      "topic": "Liquids and Solids",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 24,
+      "text": "A crystal system in which all the axes and angles are unequal is called:",
+      "options": [
+        "Tetragonal system",
+        "Monoclinic system",
+        "Triclinic system",
+        "Cubic system"
+      ],
+      "correctAnswer": "Triclinic system",
+      "topic": "Liquids and Solids",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 25,
+      "text": "At Murree hills water boils at:",
+      "options": [
+        "98°C",
+        "100°C",
+        "0°C",
+        "50°C"
+      ],
+      "correctAnswer": "98°C",
+      "topic": "Liquids and Solids",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 26,
+      "text": "Coordination number of Na+ ion in NaCl is:",
+      "options": [
+        "One",
+        "Two",
+        "Four",
+        "Six"
+      ],
+      "correctAnswer": "Six",
+      "topic": "Liquids and Solids",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 27,
+      "text": "Water may boil at 120°C when external pressure is:",
+      "options": [
+        "369 torr",
+        "700 torr",
+        "760 torr",
+        "1489 torr"
+      ],
+      "correctAnswer": "1489 torr",
+      "topic": "Liquids and Solids",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 28,
+      "text": "Crystals formed due to London forces of interaction are:",
+      "options": [
+        "Ionic",
+        "Covalent",
+        "Molecular",
+        "Metallic"
+      ],
+      "correctAnswer": "Molecular",
+      "topic": "Liquids and Solids",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 29,
+      "text": "Forces which are present between ions and water molecules are:",
+      "options": [
+        "Dipole-induced dipole forces",
+        "Dipole-dipole forces",
+        "Ion dipole forces",
+        "London dispersion forces"
+      ],
+      "correctAnswer": "Ion dipole forces",
+      "topic": "Liquids and Solids",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 30,
+      "text": "How many allotropic forms are present in carbon?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correctAnswer": "Four",
+      "topic": "Liquids and Solids",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 31,
+      "text": "Maximum number of electrons in a subshell is given by:",
+      "options": [
+        "2l + 1",
+        "2l - 1",
+        "2(2l + 1)",
+        "2(2l - 1)"
+      ],
+      "correctAnswer": "2(2l + 1)",
+      "topic": "Atomic Structure",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 32,
+      "text": "An orbital can accommodate maximum electrons:",
+      "options": [
+        "10",
+        "14",
+        "6",
+        "2"
+      ],
+      "correctAnswer": "2",
+      "topic": "Atomic Structure",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 33,
+      "text": "How many times the mass of neutron is greater than that of electron?",
+      "options": [
+        "1480",
+        "2000",
+        "200",
+        "1840"
+      ],
+      "correctAnswer": "1840",
+      "topic": "Atomic Structure",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 34,
+      "text": "Lyman Series is obtained when an electron in an atom jumps from a higher energy level to:",
+      "options": [
+        "Ground level",
+        "2nd level",
+        "3rd level",
+        "4th level"
+      ],
+      "correctAnswer": "Ground level",
+      "topic": "Atomic Structure",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 35,
+      "text": "When the 6d orbital is complete, the entering electron goes into:",
+      "options": [
+        "7f",
+        "7s",
+        "7p",
+        "7d"
+      ],
+      "correctAnswer": "7f",
+      "topic": "Atomic Structure",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 36,
+      "text": "Lyman series occurs in:",
+      "options": [
+        "Visible region",
+        "U.V. region",
+        "I.R. region",
+        "None of these"
+      ],
+      "correctAnswer": "U.V. region",
+      "topic": "Atomic Structure",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 37,
+      "text": "According to Bohr’s atomic model, the radius of the second orbit of the hydrogen atom is:",
+      "options": [
+        "0.529 Å",
+        "2.116 Å",
+        "4.0 Å",
+        "5.0 Å"
+      ],
+      "correctAnswer": "2.116 Å",
+      "topic": "Atomic Structure",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 38,
+      "text": "Lines of Paschen series are produced when electrons jump from higher orbits to:",
+      "options": [
+        "1st orbit",
+        "2nd orbit",
+        "3rd orbit",
+        "4th orbit"
+      ],
+      "correctAnswer": "3rd orbit",
+      "topic": "Atomic Structure",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 39,
+      "text": "The electronic configuration of an atom is 1s2, 2s2, 2p4. The number of unpaired electrons in this atom is:",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correctAnswer": "2",
+      "topic": "Atomic Structure",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 40,
+      "text": "Negative charge on cathode rays was established by:",
+      "options": [
+        "William Crook",
+        "J. Perrin",
+        "R.A. Millikan",
+        "Hittrof"
+      ],
+      "correctAnswer": "J. Perrin",
+      "topic": "Atomic Structure",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 41,
+      "text": "Which of the following molecules has a coordinate covalent bond?",
+      "options": [
+        "HCl",
+        "NaCl",
+        "NH4Cl",
+        "AlCl3"
+      ],
+      "correctAnswer": "NH4Cl",
+      "topic": "Chemical Bonding",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 42,
+      "text": "The angle formed in sp hybridization is:",
+      "options": [
+        "120°",
+        "180°",
+        "109.5°",
+        "107.5°"
+      ],
+      "correctAnswer": "180°",
+      "topic": "Chemical Bonding",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 43,
+      "text": "Ionic compounds are mostly obtained by the combination of group:",
+      "options": [
+        "3 and 5",
+        "2 and 5",
+        "4 and 8",
+        "1 and 7"
+      ],
+      "correctAnswer": "1 and 7",
+      "topic": "Chemical Bonding",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 44,
+      "text": "Dipole moment of CO2 is:",
+      "options": [
+        "1.84D",
+        "Zero D",
+        "0.95 D",
+        "2.2 D"
+      ],
+      "correctAnswer": "Zero D",
+      "topic": "Chemical Bonding",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 45,
+      "text": "In sp2 hybridization, the orbitals are oriented at an angle of:",
+      "options": [
+        "109.5°",
+        "120°",
+        "180°",
+        "0°"
+      ],
+      "correctAnswer": "120°",
+      "topic": "Chemical Bonding",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 46,
+      "text": "A molecular orbital can contain a maximum of:",
+      "options": [
+        "One electron",
+        "Two electrons",
+        "Three electrons",
+        "Four electrons"
+      ],
+      "correctAnswer": "Two electrons",
+      "topic": "Chemical Bonding",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 47,
+      "text": "Noble gases have maximum stability because:",
+      "options": [
+        "They are very safe",
+        "Their valence shells are complete",
+        "They are gases",
+        "They are present in zero group"
+      ],
+      "correctAnswer": "Their valence shells are complete",
+      "topic": "Chemical Bonding",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 48,
+      "text": "Octet rule is not followed in the formation of:",
+      "options": [
+        "NF3",
+        "CF4",
+        "CCl4",
+        "PCl5"
+      ],
+      "correctAnswer": "PCl5",
+      "topic": "Chemical Bonding",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 49,
+      "text": "The hybridization of carbon in C2H4 is:",
+      "options": [
+        "sp",
+        "sp2",
+        "sp3",
+        "Not hybridized"
+      ],
+      "correctAnswer": "sp2",
+      "topic": "Chemical Bonding",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 50,
+      "text": "Total number of bonds in C2H4 molecule is:",
+      "options": [
+        "Six",
+        "Four",
+        "Five",
+        "Eight"
+      ],
+      "correctAnswer": "Five",
+      "topic": "Chemical Bonding",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 51,
+      "text": "Spontaneous reactions are:",
+      "options": [
+        "Reversible",
+        "Irreversible",
+        "Non-irreversible",
+        "None of these"
+      ],
+      "correctAnswer": "Irreversible",
+      "topic": "Thermochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 52,
+      "text": "The standard heat changes occur at:",
+      "options": [
+        "25°C and 2 atm",
+        "298 K and 1 atm",
+        "25°C and 1 mm Hg",
+        "273 K and 1 atm"
+      ],
+      "correctAnswer": "298 K and 1 atm",
+      "topic": "Thermochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 53,
+      "text": "H⁺ + OH⁻ → H2O. The change in enthalpy for this reaction is called:",
+      "options": [
+        "Heat of reaction",
+        "Heat of formation",
+        "Heat of neutralization",
+        "Heat of combustion"
+      ],
+      "correctAnswer": "Heat of neutralization",
+      "topic": "Thermochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 54,
+      "text": "The net change in energy in a chemical reaction is the same whether it takes place directly or indirectly. This is called:",
+      "options": [
+        "Henry’s law",
+        "Charlie’s law",
+        "Hess’s law",
+        "Graham’s law"
+      ],
+      "correctAnswer": "Hess’s law",
+      "topic": "Thermochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 55,
+      "text": "The enthalpy change when one mole of a substance is completely burnt in excess oxygen is called:",
+      "options": [
+        "Enthalpy of atomization",
+        "Enthalpy of neutralization",
+        "Enthalpy of combustion",
+        "Enthalpy of formation"
+      ],
+      "correctAnswer": "Enthalpy of combustion",
+      "topic": "Thermochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 56,
+      "text": "Enthalpy change for the reaction: CH4(g) + 2O2(g) → CO2(g) + 2H2O(l) is called enthalpy of:",
+      "options": [
+        "Formation",
+        "Combustion",
+        "Neutralization",
+        "Atomization"
+      ],
+      "correctAnswer": "Combustion",
+      "topic": "Thermochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 57,
+      "text": "Standard enthalpies are measured at:",
+      "options": [
+        "273 K",
+        "298 K",
+        "373 K",
+        "All of these"
+      ],
+      "correctAnswer": "298 K",
+      "topic": "Thermochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 58,
+      "text": "Which of the following is an exothermic process?",
+      "options": [
+        "Evaporation",
+        "Sublimation",
+        "Respiration",
+        "Boiling"
+      ],
+      "correctAnswer": "Respiration",
+      "topic": "Thermochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 59,
+      "text": "A state function which describes the internal energy and the product of pressure and volume is called:",
+      "options": [
+        "Enthalpy",
+        "Internal energy",
+        "Work",
+        "Free energy"
+      ],
+      "correctAnswer": "Enthalpy",
+      "topic": "Thermochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 60,
+      "text": "The total heat content of a system is called:",
+      "options": [
+        "Entropy",
+        "Enthalpy",
+        "Temperature",
+        "Internal energy"
+      ],
+      "correctAnswer": "Enthalpy",
+      "topic": "Thermochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 61,
+      "text": "The value of pH and pOH of pure water at 25°C is approximately:",
+      "options": [
+        "14",
+        "7",
+        "1 × 10⁻¹⁴",
+        "1 × 10¹⁴"
+      ],
+      "correctAnswer": "7",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 62,
+      "text": "Equilibrium constant for gaseous equilibrium is represented by:",
+      "options": [
+        "Ka",
+        "Kc",
+        "Kx",
+        "Kp"
+      ],
+      "correctAnswer": "Kp",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 63,
+      "text": "Conjugate acid of a very strong base is relatively:",
+      "options": [
+        "Very strong acid",
+        "Weak acid",
+        "Very weak acid",
+        "Strong acid"
+      ],
+      "correctAnswer": "Very weak acid",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 64,
+      "text": "Molarity of pure water is:",
       "options": [
         "1",
-        "1",
-        "1",
-        "1"
+        "18",
+        "55.5",
+        "6"
       ],
-      "correctAnswer": "1",
-      "topic": "1",
-      "difficulty": "Medium"
+      "correctAnswer": "55.5",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 65,
+      "text": "The suppression of ionization of a weak acid or weak base by adding one of its own ions is known as:",
+      "options": [
+        "Buffer action",
+        "Common ion effect",
+        "Buffer capacity",
+        "Ionization effect"
+      ],
+      "correctAnswer": "Common ion effect",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 66,
+      "text": "By adding NH4Cl to NH4OH solution, the ionization of NH4OH:",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Remains same",
+        "Increases 100 times"
+      ],
+      "correctAnswer": "Decreases",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 67,
+      "text": "pH of tomato is:",
+      "options": [
+        "1.2",
+        "4.2",
+        "7.2",
+        "9.2"
+      ],
+      "correctAnswer": "4.2",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 68,
+      "text": "When Kc value is small, the equilibrium position is:",
+      "options": [
+        "Towards left",
+        "Towards right",
+        "Remains unchanged",
+        "None of these"
+      ],
+      "correctAnswer": "Towards left",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 69,
+      "text": "A basic buffer solution can be prepared by mixing:",
+      "options": [
+        "A strong acid and its salt with a weak base",
+        "A weak base and its salt with a strong acid",
+        "A strong base and its salt with a weak acid",
+        "A weak acid and its salt with a strong base"
+      ],
+      "correctAnswer": "A weak base and its salt with a strong acid",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 70,
+      "text": "The pOH of a solution is 4. The H⁺ ion concentration of the solution is:",
+      "options": [
+        "4.0 moles/dm³",
+        "10⁻¹⁰ moles/dm³",
+        "0.4 moles/dm³",
+        "4 × 10⁴ moles/dm³"
+      ],
+      "correctAnswer": "10⁻¹⁰ moles/dm³",
+      "topic": "Acids, Bases, and pH",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 71,
+      "text": "The ideal gas constant R, when expressed in dm³ atm mol⁻¹ K⁻¹ units, has a value of:",
+      "options": [
+        "0.0821",
+        "1.0821",
+        "82.21",
+        "82.1"
+      ],
+      "correctAnswer": "0.0821",
+      "topic": "States of Matter",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 72,
+      "text": "Calorie is equivalent to:",
+      "options": [
+        "0.4184 J",
+        "41.84 J",
+        "4.184 J",
+        "10.418 J"
+      ],
+      "correctAnswer": "4.184 J",
+      "topic": "States of Matter",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 73,
+      "text": "The density of a gas can be determined by the formula:",
+      "options": [
+        "d = PM/RT",
+        "d = RT/PM",
+        "d = PMR/T",
+        "d = PMT/R"
+      ],
+      "correctAnswer": "d = PM/RT",
+      "topic": "States of Matter",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 74,
+      "text": "Which gas has the highest diffusion rate?",
+      "options": [
+        "SO₂",
+        "Cl₂",
+        "NH₃",
+        "CO₂"
+      ],
+      "correctAnswer": "NH₃",
+      "topic": "States of Matter",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 75,
+      "text": "Mathematically, Boyle’s law is shown as:",
+      "options": [
+        "PT = K",
+        "VT = K",
+        "P/T = K",
+        "PV = K"
+      ],
+      "correctAnswer": "PV = K",
+      "topic": "States of Matter",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 76,
+      "text": "Absolute zero is equal to:",
+      "options": [
+        "273°C",
+        "−273°C",
+        "0°C",
+        "273 K"
+      ],
+      "correctAnswer": "−273°C",
+      "topic": "States of Matter",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 77,
+      "text": "If the values of 'a' and 'b' in Van der Waal’s equation are close to zero for a gas, then the gas is:",
+      "options": [
+        "Ideal",
+        "Non-ideal",
+        "Highly polar",
+        "Easily liquefied"
+      ],
+      "correctAnswer": "Ideal",
+      "topic": "States of Matter",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 78,
+      "text": "The constant factor in Charles’s law is:",
+      "options": [
+        "Volume",
+        "Temperature",
+        "Pressure",
+        "All of these"
+      ],
+      "correctAnswer": "Pressure",
+      "topic": "States of Matter",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 79,
+      "text": "Which gas will diffuse more rapidly?",
+      "options": [
+        "CO₂",
+        "NH₃",
+        "HCl",
+        "SO₂"
+      ],
+      "correctAnswer": "NH₃",
+      "topic": "States of Matter",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 80,
+      "text": "Normal human body temperature is:",
+      "options": [
+        "37°C",
+        "98.6°C",
+        "37°F",
+        "273 K"
+      ],
+      "correctAnswer": "37°C",
+      "topic": "States of Matter",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 81,
+      "text": "Which one of the following is a colligative property?",
+      "options": [
+        "Viscosity",
+        "Surface tension",
+        "Osmotic pressure",
+        "Boiling point"
+      ],
+      "correctAnswer": "Osmotic pressure",
+      "topic": "Solutions",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 82,
+      "text": "The process of passing a solvent through a semi-permeable membrane from lower to higher concentration is:",
+      "options": [
+        "Diffusion",
+        "Osmosis",
+        "Reverse osmosis",
+        "None of these"
+      ],
+      "correctAnswer": "Osmosis",
+      "topic": "Solutions",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 83,
+      "text": "Freezing point decreases when:",
+      "options": [
+        "The number of solute particles increases",
+        "The solvent evaporates",
+        "The solution is diluted",
+        "The solution is heated"
+      ],
+      "correctAnswer": "The number of solute particles increases",
+      "topic": "Solutions",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 84,
+      "text": "The boiling point of a solution is always higher than:",
+      "options": [
+        "The solvent",
+        "The solute",
+        "The freezing point",
+        "The critical temperature"
+      ],
+      "correctAnswer": "The solvent",
+      "topic": "Solutions",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 85,
+      "text": "Which law states that the vapor pressure of a solution is proportional to the mole fraction of the solvent?",
+      "options": [
+        "Raoult’s law",
+        "Boyle’s law",
+        "Henry’s law",
+        "Dalton’s law"
+      ],
+      "correctAnswer": "Raoult’s law",
+      "topic": "Solutions",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 86,
+      "text": "In an ideal solution, the intermolecular forces between solute and solvent molecules are:",
+      "options": [
+        "Weaker than solvent-solvent interactions",
+        "Stronger than solute-solute interactions",
+        "The same as between solvent and solvent",
+        "Zero"
+      ],
+      "correctAnswer": "The same as between solvent and solvent",
+      "topic": "Solutions",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 87,
+      "text": "Molality is defined as:",
+      "options": [
+        "Moles of solute per liter of solution",
+        "Moles of solute per kilogram of solvent",
+        "Mass of solute per liter of solution",
+        "Moles of solute per mole of solvent"
+      ],
+      "correctAnswer": "Moles of solute per kilogram of solvent",
+      "topic": "Solutions",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 88,
+      "text": "When a non-volatile solute is added to a solvent, the vapor pressure of the solvent:",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Remains the same",
+        "Becomes zero"
+      ],
+      "correctAnswer": "Decreases",
+      "topic": "Solutions",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 89,
+      "text": "The van’t Hoff factor for NaCl in an aqueous solution is approximately:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": "2",
+      "topic": "Solutions",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 90,
+      "text": "Reverse osmosis is a process used for:",
+      "options": [
+        "Desalination",
+        "Evaporation",
+        "Distillation",
+        "Crystallization"
+      ],
+      "correctAnswer": "Desalination",
+      "topic": "Solutions",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 91,
+      "text": "Electrochemical cells convert:",
+      "options": [
+        "Chemical energy into electrical energy",
+        "Electrical energy into chemical energy",
+        "Heat energy into chemical energy",
+        "Chemical energy into heat energy"
+      ],
+      "correctAnswer": "Chemical energy into electrical energy",
+      "topic": "Electrochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 92,
+      "text": "The unit of electrochemical equivalent is:",
+      "options": [
+        "Coulomb",
+        "Kg/Coulomb",
+        "Ampere",
+        "Volt"
+      ],
+      "correctAnswer": "Kg/Coulomb",
+      "topic": "Electrochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 93,
+      "text": "Faraday’s first law of electrolysis states that:",
+      "options": [
+        "The amount of a substance deposited is directly proportional to the quantity of electricity passed",
+        "The mass of the substance deposited is inversely proportional to its equivalent weight",
+        "The current efficiency decreases with time",
+        "The potential difference affects the electrolysis rate"
+      ],
+      "correctAnswer": "The amount of a substance deposited is directly proportional to the quantity of electricity passed",
+      "topic": "Electrochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 94,
+      "text": "Which of the following is used as an electrolyte in a dry cell?",
+      "options": [
+        "NaCl",
+        "NH4Cl",
+        "KCl",
+        "CaCl2"
+      ],
+      "correctAnswer": "NH4Cl",
+      "topic": "Electrochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 95,
+      "text": "In electroplating, the object to be plated is always:",
+      "options": [
+        "Anode",
+        "Cathode",
+        "Electrolyte",
+        "Salt bridge"
+      ],
+      "correctAnswer": "Cathode",
+      "topic": "Electrochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 96,
+      "text": "Standard electrode potential of hydrogen is taken as:",
+      "options": [
+        "1 V",
+        "0.5 V",
+        "0 V",
+        "−1 V"
+      ],
+      "correctAnswer": "0 V",
+      "topic": "Electrochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 97,
+      "text": "The standard reduction potential of a half-cell is measured relative to:",
+      "options": [
+        "Calomel electrode",
+        "Platinum electrode",
+        "Standard hydrogen electrode",
+        "Reference electrode"
+      ],
+      "correctAnswer": "Standard hydrogen electrode",
+      "topic": "Electrochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 98,
+      "text": "Galvanic cells are also called:",
+      "options": [
+        "Electrolytic cells",
+        "Voltaic cells",
+        "Fuel cells",
+        "Dry cells"
+      ],
+      "correctAnswer": "Voltaic cells",
+      "topic": "Electrochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 99,
+      "text": "Which of the following is an example of a primary cell?",
+      "options": [
+        "Lead-acid battery",
+        "Nickel-cadmium cell",
+        "Dry cell",
+        "Fuel cell"
+      ],
+      "correctAnswer": "Dry cell",
+      "topic": "Electrochemistry",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 100,
+      "text": "Electrolysis of molten NaCl gives:",
+      "options": [
+        "Sodium and chlorine",
+        "Hydrogen and chlorine",
+        "Sodium hydroxide and chlorine",
+        "Sodium hypochlorite and chlorine"
+      ],
+      "correctAnswer": "Sodium and chlorine",
+      "topic": "Electrochemistry",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 101,
+      "text": "The rate of a reaction is expressed as:",
+      "options": [
+        "Change in concentration per unit time",
+        "Change in temperature per unit time",
+        "Change in pressure per unit time",
+        "Change in volume per unit time"
+      ],
+      "correctAnswer": "Change in concentration per unit time",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 102,
+      "text": "A reaction with a rate law of Rate = k[A]² is:",
+      "options": [
+        "First order",
+        "Second order",
+        "Third order",
+        "Zero order"
+      ],
+      "correctAnswer": "Second order",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 103,
+      "text": "The half-life of a first-order reaction is:",
+      "options": [
+        "Independent of initial concentration",
+        "Proportional to initial concentration",
+        "Inversely proportional to initial concentration",
+        "Dependent on the order of the reaction"
+      ],
+      "correctAnswer": "Independent of initial concentration",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 104,
+      "text": "Activation energy is the:",
+      "options": [
+        "Minimum energy required to start a reaction",
+        "Energy of reactants",
+        "Energy of products",
+        "Heat of reaction"
+      ],
+      "correctAnswer": "Minimum energy required to start a reaction",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 105,
+      "text": "The Arrhenius equation shows the relationship between:",
+      "options": [
+        "Reaction rate and activation energy",
+        "Reaction rate and reactant concentration",
+        "Reaction rate and catalyst",
+        "Reaction rate and reaction order"
+      ],
+      "correctAnswer": "Reaction rate and activation energy",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 106,
+      "text": "Which of the following factors does not affect the rate of a chemical reaction?",
+      "options": [
+        "Concentration",
+        "Temperature",
+        "Pressure",
+        "Color of the reactants"
+      ],
+      "correctAnswer": "Color of the reactants",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 107,
+      "text": "In a zero-order reaction, the rate is:",
+      "options": [
+        "Independent of reactant concentration",
+        "Proportional to reactant concentration",
+        "Proportional to the square of reactant concentration",
+        "Inversely proportional to reactant concentration"
+      ],
+      "correctAnswer": "Independent of reactant concentration",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Hard",
+      "favourite": 0
+    },
+    {
+      "id": 108,
+      "text": "A catalyst increases the rate of reaction by:",
+      "options": [
+        "Increasing temperature",
+        "Decreasing activation energy",
+        "Changing the equilibrium constant",
+        "Increasing pressure"
+      ],
+      "correctAnswer": "Decreasing activation energy",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 109,
+      "text": "The unit of rate constant for a second-order reaction is:",
+      "options": [
+        "s⁻¹",
+        "L mol⁻¹ s⁻¹",
+        "mol L⁻¹ s⁻¹",
+        "L² mol⁻² s⁻¹"
+      ],
+      "correctAnswer": "L mol⁻¹ s⁻¹",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 110,
+      "text": "Which of the following reactions is a first-order reaction?",
+      "options": [
+        "Decomposition of N₂O₅",
+        "Formation of ammonia",
+        "Combustion of methane",
+        "Neutralization of acid and base"
+      ],
+      "correctAnswer": "Decomposition of N₂O₅",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 111,
+      "text": "What is you name boy",
+      "options": [
+        "white",
+        "brown",
+        "black",
+        "red"
+      ],
+      "correctAnswer": "black",
+      "topic": "Name",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 112,
+      "text": "What is your second name ",
+      "options": [
+        "White ",
+        "Black ",
+        "Red",
+        "Brown"
+      ],
+      "correctAnswer": "Red",
+      "topic": "Name",
+      "difficulty": "Moderate",
+      "favourite": 0
     }
   ]
 }
