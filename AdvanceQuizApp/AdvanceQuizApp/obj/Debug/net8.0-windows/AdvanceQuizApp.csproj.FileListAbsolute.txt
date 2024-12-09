@@ -54,10 +54,8 @@ G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Qu
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\bin\Debug\net8.0-windows\AdvanceQuizApp.dll
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\bin\Debug\net8.0-windows\AdvanceQuizApp.pdb
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdminPanel.baml
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\LoginPanel.baml
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdminPanel.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\BrowseQuestions.g.cs
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\LoginPanel.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\MainWindow.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\App.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdvanceQuizApp_MarkupCompile.cache
@@ -193,9 +191,7 @@ D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdvanceQuizApp.csproj.AssemblyReference.cache
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\DeletePanel.baml
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\EditQuizPage.baml
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\DeletePanel.g.cs
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\EditQuizPage.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\ManageQuestionBankPage.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\CreateTest.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Searchwindow.g.cs
@@ -215,3 +211,7 @@ D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\Adva
 D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\AddQuestion.g.cs
 D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Login.g.cs
 D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Login.baml
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\AddQuestion.baml
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\AddQuestion.g.cs
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Login.g.cs
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Login.baml
