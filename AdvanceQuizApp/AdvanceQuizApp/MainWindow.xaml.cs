@@ -47,7 +47,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            LoginPanel loginPanel = new LoginPanel();
+            Login loginPanel = new Login();
             loginPanel.Show();
         }
         private void CreateTest_Click(object sender, RoutedEventArgs e)
