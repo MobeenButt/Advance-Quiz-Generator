@@ -19,6 +19,8 @@
 *.bin
 *.dll
 *.exe
+*.pdb
+*.json
 
 # Ignore auto-generated files
 *.baml
