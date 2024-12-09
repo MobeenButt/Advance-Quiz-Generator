@@ -3,7 +3,7 @@
 /obj/
 /.vs/
 
-# Ignore user-specific files
+# Ignore user-specific file
 *.user
 *.cache
 
