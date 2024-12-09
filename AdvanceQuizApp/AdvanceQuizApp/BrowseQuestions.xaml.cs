@@ -45,8 +45,8 @@ namespace AdvanceQuizApp
                     topicBST.Insert(question.topic);
             }
 
-            // Get sorted topics for UI
             topics = topicBST.GetSortedTopics();
+            
         }
 
         private void GenerateTopicButtons()
