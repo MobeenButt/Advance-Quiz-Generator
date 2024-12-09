@@ -18,3 +18,4 @@
 *.g.cs
 AdvanceQuizApp/AdvanceQuizApp/obj/Debug/net8.0-windows/AdvanceQuizApp.sourcelink.json
 *.json
+*.xaml
