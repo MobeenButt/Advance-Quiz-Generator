@@ -1,4 +1,9 @@
-﻿namespace AdvanceQuizApp.DataBank
+﻿using System;
+using System.IO;
+using Newtonsoft.Json;
+using System.Text.Json;
+
+namespace AdvanceQuizApp.DataBank
 {
     public class Question
     {
@@ -21,6 +26,15 @@
             this.topicName = topicName;
             questions = new List<Question>();
             subtopics = new List<Topic>();
+        }
+    }
+    public class QuestionLoader
+    {
+        public static List<Question> LoadQuestions(string filePath)
+        {
+            string jsonData = File.ReadAllText(filePath);
+            var questions = JsonConvert.DeserializeObject<Dictionary<string, List<Question>>>(jsonData);
+            return questions["questions"];
         }
     }
 }

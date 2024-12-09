@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\HP\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Talha\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\HP\\.nuget\\packages"
     ],
     "configProperties": {

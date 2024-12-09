@@ -92,7 +92,7 @@
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
                 <TextBox Width="400" Height="30" Margin="0,0,10,0" />
-                <Button Content="Search" Width="100" Height="30" Background="#1ABC9C" Foreground="White"/>
+                <Button Content="Search" Width="100" Height="30" Background="#1ABC9C" Foreground="White" Click="Search"/>
             </StackPanel>
 
             <ScrollViewer VerticalScrollBarVisibility="Auto" Height="300">
