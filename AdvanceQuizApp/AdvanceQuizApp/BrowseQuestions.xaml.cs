@@ -76,13 +76,7 @@ namespace AdvanceQuizApp
 
         private void Button_Search_Click(object sender, RoutedEventArgs e)
         {
-            TextBox searchBox = this.FindName("searchBox") as TextBox;
-            string searchTopic = searchBox.Text;
-
-            if (topicBST.Search(searchTopic))
-                MessageBox.Show($"Topic '{searchTopic}' found!");
-            else
-                MessageBox.Show($"Topic '{searchTopic}' not found!");
+            
         }
         private void Button_CreateQuiz_Click(object sender, RoutedEventArgs e)
         {
@@ -113,6 +107,17 @@ namespace AdvanceQuizApp
             this.Hide();
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+        }
+
+        private void Search(object sender, RoutedEventArgs e)
+        {
+            TextBox searchBox = this.FindName("searchBox") as TextBox;
+            string searchTopic = searchBox.Text;
+
+            if (topicBST.Search(searchTopic))
+                MessageBox.Show($"Topic '{searchTopic}' found!");
+            else
+                MessageBox.Show($"Topic '{searchTopic}' not found!");
         }
     }
 }

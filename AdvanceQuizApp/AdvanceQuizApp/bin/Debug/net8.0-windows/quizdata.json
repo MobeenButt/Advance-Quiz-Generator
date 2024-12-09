@@ -24,7 +24,7 @@
         "140"
       ],
       "correctAnswer": "120",
-      "topic": "Basic Concepts of Chemistry",
+      "topic": "Basic Concepts of DChemistry",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -1256,7 +1256,7 @@
         "Crystallization"
       ],
       "correctAnswer": "Desalination",
-      "topic": "Solutions",
+      "topic": "Solution 2",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -1270,7 +1270,7 @@
         "Chemical energy into heat energy"
       ],
       "correctAnswer": "Chemical energy into electrical energy",
-      "topic": "Electrochemistry",
+      "topic": "Electrochemistry 2",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -1284,7 +1284,7 @@
         "Volt"
       ],
       "correctAnswer": "Kg/Coulomb",
-      "topic": "Electrochemistry",
+      "topic": "Electrochemistry 22",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -1298,7 +1298,7 @@
         "The potential difference affects the electrolysis rate"
       ],
       "correctAnswer": "The amount of a substance deposited is directly proportional to the quantity of electricity passed",
-      "topic": "Electrochemistry",
+      "topic": "Electrochemistry 4",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -1312,7 +1312,7 @@
         "CaCl2"
       ],
       "correctAnswer": "NH4Cl",
-      "topic": "Electrochemistry",
+      "topic": "Electrochemistry12",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -1326,7 +1326,7 @@
         "Salt bridge"
       ],
       "correctAnswer": "Cathode",
-      "topic": "Electrochemistry",
+      "topic": "Electrochemistry213",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -1340,7 +1340,7 @@
         "−1 V"
       ],
       "correctAnswer": "0 V",
-      "topic": "Electrochemistry",
+      "topic": "Electrochemistry3",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -1480,7 +1480,7 @@
         "Color of the reactants"
       ],
       "correctAnswer": "Color of the reactants",
-      "topic": "Chemical Kinetics",
+      "topic": "Chemical Kinetics 5",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -1508,7 +1508,7 @@
         "Increasing pressure"
       ],
       "correctAnswer": "Decreasing activation energy",
-      "topic": "Chemical Kinetics",
+      "topic": "Chemical Kinetics 7",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -1522,7 +1522,7 @@
         "L² mol⁻² s⁻¹"
       ],
       "correctAnswer": "L mol⁻¹ s⁻¹",
-      "topic": "Chemical Kinetics",
+      "topic": "Chemical Kinetics 8",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -1538,6 +1538,20 @@
       "correctAnswer": "Decomposition of N₂O₅",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 3,
+      "text": "what is shera",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": "",
+      "topic": "Acha to ye topic hai",
+      "difficulty": "5",
       "favourite": 0
     }
 
