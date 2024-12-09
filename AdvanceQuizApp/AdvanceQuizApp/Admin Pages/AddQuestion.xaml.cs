@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using AdvanceQuizApp.DataBank;
 using Newtonsoft.Json;
@@ -28,7 +29,7 @@ namespace AdvanceQuizApp.Admin_Pages
                 {
                     questions.Clear();
                     questions.AddRange(QuizData["questions"]);
-                    QuestionsListView.ItemsSource = questions;
+                    //QuestionsListView.ItemsSource = questions;
                 }
             }
         }
@@ -42,7 +43,7 @@ namespace AdvanceQuizApp.Admin_Pages
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Question newquestion = new Question
-            {
+                {
                 id = questions.Count + 1,
                 text = QuestionTextBox.Text,
                 options = new List<string> {
@@ -53,12 +54,12 @@ namespace AdvanceQuizApp.Admin_Pages
                 },
                 correctAnswer = CorrectAnswerTextBox.Text,
                 topic = TopicTextBox.Text,
-                difficulty = DifficultyTextBox.Text,
+                difficulty = (DifficultyComboBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
                 favourite = 0
 
-            };
+                };
             questions.Add(newquestion);
-            QuestionsListView.Items.Refresh();
+            //QuestionsListView.Items.Refresh();
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
@@ -91,7 +92,7 @@ namespace AdvanceQuizApp.Admin_Pages
             File.WriteAllText(filePath, updatedJson);
             MessageBox.Show("Quiz updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             questions.Clear();
-            QuestionsListView.Items.Refresh();
+            //QuestionsListView.Items.Refresh();
         }
 
         //private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -148,13 +149,13 @@ namespace AdvanceQuizApp.Admin_Pages
         },
                 correctAnswer = CorrectAnswerTextBox.Text,
                 topic = TopicTextBox.Text,
-                difficulty = DifficultyTextBox.Text,
+                difficulty = (DifficultyComboBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
                 favourite = 0
             };
 
             // Add the new question to the list and update UI
             questions.Add(newQuestion);
-            QuestionsListView.Items.Refresh();
+            //QuestionsListView.Items.Refresh();
 
             // Clear the input fields
             QuestionTextBox.Clear();
@@ -164,8 +165,9 @@ namespace AdvanceQuizApp.Admin_Pages
             Option4TextBox.Clear();
             CorrectAnswerTextBox.Clear();
             TopicTextBox.Clear();
-            DifficultyTextBox.Clear();
-        }
+            DifficultyComboBox.SelectedIndex = -1;
+
+            }
 
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -174,5 +176,10 @@ namespace AdvanceQuizApp.Admin_Pages
             AdminPanel admin = new AdminPanel();
             admin.Show();
         }
-    }
+
+        private void DifficultyTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+            {
+
+            }
+        }
 }
