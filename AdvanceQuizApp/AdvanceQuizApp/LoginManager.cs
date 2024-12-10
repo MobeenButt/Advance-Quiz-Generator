@@ -32,7 +32,8 @@ namespace AdvanceQuizApp
         public bool AddUser(string name, string pass)
         {
             //baki sb ki priority 0 hogi
-            loginQueue.Enqueue(new User(name, pass, 0));    
+            loginQueue.Enqueue(new User(name, pass, 0));
+            SaveToFile();
             return true;
         }
         public string ProcessLogin()
