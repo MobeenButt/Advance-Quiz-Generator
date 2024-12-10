@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
+        WindowState="Maximized"
         Title="CreateTest" Height="450" Width="800">
     <Grid>
         <!-- Top bar with navigation buttons -->

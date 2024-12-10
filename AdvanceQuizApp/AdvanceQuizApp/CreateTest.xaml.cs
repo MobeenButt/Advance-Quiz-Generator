@@ -13,13 +13,23 @@ namespace AdvanceQuizApp
         private DateTime quizStartTime;
         private int correctAnswers = 0;
         //
-        public CreateTest()
-        {
+        public CreateTest(List<AdvanceQuizApp.DataBank.Question> quizQuestions)
+            {
             InitializeComponent();
-            LoadQuestions();
-            DisplayQuestion(0);
+            questions = quizQuestions; // Assign questions passed from CreateQuiz
+            currentQuestionIndex = 0;
             quizStartTime = DateTime.Now;
-        }
+
+            if (questions != null && questions.Count > 0)
+                {
+                DisplayQuestion(0);
+                }
+            else
+                {
+                MessageBox.Show("No questions available for the test.");
+                Close();
+                }
+            }
         private void Button_ReturnButtton_Click(object sender, RoutedEventArgs e)
         {
             Window win = new MainWindow();
@@ -44,12 +54,12 @@ namespace AdvanceQuizApp
         }
 
         private void DisplayQuestion(int index)
-        {
-            if (questions == null || index < 0 || index >= questions.Count)
             {
+            if (questions == null || index < 0 || index >= questions.Count)
+                {
                 MessageBox.Show("Invalid question index.");
                 return;
-            }
+                }
 
             var question = questions[index];
 
@@ -60,36 +70,37 @@ namespace AdvanceQuizApp
             QuestionTextBlock.Text = question.text;
 
             // Update Question Number Display
-            int currentQuestionNumber = question.id; // Assuming `id` is a 1-based index representing the question number
+            int currentQuestionNumber = index + 1; // 1-based index for question number
             int totalQuestions = questions.Count;
             QuestionNumberTextBlock.Text = $"Question {currentQuestionNumber} of {totalQuestions}";
 
             // Update Options
             OptionsStackPanel.Children.Clear(); // Clear previous options
             foreach (var option in question.options)
-            {
-                var radioButton = new RadioButton
                 {
+                var radioButton = new RadioButton
+                    {
                     GroupName = "Answers",
                     Content = option,
                     FontSize = 16,
                     Margin = new Thickness(5)
-                };
+                    };
                 OptionsStackPanel.Children.Add(radioButton);
-            }
+                }
 
             // Hide Correct Answer Display
             CorrectAnswerTextBlock.Visibility = Visibility.Collapsed;
             FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
-        }
+            }
+
 
         private void MarkFavorite_Click(object sender, RoutedEventArgs e)
-        {
-            if (questions == null || currentQuestionIndex < 0 || currentQuestionIndex >= questions.Count)
             {
+            if (questions == null || currentQuestionIndex < 0 || currentQuestionIndex >= questions.Count)
+                {
                 MessageBox.Show("Invalid question index.");
                 return;
-            }
+                }
 
             var question = questions[currentQuestionIndex];
 
@@ -99,49 +110,78 @@ namespace AdvanceQuizApp
             // Update the icon
             FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
 
-            // Save changes back to the JSON file
+            // Save changes back to the JSON file without affecting other questions
             try
-            {
+                {
+                // Read the existing JSON file
                 string jsonPath = "quizdata.json";
-                var questionData = new QuestionData { questions = questions };
+                string jsonString = File.ReadAllText(jsonPath);
+
+                // Deserialize into a list of questions
+                var questionData = JsonSerializer.Deserialize<QuestionData>(jsonString);
+                if (questionData == null)
+                    {
+                    throw new Exception("Failed to deserialize the question data.");
+                    }
+
+                // Debugging: Check if the question exists in the data
+                var existingQuestion = questionData.questions.FirstOrDefault(q => q.id == question.id); // Assuming 'id' is a unique identifier
+                if (existingQuestion != null)
+                    {
+                    // Update the favourite status for the specific question
+                    existingQuestion.favourite = question.favourite;
+                    }
+                else
+                    {
+                    // If the question is not found, show an error message
+                    MessageBox.Show("Question not found in the data.");
+                    return;
+                    }
+
+                // Serialize the updated data and save it back to the file
                 string updatedJson = JsonSerializer.Serialize(questionData, new JsonSerializerOptions { WriteIndented = true });
                 File.WriteAllText(jsonPath, updatedJson);
+
                 MessageBox.Show("Favorite status updated successfully!");
-            }
+                }
             catch (Exception ex)
-            {
+                {
                 MessageBox.Show($"Error saving favorite status: {ex.Message}");
+                }
             }
-        }
+
+
 
 
         // Event Handler for Next Button
+        // Event Handler for Next Button
         private void NextQuestion_Click(object sender, RoutedEventArgs e)
-        {
-            if (currentQuestionIndex < questions.Count - 1)
             {
+            if (currentQuestionIndex < questions.Count - 1)
+                {
                 currentQuestionIndex++;
                 DisplayQuestion(currentQuestionIndex);
-            }
+                }
             else
-            {
+                {
                 MessageBox.Show("You have reached the last question.");
+                }
             }
-        }
 
         // Event Handler for Previous Button
         private void PreviousQuestion_Click(object sender, RoutedEventArgs e)
-        {
-            if (currentQuestionIndex > 0)
             {
+            if (currentQuestionIndex > 0)
+                {
                 currentQuestionIndex--;
                 DisplayQuestion(currentQuestionIndex);
-            }
+                }
             else
-            {
+                {
                 MessageBox.Show("You are on the first question.");
+                }
             }
-        }
+
         private void CheckAnswerButton_Click(object sender, RoutedEventArgs e)
         {
             if (questions == null || currentQuestionIndex < 0 || currentQuestionIndex >= questions.Count)
