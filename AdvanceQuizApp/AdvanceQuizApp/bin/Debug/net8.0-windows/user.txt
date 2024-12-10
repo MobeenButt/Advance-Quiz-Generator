@@ -1,7 +1,2 @@
-admin,admin123
-user,123
-user12,123
-user123,admin123
-1,123
-talha1,12345
-1,1
+2,3,0
+admin,admin123,1

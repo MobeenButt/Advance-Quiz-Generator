@@ -1,32 +1,38 @@
 ﻿using System.IO;
 using AdvanceQuizApp.ADT;
+using AdvanceQuizApp.Admin_Pages;
 namespace AdvanceQuizApp
 {
     class LoginManager
     {
         private const string filePath = "user.txt";
-        private Dictionary<string, string> credentials;
-        private MyQueue<Tuple<string, string>> loginQueue;
+        private Dictionary<string, User> users;
+        private MyQueue<User> loginQueue;
         public LoginManager()
         {
-            credentials = new Dictionary<string, string>();
-            loginQueue = new MyQueue<Tuple<string, string>>();
+            users = new Dictionary<string, User>();
+            loginQueue = new MyQueue<User>();
             LoadCredentialsFromFile();
 
         }
-        public bool RegisterUser(string name, string pass)
+        public bool RegisterUser(string name, string pass,int priority)
         {
-            if (credentials.ContainsKey(name))
+            if (users.ContainsKey(name))
             {
                 return false;
             }
-            credentials[name] = pass;
+            if(name=="admin")
+            {
+                priority = 1;   
+            }
+            users[name]= new User(name, pass, priority);
             SaveToFile();
             return true;
         }
         public bool AddUser(string name, string pass)
         {
-            loginQueue.Enqueue(new Tuple<string, string>(name, pass));
+            //baki sb ki priority 0 hogi
+            loginQueue.Enqueue(new User(name, pass, 0));    
             return true;
         }
         public string ProcessLogin()
@@ -37,8 +43,8 @@ namespace AdvanceQuizApp
             }
 
             var loginRequest = loginQueue.Dequeue();
-            string username = loginRequest.Item1;
-            string password = loginRequest.Item2;
+            string username = loginRequest.Username;
+            string password = loginRequest.Password;
 
             if (ValidateUser(username, password))
             {
@@ -60,9 +66,9 @@ namespace AdvanceQuizApp
         {
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                foreach (var user in credentials)
+                foreach (var user in users)
                 {
-                    writer.WriteLine(user.Key + "," + user.Value);
+                    writer.WriteLine(user.Key + "," + user.Value.Password + "," + user.Value.Priority);
                 }
             }
         }
@@ -74,18 +80,21 @@ namespace AdvanceQuizApp
                 foreach (string line in lines)
                 {
                     string[] parts = line.Split(',');
-                    if (parts.Length == 2)
+                    if (parts.Length == 3)
                     {
-                        credentials[parts[0]] = parts[1];
+                      string name= parts[0];
+                        string pass = parts[1];
+                        int priority = int.Parse(parts[2]);
+                        users[name] = new User(name, pass, priority);
                     }
                 }
             }
         }
         public bool ValidateUser(string name, string pass)
         {
-            if (credentials.ContainsKey(name))
+            if (users.ContainsKey(name))
             {
-                return credentials[name] == pass;
+                return users[name].Password == pass;
             }
             return false;
         }
