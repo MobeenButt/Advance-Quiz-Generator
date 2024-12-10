@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
 AdvanceQuizApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< Updated upstream
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
 12-541171691
 
 23-912811196
 199-1857524334
 Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;Login.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;
+=======
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+13206727614
 
-True
+25641489315
+199504281495
+Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageUsers.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateTest.xaml;Login.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;TopicQuestions.xaml;
+>>>>>>> Stashed changes
+
+False
 

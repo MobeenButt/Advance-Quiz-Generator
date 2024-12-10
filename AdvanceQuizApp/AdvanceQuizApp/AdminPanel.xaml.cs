@@ -52,13 +52,11 @@ namespace AdvanceQuizApp
         {
             //MessageBox.Show("View Statistics clicked!");
         }
-        private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
+        private void ManageUsers_Click(object sender, RoutedEventArgs e)
         {
-            Window br = new ManageQuestions();
-            br.Show();
-            br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
+            this.Hide();
+            ManageUsers manageUsers = new ManageUsers();
+            manageUsers.Show();
         }
-
     }
 }
