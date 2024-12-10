@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+
     "D:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj": {}
   },
   "projects": {
@@ -17,6 +18,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+
           "C:\\Users\\Mobeen Butt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -74,6 +76,7 @@
               "privateAssets": "none"
             }
           },
+
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }

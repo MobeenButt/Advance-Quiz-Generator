@@ -47,6 +47,7 @@ namespace AdvanceQuizApp {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.0.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
