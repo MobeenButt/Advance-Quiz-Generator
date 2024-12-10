@@ -217,3 +217,7 @@ G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Qu
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Login.baml
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TopicQuestions.g.cs
 G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TopicQuestions.baml
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TopicQuestions.g.cs
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\TopicQuestions.baml
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\CreateQuiz.g.cs
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\CreateQuiz.baml

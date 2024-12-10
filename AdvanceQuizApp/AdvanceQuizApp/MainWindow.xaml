@@ -76,9 +76,10 @@
             <Button Content="Last Test" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_SearchQuestions_Click"/>
-            <Button Content="Create Test" 
+           
+            <Button Content="Create Quiz" 
                     Style="{StaticResource SidebarButtonStyle}" 
-                    Click="CreateTest_Click"/>
+                    Click="CreateQuiz_Click"/>
             <Button Content="Browse Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_BrowseQuestions_Click"/>
