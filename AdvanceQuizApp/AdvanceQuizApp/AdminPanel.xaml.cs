@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using AdvanceQuizApp.Admin_Pages;
 namespace AdvanceQuizApp
 {
@@ -12,10 +11,6 @@ namespace AdvanceQuizApp
         {
             InitializeComponent();
         }
-        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
-            {
-            //hsflashfl
-            }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logging out...");
@@ -33,8 +28,8 @@ namespace AdvanceQuizApp
 
         private void DeleteQuiz_Click(object sender, RoutedEventArgs e)
         {
-           this.Hide();
-            DeletePanel deletePanel = new DeletePanel();   
+            this.Hide();
+            DeletePanel deletePanel = new DeletePanel();
             deletePanel.Show();
         }
 
@@ -48,15 +43,6 @@ namespace AdvanceQuizApp
             MessageBox.Show("View All Quizzes clicked!");
         }
 
-
-        private void ManageQuestionBank_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            ManageQuestionBankPage manageQuestionBankPage = new ManageQuestionBankPage();
-            manageQuestionBankPage.Show();
-
-        }
-
         private void GenerateReports_Click(object sender, RoutedEventArgs e)
         {
 
@@ -66,21 +52,11 @@ namespace AdvanceQuizApp
         {
             //MessageBox.Show("View Statistics clicked!");
         }
-        private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
+        private void ManageUsers_Click(object sender, RoutedEventArgs e)
         {
-            Window br = new ManageQuestions();
-            br.Show();
-            br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
-        }
-        private void Button_AddQuestion_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("adding qe...");
-        }
-        private void Button_AddTopic_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("adding top...");
-
+            this.Hide();
+            ManageUsers manageUsers = new ManageUsers();
+            manageUsers.Show();
         }
     }
 }

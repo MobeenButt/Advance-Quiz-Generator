@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace AdvanceQuizApp.ADT
+﻿namespace AdvanceQuizApp.ADT
 {
     public class PriorityQueue<T>
     {
@@ -81,6 +74,18 @@ namespace AdvanceQuizApp.ADT
             }
             return count;
         }
+        public List<T> ToList()
+        {
+            List<T> list = new List<T>();
+            pNode<T> current = head;
+            while (current != null)
+            {
+                list.Add(current.value);
+                current = current.next;
+            }
+            return list;
+        }
+
     }
 
     class pNode<T>

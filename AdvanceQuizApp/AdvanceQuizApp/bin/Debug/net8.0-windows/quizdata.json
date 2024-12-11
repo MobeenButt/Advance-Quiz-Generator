@@ -1,4 +1,3 @@
-
 {
   "questions": [
     {
@@ -573,7 +572,7 @@
       "correctAnswer": "NH4Cl",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 1
     },
     {
       "id": 42,
@@ -853,7 +852,7 @@
       "correctAnswer": "7",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 1
     },
     {
       "id": 62,
@@ -1525,104 +1524,6 @@
       "correctAnswer": "L mol⁻¹ s⁻¹",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
-      "favourite": 0
-    },
-    {
-      "id": 110,
-      "text": "Which of the following reactions is a first-order reaction?",
-      "options": [
-        "Decomposition of N₂O₅",
-        "Formation of ammonia",
-        "Combustion of methane",
-        "Neutralization of acid and base"
-      ],
-      "correctAnswer": "Decomposition of N₂O₅",
-      "topic": "Chemical Kinetics",
-      "difficulty": "Moderate",
-      "favourite": 0
-    },
-    {
-      "id": 111,
-      "text": "What is you name boy",
-      "options": [
-        "white",
-        "brown",
-        "black",
-        "red"
-      ],
-      "correctAnswer": "black",
-      "topic": "Name",
-      "difficulty": "Easy",
-      "favourite": 0
-    },
-    {
-      "id": 112,
-      "text": "What is you name boy",
-      "options": [
-        "white",
-        "brown",
-        "black",
-        "red"
-      ],
-      "correctAnswer": "black",
-      "topic": "Name",
-      "difficulty": "Easy",
-      "favourite": 0
-    },
-    {
-      "id": 113,
-      "text": "What is your second name ",
-      "options": [
-        "White ",
-        "Black ",
-        "Red",
-        "Brown"
-      ],
-      "correctAnswer": "Red",
-      "topic": "Name",
-      "difficulty": "Moderate",
-      "favourite": 0
-    },
-    {
-      "id": 114,
-      "text": "What is you name boy",
-      "options": [
-        "white",
-        "brown",
-        "black",
-        "red"
-      ],
-      "correctAnswer": "black",
-      "topic": "Name",
-      "difficulty": "Easy",
-      "favourite": 0
-    },
-    {
-      "id": 115,
-      "text": "What is you name boy",
-      "options": [
-        "white",
-        "brown",
-        "black",
-        "red"
-      ],
-      "correctAnswer": "black",
-      "topic": "Name",
-      "difficulty": "Easy",
-      "favourite": 0
-    },
-    {
-      "id": 116,
-      "text": "What is you name boy",
-      "options": [
-        "white",
-        "brown",
-        "black",
-        "red"
-      ],
-      "correctAnswer": "black",
-      "topic": "Name",
-      "difficulty": "Easy",
       "favourite": 0
     }
   ]

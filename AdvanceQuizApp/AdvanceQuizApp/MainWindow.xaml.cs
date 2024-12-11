@@ -42,6 +42,13 @@ namespace AdvanceQuizApp
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
         }
+        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
+            {
+            Window br = new CreateQuiz();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Visibility = Visibility.Hidden;
+            }
 
         private void Button_Logout_Click(object sender, RoutedEventArgs e)
         {
@@ -50,13 +57,13 @@ namespace AdvanceQuizApp
             Login loginPanel = new Login();
             loginPanel.Show();
         }
-        private void CreateTest_Click(object sender, RoutedEventArgs e)
-        {
-            Window br = new CreateTest();
-            br.Show();
-            br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
-        }
+        //private void CreateTest_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //Window br = new CreateTest();
+        //    //br.Show();
+        //    //br.WindowState = WindowState.Maximized;
+        //    //this.Visibility = Visibility.Hidden;
+        //}
         private void Button_SearchQuestions_Click(object sender, RoutedEventArgs e)
         {
             var blurEffect = new BlurEffect
