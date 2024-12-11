@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
 AdvanceQuizApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
-14-729424823
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+14-1037626906
 
-231956567822
-199-598269392
-Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageQuestionBankPage.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateQuiz.xaml;CreateTest.xaml;Login.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;TopicQuestions.xaml;
+24-1024690226
+199504281495
+Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageUsers.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateQuiz.xaml;CreateTest.xaml;Login.xaml;MainWindow.xaml;ManageQuestions.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;TopicQuestions.xaml;
 
 False
 
