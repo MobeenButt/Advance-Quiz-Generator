@@ -4,8 +4,8 @@
       "id": 1,
       "text": "Which of the following compounds has the highest % age of oxygen by weight?",
       "options": [
-        "CH3\uF02DOH",
-        "C2H5\uF02DOH",
+        "CH3OH",
+        "C2H5OH",
         "HCOOH",
         "H2O"
       ],
@@ -301,7 +301,7 @@
         "Increase down the group",
         "Decrease down the group",
         "Remains constant",
-        "Can\u2019t be predicted"
+        "Can’t be predicted"
       ],
       "correctAnswer": "Increase down the group",
       "topic": "Liquids and Solids",
@@ -340,19 +340,19 @@
       "id": 25,
       "text": "At Murree hills water boils at:",
       "options": [
-        "98\u00B0C",
-        "100\u00B0C",
-        "0\u00B0C",
-        "50\u00B0C"
+        "98°C",
+        "100°C",
+        "0°C",
+        "50°C"
       ],
-      "correctAnswer": "98\u00B0C",
+      "correctAnswer": "98°C",
       "topic": "Liquids and Solids",
       "difficulty": "Moderate",
       "favourite": 0
     },
     {
       "id": 26,
-      "text": "Coordination number of Na\u002B ion in NaCl is:",
+      "text": "Coordination number of Na+ ion in NaCl is:",
       "options": [
         "One",
         "Two",
@@ -366,7 +366,7 @@
     },
     {
       "id": 27,
-      "text": "Water may boil at 120\u00B0C when external pressure is:",
+      "text": "Water may boil at 120°C when external pressure is:",
       "options": [
         "369 torr",
         "700 torr",
@@ -424,12 +424,12 @@
       "id": 31,
       "text": "Maximum number of electrons in a subshell is given by:",
       "options": [
-        "2l \u002B 1",
+        "2l + 1",
         "2l - 1",
-        "2(2l \u002B 1)",
+        "2(2l + 1)",
         "2(2l - 1)"
       ],
-      "correctAnswer": "2(2l \u002B 1)",
+      "correctAnswer": "2(2l + 1)",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
       "favourite": 0
@@ -506,14 +506,14 @@
     },
     {
       "id": 37,
-      "text": "According to Bohr\u2019s atomic model, the radius of the second orbit of the hydrogen atom is:",
+      "text": "According to Bohr’s atomic model, the radius of the second orbit of the hydrogen atom is:",
       "options": [
-        "0.529 \u00C5",
-        "2.116 \u00C5",
-        "4.0 \u00C5",
-        "5.0 \u00C5"
+        "0.529 Å",
+        "2.116 Å",
+        "4.0 Å",
+        "5.0 Å"
       ],
-      "correctAnswer": "2.116 \u00C5",
+      "correctAnswer": "2.116 Å",
       "topic": "Atomic Structure",
       "difficulty": "Hard",
       "favourite": 0
@@ -578,12 +578,12 @@
       "id": 42,
       "text": "The angle formed in sp hybridization is:",
       "options": [
-        "120\u00B0",
-        "180\u00B0",
-        "109.5\u00B0",
-        "107.5\u00B0"
+        "120°",
+        "180°",
+        "109.5°",
+        "107.5°"
       ],
-      "correctAnswer": "180\u00B0",
+      "correctAnswer": "180°",
       "topic": "Chemical Bonding",
       "difficulty": "Easy",
       "favourite": 0
@@ -620,12 +620,12 @@
       "id": 45,
       "text": "In sp2 hybridization, the orbitals are oriented at an angle of:",
       "options": [
-        "109.5\u00B0",
-        "120\u00B0",
-        "180\u00B0",
-        "0\u00B0"
+        "109.5°",
+        "120°",
+        "180°",
+        "0°"
       ],
-      "correctAnswer": "120\u00B0",
+      "correctAnswer": "120°",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
       "favourite": 0
@@ -718,9 +718,9 @@
       "id": 52,
       "text": "The standard heat changes occur at:",
       "options": [
-        "25\u00B0C and 2 atm",
+        "25°C and 2 atm",
         "298 K and 1 atm",
-        "25\u00B0C and 1 mm Hg",
+        "25°C and 1 mm Hg",
         "273 K and 1 atm"
       ],
       "correctAnswer": "298 K and 1 atm",
@@ -730,7 +730,7 @@
     },
     {
       "id": 53,
-      "text": "H\u207A \u002B OH\u207B \u2192 H2O. The change in enthalpy for this reaction is called:",
+      "text": "H⁺ + OH⁻ → H2O. The change in enthalpy for this reaction is called:",
       "options": [
         "Heat of reaction",
         "Heat of formation",
@@ -746,12 +746,12 @@
       "id": 54,
       "text": "The net change in energy in a chemical reaction is the same whether it takes place directly or indirectly. This is called:",
       "options": [
-        "Henry\u2019s law",
-        "Charlie\u2019s law",
-        "Hess\u2019s law",
-        "Graham\u2019s law"
+        "Henry’s law",
+        "Charlie’s law",
+        "Hess’s law",
+        "Graham’s law"
       ],
-      "correctAnswer": "Hess\u2019s law",
+      "correctAnswer": "Hess’s law",
       "topic": "Thermochemistry",
       "difficulty": "Moderate",
       "favourite": 0
@@ -772,7 +772,7 @@
     },
     {
       "id": 56,
-      "text": "Enthalpy change for the reaction: CH4(g) \u002B 2O2(g) \u2192 CO2(g) \u002B 2H2O(l) is called enthalpy of:",
+      "text": "Enthalpy change for the reaction: CH4(g) + 2O2(g) → CO2(g) + 2H2O(l) is called enthalpy of:",
       "options": [
         "Formation",
         "Combustion",
@@ -842,12 +842,12 @@
     },
     {
       "id": 61,
-      "text": "The value of pH and pOH of pure water at 25\u00B0C is approximately:",
+      "text": "The value of pH and pOH of pure water at 25°C is approximately:",
       "options": [
         "14",
         "7",
-        "1 \u00D7 10\u207B\u00B9\u2074",
-        "1 \u00D7 10\u00B9\u2074"
+        "1 × 10⁻¹⁴",
+        "1 × 10¹⁴"
       ],
       "correctAnswer": "7",
       "topic": "Acids, Bases, and pH",
@@ -968,21 +968,21 @@
     },
     {
       "id": 70,
-      "text": "The pOH of a solution is 4. The H\u207A ion concentration of the solution is:",
+      "text": "The pOH of a solution is 4. The H⁺ ion concentration of the solution is:",
       "options": [
-        "4.0 moles/dm\u00B3",
-        "10\u207B\u00B9\u2070 moles/dm\u00B3",
-        "0.4 moles/dm\u00B3",
-        "4 \u00D7 10\u2074 moles/dm\u00B3"
+        "4.0 moles/dm³",
+        "10⁻¹⁰ moles/dm³",
+        "0.4 moles/dm³",
+        "4 × 10⁴ moles/dm³"
       ],
-      "correctAnswer": "10\u207B\u00B9\u2070 moles/dm\u00B3",
+      "correctAnswer": "10⁻¹⁰ moles/dm³",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Hard",
       "favourite": 0
     },
     {
       "id": 71,
-      "text": "The ideal gas constant R, when expressed in dm\u00B3 atm mol\u207B\u00B9 K\u207B\u00B9 units, has a value of:",
+      "text": "The ideal gas constant R, when expressed in dm³ atm mol⁻¹ K⁻¹ units, has a value of:",
       "options": [
         "0.0821",
         "1.0821",
@@ -1026,19 +1026,19 @@
       "id": 74,
       "text": "Which gas has the highest diffusion rate?",
       "options": [
-        "SO\u2082",
-        "Cl\u2082",
-        "NH\u2083",
-        "CO\u2082"
+        "SO₂",
+        "Cl₂",
+        "NH₃",
+        "CO₂"
       ],
-      "correctAnswer": "NH\u2083",
+      "correctAnswer": "NH₃",
       "topic": "States of Matter",
       "difficulty": "Easy",
       "favourite": 0
     },
     {
       "id": 75,
-      "text": "Mathematically, Boyle\u2019s law is shown as:",
+      "text": "Mathematically, Boyle’s law is shown as:",
       "options": [
         "PT = K",
         "VT = K",
@@ -1054,19 +1054,19 @@
       "id": 76,
       "text": "Absolute zero is equal to:",
       "options": [
-        "273\u00B0C",
-        "\u2212273\u00B0C",
-        "0\u00B0C",
+        "273°C",
+        "−273°C",
+        "0°C",
         "273 K"
       ],
-      "correctAnswer": "\u2212273\u00B0C",
+      "correctAnswer": "−273°C",
       "topic": "States of Matter",
       "difficulty": "Moderate",
       "favourite": 0
     },
     {
       "id": 77,
-      "text": "If the values of \u0027a\u0027 and \u0027b\u0027 in Van der Waal\u2019s equation are close to zero for a gas, then the gas is:",
+      "text": "If the values of 'a' and 'b' in Van der Waal’s equation are close to zero for a gas, then the gas is:",
       "options": [
         "Ideal",
         "Non-ideal",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 78,
-      "text": "The constant factor in Charles\u2019s law is:",
+      "text": "The constant factor in Charles’s law is:",
       "options": [
         "Volume",
         "Temperature",
@@ -1096,12 +1096,12 @@
       "id": 79,
       "text": "Which gas will diffuse more rapidly?",
       "options": [
-        "CO\u2082",
-        "NH\u2083",
+        "CO₂",
+        "NH₃",
         "HCl",
-        "SO\u2082"
+        "SO₂"
       ],
-      "correctAnswer": "NH\u2083",
+      "correctAnswer": "NH₃",
       "topic": "States of Matter",
       "difficulty": "Easy",
       "favourite": 0
@@ -1110,12 +1110,12 @@
       "id": 80,
       "text": "Normal human body temperature is:",
       "options": [
-        "37\u00B0C",
-        "98.6\u00B0C",
-        "37\u00B0F",
+        "37°C",
+        "98.6°C",
+        "37°F",
         "273 K"
       ],
-      "correctAnswer": "37\u00B0C",
+      "correctAnswer": "37°C",
       "topic": "States of Matter",
       "difficulty": "Easy",
       "favourite": 0
@@ -1180,12 +1180,12 @@
       "id": 85,
       "text": "Which law states that the vapor pressure of a solution is proportional to the mole fraction of the solvent?",
       "options": [
-        "Raoult\u2019s law",
-        "Boyle\u2019s law",
-        "Henry\u2019s law",
-        "Dalton\u2019s law"
+        "Raoult’s law",
+        "Boyle’s law",
+        "Henry’s law",
+        "Dalton’s law"
       ],
-      "correctAnswer": "Raoult\u2019s law",
+      "correctAnswer": "Raoult’s law",
       "topic": "Solutions",
       "difficulty": "Moderate",
       "favourite": 0
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 89,
-      "text": "The van\u2019t Hoff factor for NaCl in an aqueous solution is approximately:",
+      "text": "The van’t Hoff factor for NaCl in an aqueous solution is approximately:",
       "options": [
         "1",
         "2",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 93,
-      "text": "Faraday\u2019s first law of electrolysis states that:",
+      "text": "Faraday’s first law of electrolysis states that:",
       "options": [
         "The amount of a substance deposited is directly proportional to the quantity of electricity passed",
         "The mass of the substance deposited is inversely proportional to its equivalent weight",
@@ -1337,7 +1337,7 @@
         "1 V",
         "0.5 V",
         "0 V",
-        "\u22121 V"
+        "−1 V"
       ],
       "correctAnswer": "0 V",
       "topic": "Electrochemistry",
@@ -1416,7 +1416,7 @@
     },
     {
       "id": 102,
-      "text": "A reaction with a rate law of Rate = k[A]\u00B2 is:",
+      "text": "A reaction with a rate law of Rate = k[A]² is:",
       "options": [
         "First order",
         "Second order",
@@ -1516,26 +1516,12 @@
       "id": 109,
       "text": "The unit of rate constant for a second-order reaction is:",
       "options": [
-        "s\u207B\u00B9",
-        "L mol\u207B\u00B9 s\u207B\u00B9",
-        "mol L\u207B\u00B9 s\u207B\u00B9",
-        "L\u00B2 mol\u207B\u00B2 s\u207B\u00B9"
+        "s⁻¹",
+        "L mol⁻¹ s⁻¹",
+        "mol L⁻¹ s⁻¹",
+        "L² mol⁻² s⁻¹"
       ],
-      "correctAnswer": "L mol\u207B\u00B9 s\u207B\u00B9",
-      "topic": "Chemical Kinetics",
-      "difficulty": "Moderate",
-      "favourite": 0
-    },
-    {
-      "id": 110,
-      "text": "Which of the following reactions is a first-order reaction?",
-      "options": [
-        "Decomposition of N\u2082O\u2085",
-        "Formation of ammonia",
-        "Combustion of methane",
-        "Neutralization of acid and base"
-      ],
-      "correctAnswer": "Decomposition of N\u2082O\u2085",
+      "correctAnswer": "L mol⁻¹ s⁻¹",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
       "favourite": 0
