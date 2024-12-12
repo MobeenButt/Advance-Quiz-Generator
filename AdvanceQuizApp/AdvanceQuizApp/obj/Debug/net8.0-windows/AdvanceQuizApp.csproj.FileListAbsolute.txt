@@ -229,3 +229,5 @@ D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\Adva
 D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\Admin Pages\ManageUsers.g.cs
 D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdvanceQuizApp.Resource1.resources
 D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\AdvanceQuizApp.csproj.GenerateResource.cache
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\PreviousQuizes.g.cs
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\PreviousQuizes.baml
