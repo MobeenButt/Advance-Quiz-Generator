@@ -8,17 +8,19 @@ namespace AdvanceQuizApp
 {
     public partial class CreateTest : Window
     {
-        private List<AdvanceQuizApp.DataBank.Question> questions;
+        private List<AdvanceQuizApp.Question> questions;
         private int currentQuestionIndex;
         private DateTime quizStartTime;
         private int correctAnswers = 0;
+        private string quizid;
         //
-        public CreateTest(List<AdvanceQuizApp.DataBank.Question> quizQuestions)
+        public CreateTest(List<AdvanceQuizApp.Question> quizQuestions, string QuizId)
             {
             InitializeComponent();
             questions = quizQuestions; // Assign questions passed from CreateQuiz
             currentQuestionIndex = 0;
             quizStartTime = DateTime.Now;
+            quizid = QuizId;
 
             if (questions != null && questions.Count > 0)
                 {
@@ -218,6 +220,78 @@ namespace AdvanceQuizApp
             // Show the correct answer
             CorrectAnswerTextBlock.Visibility = Visibility.Visible;
         }
+        private void SaveQuizButton_Click(object sender, RoutedEventArgs e)
+            {
+            try
+                {
+                // Read the current user details
+                string currentUserFile = "CurrentUser.txt";
+                if (!File.Exists(currentUserFile))
+                    {
+                    MessageBox.Show("Current user file not found!");
+                    return;
+                    }
+
+                string[] userDetails = File.ReadAllText(currentUserFile).Split(',');
+                if (userDetails.Length < 3)
+                    {
+                    MessageBox.Show("Invalid user details format! Ensure the file contains 'username,password,priority'.");
+                    return;
+                    }
+
+                string userName = userDetails[0]; // Username
+                string userPassword = userDetails[1]; // Password
+                                                      // Ignoring user priority (userDetails[2])
+
+                // Prepare quiz data
+                var quizData = new
+                    {
+                    QuizId = quizid,// Unique identifier for the quiz
+                    Questions = questions.Select(q => new { q.id }).ToList(),
+                    SolvedQuestions = 0,
+                    SolvedCorrectly = 0
+                    };
+
+                // Load or create dictionary from JSON
+                string avlFilePath = "avltree.json";
+                Dictionary<string, List<object>> userQuizzes = new Dictionary<string, List<object>>();
+
+                if (File.Exists(avlFilePath))
+                    {
+                    try
+                        {
+                        string json = File.ReadAllText(avlFilePath);
+                        if (!string.IsNullOrWhiteSpace(json))
+                            {
+                            userQuizzes = JsonSerializer.Deserialize<Dictionary<string, List<object>>>(json);
+                            }
+                        }
+                    catch (Exception)
+                        {
+                        MessageBox.Show("The AVL tree file contains invalid data. Creating a new tree.");
+                        }
+                    }
+
+                // Add the quiz data for the current user
+                if (!userQuizzes.ContainsKey(userName))
+                    {
+                    userQuizzes[userName] = new List<object>();
+                    }
+                userQuizzes[userName].Add(quizData);
+
+                // Save the updated dictionary to JSON
+                string serializedData = JsonSerializer.Serialize(userQuizzes, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(avlFilePath, serializedData);
+
+                MessageBox.Show("Quiz saved successfully!");
+                }
+            catch (Exception ex)
+                {
+                MessageBox.Show($"Error saving quiz: {ex.Message}");
+                }
+            }
+
+
         private void StopQuizButton_Click(object sender, RoutedEventArgs e)
         {
             // Calculate elapsed time
@@ -234,7 +308,7 @@ namespace AdvanceQuizApp
     }
     public class QuestionData
     {
-        public List<AdvanceQuizApp.DataBank.Question> questions { get; set; }
+        public List<AdvanceQuizApp.Question> questions { get; set; }
     }
 
 

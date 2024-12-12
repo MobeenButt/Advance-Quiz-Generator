@@ -70,13 +70,10 @@
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_SearchQuestions_Click"/>
 
-            <Button Content="Previous Tests" 
+            <Button Content="Previous saved Quizes" 
                     Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
-            <Button Content="Last Test" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
-           
+                    Click="Button_SavedQuestions_Click"/>
+
             <Button Content="Create Quiz" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="CreateQuiz_Click"/>
@@ -97,13 +94,17 @@
                     Click="Button_Logout_Click"/>
         </StackPanel>
 
-        <Grid Grid.Column="1" Background="#ECF0F1">
-            <TextBlock Text="Welcome to the Quiz Generator!" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="24" 
-                       Foreground="#34495E" 
-                       Style="{StaticResource FadeInTextBlockStyle}"/>
+        <Grid Grid.Column="1" >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!-- Add the Image -->
+
+                <!-- Welcome Text -->
+                <TextBlock Text="Welcome to the Quiz Generator!" 
+                   HorizontalAlignment="Center" 
+                   FontSize="24" 
+                   Foreground="#34495E" 
+                   Style="{StaticResource FadeInTextBlockStyle}"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

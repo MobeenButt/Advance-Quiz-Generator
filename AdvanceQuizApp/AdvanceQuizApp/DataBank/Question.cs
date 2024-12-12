@@ -3,7 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Text.Json;
 
-namespace AdvanceQuizApp.DataBank
+namespace AdvanceQuizApp
 {
     public class Question
     {

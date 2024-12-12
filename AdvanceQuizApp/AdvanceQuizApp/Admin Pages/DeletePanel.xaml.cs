@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Windows;
-using AdvanceQuizApp.DataBank;
+using AdvanceQuizApp;
 using Newtonsoft.Json;
 
 namespace AdvanceQuizApp.Admin_Pages

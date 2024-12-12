@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AdvanceQuizApp.ADT;
-using AdvanceQuizApp.DataBank;
+using AdvanceQuizApp;
 
 namespace AdvanceQuizApp
     {
@@ -67,6 +67,11 @@ namespace AdvanceQuizApp
             var selectedTopics = SubjectsListBox.SelectedItems.Cast<ListBoxItem>()
                                                              .Select(item => item.Content.ToString())
                                                              .ToList();
+            if(QuizID.Text.ToString().Trim() == "")
+                {
+                MessageBox.Show("Please add an id of the quiz first");
+                return;
+                }
             if (selectedTopics.Count == 0)
                 {
                 MessageBox.Show("Please select at least one topic to create a quiz.");
@@ -101,13 +106,13 @@ namespace AdvanceQuizApp
                     questions = questions.Take(selectedQuestionCount).ToList();
                     }
                 }
-
+            string quizId = QuizID.Text.ToString();
             // Pass the questions to the CreateTest window
-            CreateTest testWindow = new CreateTest(questions);
+            CreateTest testWindow = new CreateTest(questions, quizId);
             testWindow.Show();
             this.Close();
             }
-        private void ShuffleQuestions(List<AdvanceQuizApp.DataBank.Question> questions)
+        private void ShuffleQuestions(List<AdvanceQuizApp.Question> questions)
             {
             Random rng = new Random();
             int n = questions.Count;
@@ -120,7 +125,7 @@ namespace AdvanceQuizApp
                 questions[n] = value;
                 }
             }
-        private List<AdvanceQuizApp.DataBank.Question> GetQuestionsForTopics(List<string> selectedTopics)
+        private List<AdvanceQuizApp.Question> GetQuestionsForTopics(List<string> selectedTopics)
             {
             string filePath = "quizdata.json";
             var allQuestions = QuestionLoader.LoadQuestions(filePath);

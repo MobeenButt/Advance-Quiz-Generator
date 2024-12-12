@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using AdvanceQuizApp.DataBank;
+using AdvanceQuizApp;
 using Newtonsoft.Json;
 namespace AdvanceQuizApp.Admin_Pages
 {

@@ -7,7 +7,7 @@
 *.user
 *.cache
 
-# Ignore binary files
+# Ignore binary file
 *.dll
 *.exe
 *.pdb
