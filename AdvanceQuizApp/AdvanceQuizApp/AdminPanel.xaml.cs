@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using AdvanceQuizApp.Admin_Pages;
+using AdvanceQuizApp.Map;
 namespace AdvanceQuizApp
 {
     /// <summary>
@@ -57,6 +58,13 @@ namespace AdvanceQuizApp
             this.Hide();
             ManageUsers manageUsers = new ManageUsers();
             manageUsers.Show();
+        }
+
+        private void Map_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MapPanel mapPanel = new MapPanel();
+            mapPanel.Show();
         }
     }
 }
