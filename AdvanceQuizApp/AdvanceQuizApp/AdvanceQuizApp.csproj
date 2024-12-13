@@ -10,9 +10,17 @@
 
   <ItemGroup>
     <Compile Remove="Authentication\**" />
+    <Compile Remove="Resources\**" />
     <EmbeddedResource Remove="Authentication\**" />
+    <EmbeddedResource Remove="Resources\**" />
     <None Remove="Authentication\**" />
+    <None Remove="Resources\**" />
     <Page Remove="Authentication\**" />
+    <Page Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,14 +36,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

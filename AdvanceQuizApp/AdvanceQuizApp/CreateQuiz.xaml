@@ -20,6 +20,10 @@
 
         <!-- ComboBox and ListBox Section -->
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Height="324" Width="483" Margin="0,50,0,0">
+            <TextBlock Text="Enter the Quiz Id/Name:"  FontWeight="Bold" Margin="0,10,0,5"/>
+            <TextBox x:Name="QuizID" Width="200"  
+     Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" Height="22" />
+
             <TextBlock Text="Select Number of Questions:" FontWeight="Bold" Margin="0,10,0,5"/>
             <ComboBox x:Name="QuestionsComboBox" Width="200" HorizontalAlignment="Center">
                 <ComboBoxItem Content="5" />
@@ -55,8 +59,8 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,60">
             <Button Content="Create" Width="100" Height="30" Margin="10,0,0,0" Click="CreateButton_Click" Background="GreenYellow" />
             <Button Content="Check No of Questions" Width="140" Height="30" Margin="10,0,0,0" 
-        Click="CheckNumberOfQuestionsButton_Click" Background="Aqua" />
-            <Button Content="Back" Width="100" Height="30" Margin="10,0,0,0" Click="BackButton_Click" Background="DeepSkyBlue" />
+        Click="CheckNumberOfQuestionsButton_Click" Background="Azure" />
+            <Button Content="Back" Width="100" Height="30" Margin="10,0,0,0" Click="BackButton_Click" Background="SkyBlue" />
         </StackPanel>
     </Grid>
 </Window>

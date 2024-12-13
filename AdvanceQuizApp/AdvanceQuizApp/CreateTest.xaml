@@ -25,6 +25,9 @@
                 <Button Width="40" Height="40" ToolTip="Stop Quiz" Click="StopQuizButton_Click">
                     <TextBlock Text="■" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
+                <Button Width="40" Height="40" ToolTip="Save Quiz" Click="SaveQuizButton_Click">
+                    <TextBlock Text="💾" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
                 <Button Width="40" Height="40" ToolTip="Return" Click="Button_ReturnButtton_Click">
                     <TextBlock Text="←" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>

@@ -81,6 +81,15 @@ namespace AdvanceQuizApp
 
             this.Effect = null;
         }
+        private void Button_SavedQuestions_Click(Object sender, RoutedEventArgs e)
+            {
+            //this will display the previous quizes 
+            Window br = new PreviousQuizes();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Visibility = Visibility.Hidden;
+
+            }
 
     }
 
