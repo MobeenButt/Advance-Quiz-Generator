@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdvanceQuizApp
+﻿namespace AdvanceQuizApp
 {
     public class AVLTree<T> where T : IComparable<T>
     {
@@ -119,4 +113,4 @@ namespace AdvanceQuizApp
             InOrder(Root);
         }
     }
-}    
+}

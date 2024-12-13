@@ -27,7 +27,7 @@
             .then(data => {
                 const locations = data.locations;
 
-                locations.forEach(function(location) {
+                locations.forEach(function (location) {
                     L.marker([location.latitude, location.longitude])
                         .addTo(map)
                         .bindPopup('<b>' + location.name + '</b>')

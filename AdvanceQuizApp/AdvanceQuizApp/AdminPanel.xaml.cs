@@ -63,8 +63,8 @@ namespace AdvanceQuizApp
         private void Map_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            MapPanel mapPanel = new MapPanel();
-            mapPanel.Show();
+           MapDisplay display = new MapDisplay();
+            display.Show();
         }
     }
 }
