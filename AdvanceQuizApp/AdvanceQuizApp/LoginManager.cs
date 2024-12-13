@@ -63,7 +63,7 @@ namespace AdvanceQuizApp
                 return "Invalid username or password.";
             }
         }
-        private void SaveToFile()
+        public void SaveToFile()
         {
             using (StreamWriter writer = new StreamWriter(filePath))
             {
@@ -98,6 +98,10 @@ namespace AdvanceQuizApp
                 return users[name].Password == pass;
             }
             return false;
+        }
+        public void EditPassword(string username,string password)
+        {
+            this.users[username].Password = password;
         }
     }
 }
