@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace AdvanceQuizApp
 {
@@ -39,8 +41,48 @@ namespace AdvanceQuizApp
 
         private void ChangePassword(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("sai a");
+            try
+            {
+                // Read the current user details
+                string currentUserFile = "CurrentUser.txt";
+                if (!File.Exists(currentUserFile))
+                {
+                    MessageBox.Show("Current user file not found!");
+                    return;
+                }
 
+                string[] userDetails = File.ReadAllText(currentUserFile).Split(',');
+                if (userDetails.Length < 3)
+                {
+                    MessageBox.Show("Invalid user details format! Ensure the file contains 'username,password,priority'.");
+                    return;
+                }
+
+                string userName = userDetails[0]; // Username
+                string userPassword = userDetails[1];
+
+                string newPassword = newPassBox.Text;
+                if (string.IsNullOrWhiteSpace(newPassword))
+                {
+                    MessageBox.Show("InvalidPassword try any other");
+                }
+                else
+                {
+                    LoginManager lt = new LoginManager();
+                    lt.EditPassword(userName, newPassword);
+                    lt.SaveToFile();
+                    MessageBox.Show($"Passwrod for {userName} Changed Successfully, Login Again");
+                    this.Close();
+                    Window br = new Login();
+                    br.Show();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
     }
 }
