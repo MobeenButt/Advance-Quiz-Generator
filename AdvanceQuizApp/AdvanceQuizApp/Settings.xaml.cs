@@ -43,23 +43,11 @@ namespace AdvanceQuizApp
         {
             try
             {
-                // Read the current user details
-                string currentUserFile = "CurrentUser.txt";
-                if (!File.Exists(currentUserFile))
-                {
-                    MessageBox.Show("Current user file not found!");
-                    return;
-                }
+               
 
-                string[] userDetails = File.ReadAllText(currentUserFile).Split(',');
-                if (userDetails.Length < 3)
-                {
-                    MessageBox.Show("Invalid user details format! Ensure the file contains 'username,password,priority'.");
-                    return;
-                }
-
-                string userName = userDetails[0]; // Username
-                string userPassword = userDetails[1];
+                string[] userDetails = UserManager.GetCurrentUser();
+                string userName = userDetails[0];
+                string password = userDetails[1];
 
                 string newPassword = newPassBox.Text;
                 if (string.IsNullOrWhiteSpace(newPassword))

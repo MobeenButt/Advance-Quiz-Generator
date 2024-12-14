@@ -69,10 +69,16 @@ namespace AdvanceQuizApp
             {
                 foreach (var user in users)
                 {
-                    writer.WriteLine(user.Key + "," + user.Value.Password + "," + user.Value.Priority);
+                    // Include favorite question IDs if present
+                    string favoriteIds = user.Value.FavoriteQuestions != null && user.Value.FavoriteQuestions.Any()
+                        ? string.Join(",", user.Value.FavoriteQuestions)
+                        : "";
+
+                    writer.WriteLine($"{user.Key},{user.Value.Password},{user.Value.Priority},{favoriteIds}");
                 }
             }
         }
+
         private void LoadCredentialsFromFile()
         {
             if (File.Exists(filePath))
@@ -81,16 +87,31 @@ namespace AdvanceQuizApp
                 foreach (string line in lines)
                 {
                     string[] parts = line.Split(',');
-                    if (parts.Length == 3)
+                    if (parts.Length >= 3)
                     {
-                      string name= parts[0];
+                        string name = parts[0];
                         string pass = parts[1];
                         int priority = int.Parse(parts[2]);
-                        users[name] = new User(name, pass, priority);
+
+                        List<int> favoriteIds = new List<int>();
+
+                        for (int i = 3; i < parts.Length; i++)
+                        {
+                            if (!string.IsNullOrEmpty(parts[i]))
+                            {
+                                // Split by the backtick (`) and add all IDs to the favoriteIds list
+                                favoriteIds.AddRange(parts[i].Split(',').Select(int.Parse));
+                            }
+                        }
+
+
+                        // Create and store the user
+                        users[name] = new User(name, pass, priority) { FavoriteQuestions = favoriteIds };
                     }
                 }
             }
         }
+
         public bool ValidateUser(string name, string pass)
         {
             if (users.ContainsKey(name))

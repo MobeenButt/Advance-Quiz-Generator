@@ -89,6 +89,9 @@
             <Button Content="About" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_About_Click"/>
+            <Button Content="Favourite Questions" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_FavouriteQuestions_Click"/>
             <Button Content="Logout" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_Logout_Click"/>
