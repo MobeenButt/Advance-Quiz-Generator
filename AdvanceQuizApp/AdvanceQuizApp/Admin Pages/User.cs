@@ -11,11 +11,15 @@ namespace AdvanceQuizApp.Admin_Pages
         public string Username { get; set; }
         public string Password { get; set; }
         public int Priority { get; set; }
+        public List<int> FavoriteQuestions { get; set; } // Add this property
+
         public User(string username, string password, int priority)
         {
             Username = username;
             Password = password;
             Priority = priority;
+            FavoriteQuestions = new List<int>();
         }
+
     }
 }

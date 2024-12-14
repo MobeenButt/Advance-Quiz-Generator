@@ -44,23 +44,9 @@ namespace AdvanceQuizApp
         {
             try
             {
-                // Read the current user details
-                string currentUserFile = "CurrentUser.txt";
-                if (!File.Exists(currentUserFile))
-                {
-                    MessageBox.Show("Current user file not found!");
-                    return;
-                }
-
-                string[] userDetails = File.ReadAllText(currentUserFile).Split(',');
-                if (userDetails.Length < 3)
-                {
-                    MessageBox.Show("Invalid user details format! Ensure the file contains 'username,password,priority'.");
-                    return;
-                }
-
-                string userName = userDetails[0]; // Username
-                string userPassword = userDetails[1];
+                string[] userDetails = UserManager.GetCurrentUser();
+                string userName = userDetails[0];
+                string password = userDetails[1];
 
                 string newPassword = newPassBox.Text;
                 if (string.IsNullOrWhiteSpace(newPassword))
@@ -85,5 +71,68 @@ namespace AdvanceQuizApp
             }
         }
 
+        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new PreviousQuizes();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_BrowseQuizes_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new BrowseQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_FavouriteQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new FavouriteQuestions(UserManager.getCurrentUsername());
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new Settings();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_About_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new About();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Logging out...");
+            this.Hide();
+            Login loginPanel = new Login();
+            loginPanel.Show();
+        }
+
+        private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new BrowseQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_SavedQuizes_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new PreviousQuizes();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
     }
 }
