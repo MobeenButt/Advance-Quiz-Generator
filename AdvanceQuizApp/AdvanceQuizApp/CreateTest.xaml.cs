@@ -32,6 +32,7 @@ namespace AdvanceQuizApp
                 Close();
                 }
             }
+
         private void Button_ReturnButtton_Click(object sender, RoutedEventArgs e)
         {
             Window win = new MainWindow();
