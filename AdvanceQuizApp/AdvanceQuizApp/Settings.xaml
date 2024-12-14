@@ -60,21 +60,37 @@
         <!-- Sidebar -->
         <StackPanel Background="#2C3E50" Orientation="Vertical" Grid.Column="0">
             <TextBlock Text="Quiz App" 
-                       Foreground="White" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
-                       HorizontalAlignment="Center" 
-                       Margin="10"/>
+               Foreground="White" 
+               FontSize="20" 
+               FontWeight="Bold" 
+               HorizontalAlignment="Center" 
+               Margin="10"/>
             <Separator Margin="10"/>
-            <Button Content="Search Questions" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Previous Tests" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Last Test" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Create Test" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Browse Questions" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Manage Quizzes" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Settings" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="About" Style="{StaticResource SidebarButtonStyle}" />
-            <Button Content="Logout" Style="{StaticResource SidebarButtonStyle}" />
+
+            <Button Content="Browse Questions" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_BrowseQuestions_Click"/>
+            <Button Content="Favourite Questions" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_FavouriteQuestions_Click"/>
+
+
+            <Button Content="Create Quiz" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="CreateQuiz_Click"/>
+            <Button Content="My Quizes" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_SavedQuizes_Click"/>
+
+            <Button Content="Settings" 
+            Style="{StaticResource SidebarButtonStyle}" 
+            Click="Button_Settings_Click"/>
+            <Button Content="About" 
+            Style="{StaticResource SidebarButtonStyle}" 
+            Click="Button_About_Click"/>
+            <Button Content="Logout" 
+            Style="{StaticResource SidebarButtonStyle}" 
+            Click="Button_Logout_Click"/>
         </StackPanel>
 
         <!-- Settings Content -->

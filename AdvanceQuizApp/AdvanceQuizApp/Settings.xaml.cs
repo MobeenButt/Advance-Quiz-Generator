@@ -43,8 +43,6 @@ namespace AdvanceQuizApp
         {
             try
             {
-               
-
                 string[] userDetails = UserManager.GetCurrentUser();
                 string userName = userDetails[0];
                 string password = userDetails[1];
@@ -72,5 +70,68 @@ namespace AdvanceQuizApp
             }
         }
 
+        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new PreviousQuizes();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_BrowseQuizes_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new BrowseQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_FavouriteQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new FavouriteQuestions(UserManager.getCurrentUsername());
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new Settings();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_About_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new About();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Logging out...");
+            this.Hide();
+            Login loginPanel = new Login();
+            loginPanel.Show();
+        }
+
+        private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new BrowseQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_SavedQuizes_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new PreviousQuizes();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
     }
 }

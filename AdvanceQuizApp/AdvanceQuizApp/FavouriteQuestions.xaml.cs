@@ -54,7 +54,9 @@ namespace AdvanceQuizApp
             {
                 selectedQuestion = favouriteQuestions[QuestionList.SelectedIndex];
                 DisplayQuestionDetails(selectedQuestion);
-                QuestionDetailsPanel.Visibility = Visibility.Visible; 
+                QuestionDetailsPanel.Visibility = Visibility.Visible;
+                QuestionTopic.Text = $"Question Topic: {selectedQuestion.topic}";
+                QuestionTopic.Visibility = Visibility.Visible;
             }
             else
             {
@@ -73,7 +75,7 @@ namespace AdvanceQuizApp
 
         private void ShowAnswer_Click(object sender, RoutedEventArgs e)
         {
-            CorrectAnswerText.Text = $"Correct Answer > {selectedQuestion.correctAnswer}";
+            CorrectAnswerText.Text = $"Acha Ye keh rha hai ! > {selectedQuestion.correctAnswer}";
             CorrectAnswerText.Visibility = Visibility.Visible;
         }
 
@@ -100,9 +102,6 @@ namespace AdvanceQuizApp
                 MessageBox.Show("No question selected to remove!");
             }
         }
-
-
-
 
         private void GoHome_Click(object sender, RoutedEventArgs e)
         {
