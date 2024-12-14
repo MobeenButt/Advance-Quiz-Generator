@@ -33,6 +33,7 @@ namespace AdvanceQuizApp
             br.Show();
             br.WindowState = WindowState.Maximized;
 
+
         }
         private void ClearData(object sender, RoutedEventArgs e)
         {
