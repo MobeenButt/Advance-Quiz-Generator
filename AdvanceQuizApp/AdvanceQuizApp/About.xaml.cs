@@ -15,17 +15,13 @@ using System.Windows.Shapes;
 namespace AdvanceQuizApp
 {
     /// <summary>
-    /// Interaction logic for Searchwindow.xaml
+    /// Interaction logic for About.xaml
     /// </summary>
-    public partial class Searchwindow : Window
+    public partial class About : Window
+    {
+        public About()
         {
-        public Searchwindow()
-            {
             InitializeComponent();
-            }
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
-            {
-            //testing
-            }
         }
     }
+}

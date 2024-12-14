@@ -18,10 +18,7 @@ namespace AdvanceQuizApp
             MessageBox.Show("Navigating to Create Quiz page...");
         }
 
-        private void Button_ManageQuizzes_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Navigating to Manage Quizzes page...");
-        }
+        
 
         private void Button_Settings_Click(object sender, RoutedEventArgs e)
         {
@@ -43,12 +40,12 @@ namespace AdvanceQuizApp
             this.Visibility = Visibility.Hidden;
         }
         private void CreateQuiz_Click(object sender, RoutedEventArgs e)
-            {
+        {
             Window br = new CreateQuiz();
             br.Show();
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
-            }
+        }
 
         private void Button_Logout_Click(object sender, RoutedEventArgs e)
         {
@@ -57,39 +54,15 @@ namespace AdvanceQuizApp
             Login loginPanel = new Login();
             loginPanel.Show();
         }
-        //private void CreateTest_Click(object sender, RoutedEventArgs e)
-        //{
-        //    //Window br = new CreateTest();
-        //    //br.Show();
-        //    //br.WindowState = WindowState.Maximized;
-        //    //this.Visibility = Visibility.Hidden;
-        //}
-        private void Button_SearchQuestions_Click(object sender, RoutedEventArgs e)
-        {
-            var blurEffect = new BlurEffect
-            {
-                Radius = 10
-            };
-
-            this.Effect = blurEffect;
-
-            Searchwindow searchWindow = new Searchwindow
-            {
-                Owner = this
-            };
-            searchWindow.ShowDialog();
-
-            this.Effect = null;
-        }
+        
         private void Button_SavedQuestions_Click(Object sender, RoutedEventArgs e)
-            {
-            //this will display the previous quizes 
+        {
             Window br = new PreviousQuizes();
             br.Show();
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
 
-            }
+        }
 
         private void Button_FavouriteQuestions_Click(object sender, RoutedEventArgs e)
         {

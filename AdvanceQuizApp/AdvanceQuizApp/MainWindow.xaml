@@ -66,26 +66,21 @@
                        HorizontalAlignment="Center" 
                        Margin="10"/>
             <Separator Margin="10"/>
-            <Button Content="Search Questions" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
 
-            <Button Content="Previous saved Quizes" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SavedQuestions_Click"/>
-
-            <Button Content="Create Quiz" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="CreateQuiz_Click"/>
             <Button Content="Browse Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_BrowseQuestions_Click"/>
-            <Button Content="Manage Quizzes" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_ManageQuizzes_Click"/>
+            
             <Button Content="Favourite Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_FavouriteQuestions_Click"/>
+            <Button Content="Create Quiz" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="CreateQuiz_Click"/>
+            <Button Content="My Quizes" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_SavedQuestions_Click"/>
+            
             <Button Content="Settings" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_Settings_Click"/>
