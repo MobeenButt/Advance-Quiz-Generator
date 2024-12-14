@@ -28,25 +28,21 @@ namespace AdvanceQuizApp
         {
             InitializeComponent();
 
-            // Load current user details
             userDetails = UserManager.GetCurrentUser();
             this.username = userDetails[0];
 
 
-            // Load questions based on these IDs
             List<int> favouriteIds = UserManager.GetFavouriteQuestions(username);
             favouriteQuestions = QuestionLoader.LoadQuestions("quizdata.json")
                                               .Where(q => favouriteIds.Contains(q.id))
                                               .ToList();
 
-            // Ensure all questions are shown in the panel
 
             if (favouriteQuestions.Count == 0)
             {
                 MessageBox.Show("No favourite questions found for this user.");
             }
 
-            // Display questions in the left panel
             QuestionList.ItemsSource = favouriteQuestions.Select(q => q.text).ToList();
         }
 
@@ -88,16 +84,12 @@ namespace AdvanceQuizApp
             {
                 Question selectedQuestion = favouriteQuestions[index];
 
-                // Remove the question from the user's favorite list
                 UserManager.RemoveFromFavourites(username, selectedQuestion.id);
 
-                // Reload data
                 favouriteQuestions.Remove(selectedQuestion);
 
-                // Update the panel to reflect the changes
                 QuestionList.ItemsSource = favouriteQuestions.Select(q => q.text).ToList();
 
-                // Hide the details panel when no question is selected
                 if (favouriteQuestions.Count == 0)
                 {
                     QuestionDetailsPanel.Visibility = Visibility.Hidden;
