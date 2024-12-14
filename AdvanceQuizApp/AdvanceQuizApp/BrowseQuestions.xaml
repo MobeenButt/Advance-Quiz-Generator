@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
-        Title="BrowseQuestions" Height="450" Width="800">
+        Title="BrowseQuestions" Height="650" Width="1000">
     <Window.Resources>
         <Style x:Key="SidebarButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#34495E"/>
@@ -21,8 +21,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                    CornerRadius="10">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="10">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -37,70 +36,90 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-        <Style x:Key="FadeInTextBlockStyle" TargetType="TextBlock">
-            <Style.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:1"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Style.Triggers>
-        </Style>
     </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <!-- Sidebar -->
         <StackPanel Background="#2C3E50" Orientation="Vertical" Grid.Column="0">
             <TextBlock Text="Quiz App" 
-                       Foreground="White" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
-                       HorizontalAlignment="Center" 
-                       Margin="10"/>
+               Foreground="White" 
+               FontSize="20" 
+               FontWeight="Bold" 
+               HorizontalAlignment="Center" 
+               Margin="10"/>
             <Separator Margin="10"/>
-            <!-- Same side menu as MainWindow -->
+            
+
+            <Button Content="Previous saved Quizes" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_SavedQuizes_Click"/>
+
             <Button Content="Create Quiz" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_CreateQuiz_Click"/>
-            <Button Content="Manage Quizzes" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_ManageQuizzes_Click"/>
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="CreateQuiz_Click"/>
             <Button Content="Browse Questions" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_BrowseQuestions_Click"/>
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_BrowseQuestions_Click"/>
+            <Button Content="Manage Quizzes" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_ManageQuizzes_Click"/>
+            <Button Content="Favourite Questions" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_FavouriteQuestions_Click"/>
             <Button Content="Settings" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_Settings_Click"/>
-            <Button Content="About" Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_About_Click"/>
-            <Button Content="Back" Style="{StaticResource SidebarButtonStyle}"
-                    Click="Button_Back_Click"/>
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_Settings_Click"/>
+            <Button Content="About" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_About_Click"/>
+            <Button Content="Logout" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_Logout_Click"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Margin="20">
-            <TextBlock Text="Browse Questions" 
-                       FontSize="24" 
-                       FontWeight="Bold" 
-                       Foreground="#34495E" 
-                       Margin="0,0,0,20"/>
+        <!-- Main Content -->
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
-                <TextBox x:Name="searchBox" Width="400" Height="30" Margin="0,0,10,0" />
-                <Button Content="Search" Width="100" Height="30" Background="#1ABC9C" Foreground="White" Click="Search"/>
+            <TextBlock Text="Browse Questions" 
+               FontSize="24" 
+               FontWeight="Bold" 
+               Foreground="#34495E" 
+               Margin="0,0,0,20"
+               Grid.Row="0"/>
+
+            <!-- Search Bar -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20" Grid.Row="0">
+                <TextBox x:Name="searchBox" Width="400" Height="30" Margin="0,0,10,0"/>
+                <Button Content="Search" Width="100" Height="30" Background="#1ABC9C" Foreground="White" Click="Search" IsDefault="True"/>
             </StackPanel>
 
-            <ScrollViewer x:Name="scrollViewer" VerticalScrollBarVisibility="Auto" Height="600">
-                <StackPanel>
-                    <!-- Placeholder for topics -->
-                    
-                </StackPanel>
-            </ScrollViewer>
-        </StackPanel>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Left Panel: Topics -->
+                <ScrollViewer x:Name="scrollViewer" Grid.Column="0" VerticalScrollBarVisibility="Auto" Background="#ECF0F1" Margin="0,0,10,0">
+                    <StackPanel x:Name="topicPanel" Margin="10"/>
+                </ScrollViewer>
+
+                <!-- Right Panel: Questions -->
+                <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" Background="White">
+                    <StackPanel x:Name="QuestionsPanel" Margin="10"/>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+
+
     </Grid>
 </Window>
