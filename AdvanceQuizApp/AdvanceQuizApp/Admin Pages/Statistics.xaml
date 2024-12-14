@@ -1,0 +1,35 @@
+﻿<Window x:Class="AdvanceQuizApp.Admin_Pages.Statistics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvanceQuizApp.Admin_Pages"
+        mc:Ignorable="d"
+        Title="Statistics" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- Labels for Titles -->
+        <TextBlock x:Name="lblTotalQuestions" Text="Total Questions:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="10,20,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="lblCorrectAnswers" Text="Correct Answers:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="10,60,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="lblScore" Text="Score:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="10,100,0,0" FontWeight="Bold"/>
+
+        <!-- Labels to Display Values -->
+        <TextBlock x:Name="lblTotalQuestionsValue" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="150,20,0,0"/>
+        <TextBlock x:Name="lblCorrectAnswersValue" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="150,60,0,0"/>
+        <TextBlock x:Name="lblScoreValue" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="150,100,0,0"/>
+
+        <!-- Button to Refresh Stats -->
+        <Button Content="Refresh Stats" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,10,10" Height="30" Click="BtnRefreshStats_Click"/>
+    </Grid>
+</Window>
