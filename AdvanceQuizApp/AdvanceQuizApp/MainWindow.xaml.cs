@@ -91,6 +91,13 @@ namespace AdvanceQuizApp
 
             }
 
+        private void Button_FavouriteQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new FavouriteQuestions(UserManager.getCurrentUsername());
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
     }
 
 }    

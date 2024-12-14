@@ -25,7 +25,7 @@ namespace AdvanceQuizApp
     {
         private string topicName;
         private List<Question> questions;
-
+        
         public TopicQuestions(string topic)
         {
             InitializeComponent();
@@ -77,7 +77,7 @@ namespace AdvanceQuizApp
                     Width = 40,
                     Margin = new Thickness(5)
                 };
-                favButton.Click += (s, e) => AddToFavourites(question);
+                favButton.Click += (s, e) => AddToFavourites(UserManager.getCurrentUsername(),question.id);
 
                 Button arrowButton = new Button
                 {
@@ -96,12 +96,53 @@ namespace AdvanceQuizApp
             }
         }
 
-        private void AddToFavourites(Question question)
+        public static void AddToFavourites(string username, int questionId)
         {
-            question.favourite = 1;
-            File.WriteAllText("quizdata.json", JsonSerializer.Serialize(new QuizData { Questions = questions }, new JsonSerializerOptions { WriteIndented = true }));
-            MessageBox.Show("Question added to favourites.");
+            string userFile = "user.txt";
+
+            // Ensure the file exists
+            if (!File.Exists(userFile))
+            {
+                MessageBox.Show("User file not found!");
+                return;
+            }
+
+            // Read all users from the file
+            var allUsers = File.ReadAllLines(userFile).ToList();
+
+            // Find the user's line
+            int userIndex = allUsers.FindIndex(line => line.StartsWith($"{username},"));
+            if (userIndex == -1)
+            {
+                MessageBox.Show("User not found in the user file!");
+                return;
+            }
+
+            // Parse user details
+            string[] userDetails = allUsers[userIndex].Split(',');
+            List<string> favouriteIds = userDetails.Length > 3 ? userDetails.Skip(3).Where(id => !string.IsNullOrWhiteSpace(id)).ToList() : new List<string>();
+
+            // Add the question ID if not already present
+            if (!favouriteIds.Contains(questionId.ToString()))
+            {
+                favouriteIds.Add(questionId.ToString());
+
+                // Update the user's line
+                string updatedUserDetails = $"{userDetails[0]},{userDetails[1]},{userDetails[2]},{string.Join(",", favouriteIds)}";
+                allUsers[userIndex] = updatedUserDetails;
+
+                // Write back to the file
+                File.WriteAllLines(userFile, allUsers);
+
+                MessageBox.Show("Question added to favourites.");
+            }
+            else
+            {
+                MessageBox.Show("This question is already in favourites.");
+            }
         }
+
+
 
         private void ShowDetails(Question question)
         {
