@@ -60,7 +60,7 @@ namespace AdvanceQuizApp
                     lt.SaveToFile();
                     MessageBox.Show($"Passwrod for {userName} Changed Successfully, Login Again");
                     this.Close();
-                    Window br = new Login();
+                    Window br = new Logins();
                     br.Show();
                 }
 
@@ -115,7 +115,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            Login loginPanel = new Login();
+            Logins loginPanel = new Logins();
             loginPanel.Show();
         }
 
