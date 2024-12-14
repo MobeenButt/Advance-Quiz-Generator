@@ -10,6 +10,7 @@
             next = null;
         }
     }
+    
     public class MyStack<T>
     {
         public Node<T> top;
