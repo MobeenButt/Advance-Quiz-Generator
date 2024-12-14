@@ -4,15 +4,18 @@
       "id": 1,
       "text": "Which of the following compounds has the highest % age of oxygen by weight?",
       "options": [
-        "CH3OH",
-        "C2H5OH",
+        "CH3\uF02DOH",
+        "C2H5\uF02DOH",
         "HCOOH",
         "H2O"
       ],
       "correctAnswer": "H2O",
       "topic": "Basic Concepts of Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 2,
@@ -26,7 +29,10 @@
       "correctAnswer": "120",
       "topic": "Basic Concept of Chemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 3,
@@ -40,7 +46,10 @@
       "correctAnswer": "Ion collector",
       "topic": "Basic Concepts of Chemitry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 4,
@@ -54,7 +63,10 @@
       "correctAnswer": "Mg(ClO4)2",
       "topic": "Basic Concepts of C=hemistry",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 5,
@@ -68,7 +80,10 @@
       "correctAnswer": "Relative abundance",
       "topic": "Basic Concepts of C--hemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 6,
@@ -82,7 +97,10 @@
       "correctAnswer": "1.12 dm3",
       "topic": "Basic Concepts oasf Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 7,
@@ -96,7 +114,10 @@
       "correctAnswer": "100",
       "topic": "Basic Concepts of asdaChemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 8,
@@ -110,7 +131,10 @@
       "correctAnswer": "88.89%",
       "topic": "Basic Concepts of Cheasmistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 9,
@@ -124,7 +148,10 @@
       "correctAnswer": "Gives minimum amount of product",
       "topic": "Basic Concepts ofasa Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 10,
@@ -138,7 +165,10 @@
       "correctAnswer": "9",
       "topic": "Basic Concepts of saChemistry",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 11,
@@ -152,7 +182,10 @@
       "correctAnswer": "Solvent front",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 12,
@@ -166,7 +199,10 @@
       "correctAnswer": "Animal charcoal",
       "topic": "Experimental Techniques asin Chemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 13,
@@ -180,7 +216,10 @@
       "correctAnswer": "Solvent extraction",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 14,
@@ -194,7 +233,10 @@
       "correctAnswer": "Partition chromatography",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 15,
@@ -208,7 +250,10 @@
       "correctAnswer": "Suction flask",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 16,
@@ -222,7 +267,10 @@
       "correctAnswer": "Mobile phase",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 17,
@@ -236,7 +284,10 @@
       "correctAnswer": "Sublimation",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 18,
@@ -250,7 +301,10 @@
       "correctAnswer": "All of these",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 19,
@@ -264,7 +318,10 @@
       "correctAnswer": "K2Cr2O7",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 20,
@@ -278,7 +335,10 @@
       "correctAnswer": "Distribution law",
       "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 21,
@@ -292,7 +352,10 @@
       "correctAnswer": "Diamond",
       "topic": "Liquids and Solids",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 22,
@@ -301,12 +364,15 @@
         "Increase down the group",
         "Decrease down the group",
         "Remains constant",
-        "Can’t be predicted"
+        "Can\u2019t be predicted"
       ],
       "correctAnswer": "Increase down the group",
       "topic": "Liquids and Solids",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 23,
@@ -320,7 +386,10 @@
       "correctAnswer": "Temperature",
       "topic": "Liquids and Solids",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 24,
@@ -334,25 +403,31 @@
       "correctAnswer": "Triclinic system",
       "topic": "Liquids and Solids",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 25,
       "text": "At Murree hills water boils at:",
       "options": [
-        "98°C",
-        "100°C",
-        "0°C",
-        "50°C"
+        "98\u00B0C",
+        "100\u00B0C",
+        "0\u00B0C",
+        "50\u00B0C"
       ],
-      "correctAnswer": "98°C",
+      "correctAnswer": "98\u00B0C",
       "topic": "Liquids and Solids",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 26,
-      "text": "Coordination number of Na+ ion in NaCl is:",
+      "text": "Coordination number of Na\u002B ion in NaCl is:",
       "options": [
         "One",
         "Two",
@@ -362,11 +437,14 @@
       "correctAnswer": "Six",
       "topic": "Liquids and Solids",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 27,
-      "text": "Water may boil at 120°C when external pressure is:",
+      "text": "Water may boil at 120\u00B0C when external pressure is:",
       "options": [
         "369 torr",
         "700 torr",
@@ -376,7 +454,10 @@
       "correctAnswer": "1489 torr",
       "topic": "Liquids and Solids",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 28,
@@ -390,7 +471,10 @@
       "correctAnswer": "Molecular",
       "topic": "Liquids and Solids",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 29,
@@ -404,7 +488,10 @@
       "correctAnswer": "Ion dipole forces",
       "topic": "Liquids and Solids",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 30,
@@ -418,21 +505,27 @@
       "correctAnswer": "Four",
       "topic": "Liquids and Solids",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 31,
       "text": "Maximum number of electrons in a subshell is given by:",
       "options": [
-        "2l + 1",
+        "2l \u002B 1",
         "2l - 1",
-        "2(2l + 1)",
+        "2(2l \u002B 1)",
         "2(2l - 1)"
       ],
-      "correctAnswer": "2(2l + 1)",
+      "correctAnswer": "2(2l \u002B 1)",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 32,
@@ -446,7 +539,10 @@
       "correctAnswer": "2",
       "topic": "Atomic Structure",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 33,
@@ -460,7 +556,10 @@
       "correctAnswer": "1840",
       "topic": "Atomic Structure",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 34,
@@ -474,7 +573,10 @@
       "correctAnswer": "Ground level",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 35,
@@ -488,7 +590,10 @@
       "correctAnswer": "7f",
       "topic": "Atomic Structure",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 36,
@@ -502,21 +607,27 @@
       "correctAnswer": "U.V. region",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 37,
-      "text": "According to Bohr’s atomic model, the radius of the second orbit of the hydrogen atom is:",
+      "text": "According to Bohr\u2019s atomic model, the radius of the second orbit of the hydrogen atom is:",
       "options": [
-        "0.529 Å",
-        "2.116 Å",
-        "4.0 Å",
-        "5.0 Å"
+        "0.529 \u00C5",
+        "2.116 \u00C5",
+        "4.0 \u00C5",
+        "5.0 \u00C5"
       ],
-      "correctAnswer": "2.116 Å",
+      "correctAnswer": "2.116 \u00C5",
       "topic": "Atomic Structure",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 38,
@@ -530,7 +641,10 @@
       "correctAnswer": "3rd orbit",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 39,
@@ -544,7 +658,10 @@
       "correctAnswer": "2",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 40,
@@ -558,7 +675,10 @@
       "correctAnswer": "J. Perrin",
       "topic": "Atomic Structure",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 41,
@@ -572,21 +692,27 @@
       "correctAnswer": "NH4Cl",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 1
+      "favourite": 1,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 42,
       "text": "The angle formed in sp hybridization is:",
       "options": [
-        "120°",
-        "180°",
-        "109.5°",
-        "107.5°"
+        "120\u00B0",
+        "180\u00B0",
+        "109.5\u00B0",
+        "107.5\u00B0"
       ],
-      "correctAnswer": "180°",
+      "correctAnswer": "180\u00B0",
       "topic": "Chemical Bonding",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 43,
@@ -600,7 +726,10 @@
       "correctAnswer": "1 and 7",
       "topic": "Chemical Bonding",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 44,
@@ -614,21 +743,27 @@
       "correctAnswer": "Zero D",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 45,
       "text": "In sp2 hybridization, the orbitals are oriented at an angle of:",
       "options": [
-        "109.5°",
-        "120°",
-        "180°",
-        "0°"
+        "109.5\u00B0",
+        "120\u00B0",
+        "180\u00B0",
+        "0\u00B0"
       ],
-      "correctAnswer": "120°",
+      "correctAnswer": "120\u00B0",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 46,
@@ -642,7 +777,10 @@
       "correctAnswer": "Two electrons",
       "topic": "Chemical Bonding",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 47,
@@ -656,7 +794,10 @@
       "correctAnswer": "Their valence shells are complete",
       "topic": "Chemical Bonding",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 48,
@@ -670,7 +811,10 @@
       "correctAnswer": "PCl5",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 49,
@@ -684,7 +828,10 @@
       "correctAnswer": "sp2",
       "topic": "Chemical Bonding",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 50,
@@ -698,7 +845,10 @@
       "correctAnswer": "Five",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 51,
@@ -712,25 +862,31 @@
       "correctAnswer": "Irreversible",
       "topic": "Thermochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 52,
       "text": "The standard heat changes occur at:",
       "options": [
-        "25°C and 2 atm",
+        "25\u00B0C and 2 atm",
         "298 K and 1 atm",
-        "25°C and 1 mm Hg",
+        "25\u00B0C and 1 mm Hg",
         "273 K and 1 atm"
       ],
       "correctAnswer": "298 K and 1 atm",
       "topic": "Thermochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 53,
-      "text": "H⁺ + OH⁻ → H2O. The change in enthalpy for this reaction is called:",
+      "text": "H\u207A \u002B OH\u207B \u2192 H2O. The change in enthalpy for this reaction is called:",
       "options": [
         "Heat of reaction",
         "Heat of formation",
@@ -740,21 +896,27 @@
       "correctAnswer": "Heat of neutralization",
       "topic": "Thermochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 54,
       "text": "The net change in energy in a chemical reaction is the same whether it takes place directly or indirectly. This is called:",
       "options": [
-        "Henry’s law",
-        "Charlie’s law",
-        "Hess’s law",
-        "Graham’s law"
+        "Henry\u2019s law",
+        "Charlie\u2019s law",
+        "Hess\u2019s law",
+        "Graham\u2019s law"
       ],
-      "correctAnswer": "Hess’s law",
+      "correctAnswer": "Hess\u2019s law",
       "topic": "Thermochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 55,
@@ -768,11 +930,14 @@
       "correctAnswer": "Enthalpy of combustion",
       "topic": "Thermochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 56,
-      "text": "Enthalpy change for the reaction: CH4(g) + 2O2(g) → CO2(g) + 2H2O(l) is called enthalpy of:",
+      "text": "Enthalpy change for the reaction: CH4(g) \u002B 2O2(g) \u2192 CO2(g) \u002B 2H2O(l) is called enthalpy of:",
       "options": [
         "Formation",
         "Combustion",
@@ -782,7 +947,10 @@
       "correctAnswer": "Combustion",
       "topic": "Thermochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 57,
@@ -796,7 +964,10 @@
       "correctAnswer": "298 K",
       "topic": "Thermochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 58,
@@ -810,7 +981,10 @@
       "correctAnswer": "Respiration",
       "topic": "Thermochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 59,
@@ -824,7 +998,10 @@
       "correctAnswer": "Enthalpy",
       "topic": "Thermochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 60,
@@ -838,21 +1015,27 @@
       "correctAnswer": "Enthalpy",
       "topic": "Thermochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 61,
-      "text": "The value of pH and pOH of pure water at 25°C is approximately:",
+      "text": "The value of pH and pOH of pure water at 25\u00B0C is approximately:",
       "options": [
         "14",
         "7",
-        "1 × 10⁻¹⁴",
-        "1 × 10¹⁴"
+        "1 \u00D7 10\u207B\u00B9\u2074",
+        "1 \u00D7 10\u00B9\u2074"
       ],
       "correctAnswer": "7",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Easy",
-      "favourite": 1
+      "favourite": 1,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 62,
@@ -866,7 +1049,10 @@
       "correctAnswer": "Kp",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 63,
@@ -880,7 +1066,10 @@
       "correctAnswer": "Very weak acid",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 64,
@@ -894,7 +1083,10 @@
       "correctAnswer": "55.5",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 65,
@@ -908,7 +1100,10 @@
       "correctAnswer": "Common ion effect",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 66,
@@ -922,7 +1117,10 @@
       "correctAnswer": "Decreases",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 1,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 67,
@@ -936,7 +1134,10 @@
       "correctAnswer": "4.2",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 68,
@@ -950,7 +1151,10 @@
       "correctAnswer": "Towards left",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 69,
@@ -964,25 +1168,31 @@
       "correctAnswer": "A weak base and its salt with a strong acid",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 70,
-      "text": "The pOH of a solution is 4. The H⁺ ion concentration of the solution is:",
+      "text": "The pOH of a solution is 4. The H\u207A ion concentration of the solution is:",
       "options": [
-        "4.0 moles/dm³",
-        "10⁻¹⁰ moles/dm³",
-        "0.4 moles/dm³",
-        "4 × 10⁴ moles/dm³"
+        "4.0 moles/dm\u00B3",
+        "10\u207B\u00B9\u2070 moles/dm\u00B3",
+        "0.4 moles/dm\u00B3",
+        "4 \u00D7 10\u2074 moles/dm\u00B3"
       ],
-      "correctAnswer": "10⁻¹⁰ moles/dm³",
+      "correctAnswer": "10\u207B\u00B9\u2070 moles/dm\u00B3",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 71,
-      "text": "The ideal gas constant R, when expressed in dm³ atm mol⁻¹ K⁻¹ units, has a value of:",
+      "text": "The ideal gas constant R, when expressed in dm\u00B3 atm mol\u207B\u00B9 K\u207B\u00B9 units, has a value of:",
       "options": [
         "0.0821",
         "1.0821",
@@ -992,7 +1202,10 @@
       "correctAnswer": "0.0821",
       "topic": "States of Matter",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 72,
@@ -1006,7 +1219,10 @@
       "correctAnswer": "4.184 J",
       "topic": "States of Matter",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 73,
@@ -1020,25 +1236,31 @@
       "correctAnswer": "d = PM/RT",
       "topic": "States of Matter",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 74,
       "text": "Which gas has the highest diffusion rate?",
       "options": [
-        "SO₂",
-        "Cl₂",
-        "NH₃",
-        "CO₂"
+        "SO\u2082",
+        "Cl\u2082",
+        "NH\u2083",
+        "CO\u2082"
       ],
-      "correctAnswer": "NH₃",
+      "correctAnswer": "NH\u2083",
       "topic": "States of Matter",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 75,
-      "text": "Mathematically, Boyle’s law is shown as:",
+      "text": "Mathematically, Boyle\u2019s law is shown as:",
       "options": [
         "PT = K",
         "VT = K",
@@ -1048,25 +1270,31 @@
       "correctAnswer": "PV = K",
       "topic": "States of Matter",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 76,
       "text": "Absolute zero is equal to:",
       "options": [
-        "273°C",
-        "−273°C",
-        "0°C",
+        "273\u00B0C",
+        "\u2212273\u00B0C",
+        "0\u00B0C",
         "273 K"
       ],
-      "correctAnswer": "−273°C",
+      "correctAnswer": "\u2212273\u00B0C",
       "topic": "States of Matter",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 77,
-      "text": "If the values of 'a' and 'b' in Van der Waal’s equation are close to zero for a gas, then the gas is:",
+      "text": "If the values of \u0027a\u0027 and \u0027b\u0027 in Van der Waal\u2019s equation are close to zero for a gas, then the gas is:",
       "options": [
         "Ideal",
         "Non-ideal",
@@ -1076,11 +1304,14 @@
       "correctAnswer": "Ideal",
       "topic": "States of Matter",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 78,
-      "text": "The constant factor in Charles’s law is:",
+      "text": "The constant factor in Charles\u2019s law is:",
       "options": [
         "Volume",
         "Temperature",
@@ -1090,35 +1321,44 @@
       "correctAnswer": "Pressure",
       "topic": "States of Matter",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 79,
       "text": "Which gas will diffuse more rapidly?",
       "options": [
-        "CO₂",
-        "NH₃",
+        "CO\u2082",
+        "NH\u2083",
         "HCl",
-        "SO₂"
+        "SO\u2082"
       ],
-      "correctAnswer": "NH₃",
+      "correctAnswer": "NH\u2083",
       "topic": "States of Matter",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 80,
       "text": "Normal human body temperature is:",
       "options": [
-        "37°C",
-        "98.6°C",
-        "37°F",
+        "37\u00B0C",
+        "98.6\u00B0C",
+        "37\u00B0F",
         "273 K"
       ],
-      "correctAnswer": "37°C",
+      "correctAnswer": "37\u00B0C",
       "topic": "States of Matter",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 81,
@@ -1132,7 +1372,10 @@
       "correctAnswer": "Osmotic pressure",
       "topic": "Solutions",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 82,
@@ -1146,7 +1389,10 @@
       "correctAnswer": "Osmosis",
       "topic": "Solutions",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 83,
@@ -1160,7 +1406,10 @@
       "correctAnswer": "The number of solute particles increases",
       "topic": "Solutions",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 84,
@@ -1174,21 +1423,27 @@
       "correctAnswer": "The solvent",
       "topic": "Solutions",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 85,
       "text": "Which law states that the vapor pressure of a solution is proportional to the mole fraction of the solvent?",
       "options": [
-        "Raoult’s law",
-        "Boyle’s law",
-        "Henry’s law",
-        "Dalton’s law"
+        "Raoult\u2019s law",
+        "Boyle\u2019s law",
+        "Henry\u2019s law",
+        "Dalton\u2019s law"
       ],
-      "correctAnswer": "Raoult’s law",
+      "correctAnswer": "Raoult\u2019s law",
       "topic": "Solutions",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 86,
@@ -1202,7 +1457,10 @@
       "correctAnswer": "The same as between solvent and solvent",
       "topic": "Solutions",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 87,
@@ -1216,7 +1474,10 @@
       "correctAnswer": "Moles of solute per kilogram of solvent",
       "topic": "Solutions",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 88,
@@ -1230,11 +1491,14 @@
       "correctAnswer": "Decreases",
       "topic": "Solutions",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 89,
-      "text": "The van’t Hoff factor for NaCl in an aqueous solution is approximately:",
+      "text": "The van\u2019t Hoff factor for NaCl in an aqueous solution is approximately:",
       "options": [
         "1",
         "2",
@@ -1244,7 +1508,10 @@
       "correctAnswer": "2",
       "topic": "Solutions",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 90,
@@ -1258,7 +1525,10 @@
       "correctAnswer": "Desalination",
       "topic": "Solutions",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 91,
@@ -1272,7 +1542,10 @@
       "correctAnswer": "Chemical energy into electrical energy",
       "topic": "Electrochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 92,
@@ -1286,11 +1559,14 @@
       "correctAnswer": "Kg/Coulomb",
       "topic": "Electrochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 93,
-      "text": "Faraday’s first law of electrolysis states that:",
+      "text": "Faraday\u2019s first law of electrolysis states that:",
       "options": [
         "The amount of a substance deposited is directly proportional to the quantity of electricity passed",
         "The mass of the substance deposited is inversely proportional to its equivalent weight",
@@ -1300,7 +1576,10 @@
       "correctAnswer": "The amount of a substance deposited is directly proportional to the quantity of electricity passed",
       "topic": "Electrochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 94,
@@ -1314,7 +1593,10 @@
       "correctAnswer": "NH4Cl",
       "topic": "Electrochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 95,
@@ -1328,7 +1610,10 @@
       "correctAnswer": "Cathode",
       "topic": "Electrochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 96,
@@ -1337,12 +1622,15 @@
         "1 V",
         "0.5 V",
         "0 V",
-        "−1 V"
+        "\u22121 V"
       ],
       "correctAnswer": "0 V",
       "topic": "Electrochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 97,
@@ -1356,7 +1644,10 @@
       "correctAnswer": "Standard hydrogen electrode",
       "topic": "Electrochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 98,
@@ -1370,7 +1661,10 @@
       "correctAnswer": "Voltaic cells",
       "topic": "Electrochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 99,
@@ -1384,7 +1678,10 @@
       "correctAnswer": "Dry cell",
       "topic": "Electrochemistry",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 100,
@@ -1398,7 +1695,10 @@
       "correctAnswer": "Sodium and chlorine",
       "topic": "Electrochemistry",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 101,
@@ -1412,11 +1712,14 @@
       "correctAnswer": "Change in concentration per unit time",
       "topic": "Chemical Kinetics",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 102,
-      "text": "A reaction with a rate law of Rate = k[A]² is:",
+      "text": "A reaction with a rate law of Rate = k[A]\u00B2 is:",
       "options": [
         "First order",
         "Second order",
@@ -1426,7 +1729,10 @@
       "correctAnswer": "Second order",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 103,
@@ -1440,7 +1746,10 @@
       "correctAnswer": "Independent of initial concentration",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 104,
@@ -1454,7 +1763,10 @@
       "correctAnswer": "Minimum energy required to start a reaction",
       "topic": "Chemical Kinetics",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 105,
@@ -1468,7 +1780,10 @@
       "correctAnswer": "Reaction rate and activation energy",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 106,
@@ -1482,7 +1797,10 @@
       "correctAnswer": "Color of the reactants",
       "topic": "Chemical Kinetics",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 107,
@@ -1496,7 +1814,10 @@
       "correctAnswer": "Independent of reactant concentration",
       "topic": "Chemical Kinetics",
       "difficulty": "Hard",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 108,
@@ -1510,21 +1831,44 @@
       "correctAnswer": "Decreasing activation energy",
       "topic": "Chemical Kinetics",
       "difficulty": "Easy",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     },
     {
       "id": 109,
       "text": "The unit of rate constant for a second-order reaction is:",
       "options": [
-        "s⁻¹",
-        "L mol⁻¹ s⁻¹",
-        "mol L⁻¹ s⁻¹",
-        "L² mol⁻² s⁻¹"
+        "s\u207B\u00B9",
+        "L mol\u207B\u00B9 s\u207B\u00B9",
+        "mol L\u207B\u00B9 s\u207B\u00B9",
+        "L\u00B2 mol\u207B\u00B2 s\u207B\u00B9"
       ],
-      "correctAnswer": "L mol⁻¹ s⁻¹",
+      "correctAnswer": "L mol\u207B\u00B9 s\u207B\u00B9",
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
-      "favourite": 0
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
+    },
+    {
+      "id": 110,
+      "text": "What is difference b/w eating banana and pulling banana",
+      "options": [
+        "kuj to hai",
+        "tumne kela khaya hai",
+        "to kela khichi pya",
+        "all of these"
+      ],
+      "correctAnswer": "all of these",
+      "topic": "He Love Banana",
+      "difficulty": "Difficult",
+      "favourite": 0,
+      "attempted": false,
+      "selectedOption": null,
+      "rightOrWrong": false
     }
   ]
 }
