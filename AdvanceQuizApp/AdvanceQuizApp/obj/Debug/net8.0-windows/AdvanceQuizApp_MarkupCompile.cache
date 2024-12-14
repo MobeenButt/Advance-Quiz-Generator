@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
 AdvanceQuizApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
-151096990373
+D:\A for study\3rd Semester\DSA(Lab)\Final project\1\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+17-1015260553
 
-2916685293
-199-1857524334
-About.xaml;Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageUsers.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateQuiz.xaml;CreateTest.xaml;FavouriteQuestions.xaml;Login.xaml;MainWindow.xaml;Map\MapDisplay.xaml;PreviousQuizes.xaml;Settings.xaml;TestResult.xaml;
+31-1382148038
+199-598269392
+Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageUsers.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateQuiz.xaml;CreateTest.xaml;FavouriteQuestions.xaml;Login.xaml;MainWindow.xaml;ManageQuestions.xaml;Map\MapDisplay.xaml;PreviousQuizes.xaml;Searchwindow.xaml;Settings.xaml;TestResult.xaml;TopicQuestions.xaml;
 
 False
 
