@@ -1,0 +1,20 @@
+﻿<Window x:Class="AdvanceQuizApp.Map.MapDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvanceQuizApp.Map"
+        mc:Ignorable="d"
+        Title="MapDisplay" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Start Location" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" />
+        <TextBox Name="StartLocation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,30,0,0" />
+        <TextBlock Text="End Location" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,60,0,0" />
+        <TextBox Name="EndLocation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,80,0,0" />
+        <Button Content="Find Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="220,10,0,0" Click="FindPathButton_Click" />
+        <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="220,50,0,0" Click="RefreshButton_Click" />
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,120,10,10">
+            <Canvas Name="MapPanel" Background="LightGray" Width="2000" Height="2000"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
