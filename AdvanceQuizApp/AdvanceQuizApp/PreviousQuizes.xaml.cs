@@ -5,7 +5,6 @@ using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using AdvanceQuizApp;
-
 namespace AdvanceQuizApp
     {
     public partial class PreviousQuizes : Window
