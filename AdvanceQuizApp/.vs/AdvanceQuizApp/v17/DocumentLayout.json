@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\createquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\createquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\createquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\browsequestions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\previousquizes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|g:\\my cs\\semester 3\\dsa lab\\mj - final project\\advance-quiz-generator\\advance-quiz-generator\\advancequizapp\\advancequizapp\\favouritequestions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\advancequizapp\\favouritequestions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\favouritequestions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -213,8 +213,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\PreviousQuizes.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:10:14.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:10:14.896Z"
             },
             {
               "$type": "Document",
@@ -224,7 +223,7 @@
               "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateQuiz.xaml.cs",
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateQuiz.xaml.cs",
               "RelativeToolTip": "AdvanceQuizApp\\CreateQuiz.xaml.cs",
-              "ViewState": "AQIAAGAAAAAAZmZmZmYGwG4AAABGAAAA",
+              "ViewState": "AQIAABAAAAAANDMzMzMLwA0AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T12:27:33.377Z",
               "EditorCaption": ""
@@ -239,8 +238,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml.cs",
               "ViewState": "AQIAAKIAAAAAxczMzMwMwNMAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:31:22.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:31:22.168Z"
             },
             {
               "$type": "Document",
@@ -252,8 +250,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\BrowseQuestions.xaml.cs",
               "ViewState": "AQIAANgAAAAAZmZmZmYxwLkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.063Z"
             },
             {
               "$type": "Document",
@@ -265,8 +262,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\AVLTree.cs",
               "ViewState": "AQIAAFUAAAAAmpmZmZkBwGwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:07:13.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:07:13.172Z"
             },
             {
               "$type": "Document",
@@ -277,8 +273,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateQuiz.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\CreateQuiz.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-10T12:13:55.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T12:13:55.44Z"
             },
             {
               "$type": "Document",
@@ -290,8 +285,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
               "ViewState": "AQIAAA4AAAAANDMzMzPzvyMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T19:58:57.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T19:58:57.52Z"
             },
             {
               "$type": "Document",
@@ -302,8 +296,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\FavouriteQuestions.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\FavouriteQuestions.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T08:58:52.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T08:58:52.617Z"
             },
             {
               "$type": "Document",
@@ -315,8 +308,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\FavouriteQuestions.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T09:16:42.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T09:16:42.839Z"
             },
             {
               "$type": "Document",
@@ -327,8 +319,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T18:27:46.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:27:46.577Z"
             },
             {
               "$type": "Document",
@@ -340,8 +331,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\ADT\\PriorityQueue.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:22:33.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:22:33.734Z"
             },
             {
               "$type": "Document",
@@ -352,8 +342,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:20:51.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:20:51.537Z"
             },
             {
               "$type": "Document",
@@ -364,8 +353,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\BrowseQuestions.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.069Z"
             },
             {
               "$type": "Document",
@@ -377,8 +365,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml.cs",
               "ViewState": "AQIAADIAAABAAAAAAAAuwCQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:32:57.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:32:57.415Z"
             },
             {
               "$type": "Document",
@@ -390,8 +377,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAIgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:29:39.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:29:39.225Z"
             },
             {
               "$type": "Document",
@@ -403,8 +389,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\CurrentUser.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-10T13:30:43.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T13:30:43.026Z"
             },
             {
               "$type": "Document",
@@ -415,8 +400,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:29:56.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:29:56.517Z"
             },
             {
               "$type": "Document",
@@ -427,8 +411,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\About.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T18:28:04.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T18:28:04.832Z"
             },
             {
               "$type": "Document",
@@ -440,8 +423,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\LoginManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.045Z"
             },
             {
               "$type": "Document",
@@ -452,8 +434,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\PreviousQuizes.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\PreviousQuizes.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-13T21:10:12.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:10:12.162Z"
             },
             {
               "$type": "Document",
@@ -465,8 +446,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\QuizData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:09:31.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:09:31.893Z"
             },
             {
               "$type": "Document",
@@ -478,8 +458,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.074Z"
             },
             {
               "$type": "Document",
@@ -491,8 +470,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.053Z"
             },
             {
               "$type": "Document",
@@ -503,8 +481,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\AdminPanel.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:21:01.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:21:01.546Z"
             },
             {
               "$type": "Document",
@@ -515,8 +492,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.059Z"
             },
             {
               "$type": "Document",
@@ -527,8 +503,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-09T18:26:13.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T18:26:13.432Z"
             },
             {
               "$type": "Document",
@@ -539,8 +514,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\TestResult.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T18:26:43.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:26:43.498Z"
             },
             {
               "$type": "Document",
@@ -549,8 +523,7 @@
               "DocumentMoniker": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageQuestionBankPage.xaml.cs",
               "ToolTip": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageQuestionBankPage.xaml.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T20:26:41.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T20:26:41.255Z"
             },
             {
               "$type": "Document",
@@ -561,8 +534,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.072Z"
             },
             {
               "$type": "Document",
@@ -574,8 +546,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T16:21:31.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T16:21:31.777Z"
             },
             {
               "$type": "Document",
@@ -584,8 +555,7 @@
               "DocumentMoniker": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageQuestionBankPage.xaml",
               "ToolTip": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageQuestionBankPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-09T18:09:45.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T18:09:45.442Z"
             },
             {
               "$type": "Document",
@@ -596,8 +566,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Login.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-09T19:23:36.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T19:23:36.254Z"
             },
             {
               "$type": "Document",
@@ -608,8 +577,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml.cs",
               "RelativeToolTip": "AdvanceQuizApp\\AdminPanel.xaml.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:09:34.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T18:09:34.13Z"
             },
             {
               "$type": "Document",
@@ -620,8 +588,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Login.xaml.cs",
               "RelativeToolTip": "AdvanceQuizApp\\Login.xaml.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T19:24:01.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T19:24:01.582Z"
             },
             {
               "$type": "Document",
@@ -633,8 +600,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\Map\\map.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-13T21:08:40.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:08:40.908Z"
             },
             {
               "$type": "Document",
@@ -646,8 +612,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\ADT\\TopicBST.cs",
               "ViewState": "AQIAADYAAABAAAAAAAAmwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:11:44.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T12:11:44.162Z"
             },
             {
               "$type": "Document",
@@ -659,8 +624,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:20:58.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:20:58.359Z"
             },
             {
               "$type": "Document",
@@ -672,8 +636,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\DataBank\\Question.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:22:18.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T09:22:18.509Z"
             },
             {
               "$type": "Document",
@@ -685,8 +648,7 @@
               "RelativeToolTip": "AdvanceQuizApp\\Map\\Graph.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T12:06:16.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T12:06:16.428Z"
             },
             {
               "$type": "Document",
@@ -697,8 +659,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\Map\\MapDisplay.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T12:06:29.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T12:06:29.891Z"
             },
             {
               "$type": "Document",
@@ -709,8 +670,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ADT\\MyQueue.cs",
               "RelativeToolTip": "AdvanceQuizApp\\ADT\\MyQueue.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:11:18.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T18:11:18.335Z"
             },
             {
               "$type": "Document",
@@ -721,8 +681,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml.cs",
               "RelativeToolTip": "AdvanceQuizApp\\TestResult.xaml.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:26:55.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:26:55.26Z"
             },
             {
               "$type": "Document",
@@ -731,8 +690,7 @@
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-12-06T16:19:26.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:19:26.892Z"
             },
             {
               "$type": "Document",
@@ -743,8 +701,7 @@
               "ToolTip": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ADT\\MyStack.cs",
               "RelativeToolTip": "AdvanceQuizApp\\ADT\\MyStack.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:18:39.041Z"
             },
             {
               "$type": "Document",
@@ -753,8 +710,7 @@
               "DocumentMoniker": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admin\\Admin.g.cs",
               "ToolTip": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admin\\Admin.g.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:59:58.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T20:59:58.415Z"
             },
             {
               "$type": "Document",
@@ -763,8 +719,7 @@
               "DocumentMoniker": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admins\\Admin.g.i.cs",
               "ToolTip": "E:\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\Debug\\net8.0-windows\\Admins\\Admin.g.i.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:57:04.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T20:57:04.452Z"
             }
           ]
         }
