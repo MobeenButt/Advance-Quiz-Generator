@@ -2,9 +2,8 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Linq;
-using System.Collections.Generic;
 using AdvanceQuizApp.ADT;
+using System.Linq;
 
 namespace AdvanceQuizApp.Map
 {
@@ -18,46 +17,50 @@ namespace AdvanceQuizApp.Map
             InitializeComponent();
             statestack = new MyStack<List<UIElement>>();
             initializeGraph();
+            EndLocation.IsReadOnly = true;
+            EndLocation.Text = "Quiz Center";
         }
 
         private void initializeGraph()
         {
-            var node1 = new Node { Name = "A", Latitude = 100, Longitude = 100 };
-            var node2 = new Node { Name = "B", Latitude = 300, Longitude = 100 };
-            var node3 = new Node { Name = "C", Latitude = 500, Longitude = 100 };
-            var node4 = new Node { Name = "D", Latitude = 300, Longitude = 300 };
-            var node5 = new Node { Name = "E", Latitude = 100, Longitude = 300 };
-            var node6 = new Node { Name = "F", Latitude = 500, Longitude = 300 };
-            var node7 = new Node { Name = "G", Latitude = 700, Longitude = 200 };
-            var node8 = new Node { Name = "H", Latitude = 200, Longitude = 400 };
-            var node9 = new Node { Name = "I", Latitude = 400, Longitude = 400 };
-            var node10 = new Node { Name = "J", Latitude = 600, Longitude = 400 };
-            var node11 = new Node { Name = "K", Latitude = 800, Longitude = 300 };
-            var node12 = new Node { Name = "L", Latitude = 900, Longitude = 200 };
+            var nodes = new[]
+            {
+                new Node { Name = "Sialkot", Latitude = 300, Longitude = 400 },
+                new Node { Name = "Karachi", Latitude = 700, Longitude = 200 },
+                new Node { Name = "Lahore", Latitude = 500, Longitude = 500 },
+                new Node { Name = "Islamabad", Latitude = 600, Longitude = 700 },
+                new Node { Name = "Peshawar", Latitude = 800, Longitude = 300 },
+                new Node { Name = "Quetta", Latitude = 900, Longitude = 100 },
+                new Node { Name = "Rawalpindi", Latitude = 400, Longitude = 600 },
+                new Node { Name = "Multan", Latitude = 200, Longitude = 800 },
+                new Node { Name = "Faisalabad", Latitude = 300, Longitude = 900 },
+                new Node { Name = "Quiz Center", Latitude = 500, Longitude = 800 },
+                new Node { Name = "Murree", Latitude = 100, Longitude = 100 },
+                new Node { Name = "Gwadar", Latitude = 100, Longitude = 500 }
+            };
 
             graph = new Graph();
-            graph.Nodes.AddRange(new[] { node1, node2, node3, node4, node5, node6, node7, node8, node9, node10, node11, node12 });
+            graph.Nodes.AddRange(nodes);
 
-            graph.Edges.Add(new Edge { node1 = node1, node2 = node2, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node2, node2 = node3, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node1, node2 = node5, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node5, node2 = node4, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node2, node2 = node6, Weight = 300 });
-            graph.Edges.Add(new Edge { node1 = node6, node2 = node7, Weight = 300 });
-            graph.Edges.Add(new Edge { node1 = node4, node2 = node9, Weight = 150 });
-            graph.Edges.Add(new Edge { node1 = node5, node2 = node8, Weight = 250 });
-            graph.Edges.Add(new Edge { node1 = node8, node2 = node9, Weight = 150 });
-            graph.Edges.Add(new Edge { node1 = node9, node2 = node10, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node6, node2 = node10, Weight = 250 });
-            graph.Edges.Add(new Edge { node1 = node7, node2 = node11, Weight = 150 });
-            graph.Edges.Add(new Edge { node1 = node11, node2 = node12, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node10, node2 = node11, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[0], node2 = nodes[1], Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[1], node2 = nodes[2], Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[0], node2 = nodes[4], Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[4], node2 = nodes[3], Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[1], node2 = nodes[5], Weight = 300 });
+            graph.Edges.Add(new Edge { node1 = nodes[5], node2 = nodes[6], Weight = 300 });
+            graph.Edges.Add(new Edge { node1 = nodes[3], node2 = nodes[8], Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = nodes[4], node2 = nodes[7], Weight = 250 });
+            graph.Edges.Add(new Edge { node1 = nodes[7], node2 = nodes[8], Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = nodes[8], node2 = nodes[9], Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[5], node2 = nodes[9], Weight = 250 });
+            graph.Edges.Add(new Edge { node1 = nodes[6], node2 = nodes[10], Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = nodes[10], node2 = nodes[11], Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = nodes[9], node2 = nodes[10], Weight = 200 });
 
             graph.display(MapPanel);
 
             savecurrentstate();
         }
-
 
         private void savecurrentstate()
         {
@@ -68,8 +71,8 @@ namespace AdvanceQuizApp.Map
         private void FindPathButton_Click(object sender, RoutedEventArgs e)
         {
             string selectedAlgorithm = (AlgorithmSelector.SelectedItem as ComboBoxItem)?.Content.ToString();
-            var startNode = graph.Nodes.FirstOrDefault(n => n.Name == StartLocation.Text);
-            var endNode = graph.Nodes.FirstOrDefault(n => n.Name == EndLocation.Text);
+            var startNode = graph.Nodes.FirstOrDefault(n => n.Name.Equals(StartLocation.Text, StringComparison.OrdinalIgnoreCase));
+            var endNode = graph.Nodes.FirstOrDefault(n => n.Name.Equals("Quiz Center", StringComparison.OrdinalIgnoreCase));
 
             if (startNode == null || endNode == null)
             {
@@ -95,18 +98,19 @@ namespace AdvanceQuizApp.Map
                     return;
             }
 
-            DisplayPath(path);
+            DisplayPath(path, selectedAlgorithm);
         }
 
-
-        private void DisplayPath(List<Node> path)
+        private void DisplayPath(List<Node> path, string algorithm)
         {
             if (path.Count == 0)
             {
                 MessageBox.Show("No path found.");
                 return;
             }
-            graph.display(MapPanel);
+
+            graph.display(MapPanel);  // Clear previous paths
+
             for (int i = 0; i < path.Count - 1; i++)
             {
                 var currentNode = path[i];
@@ -118,16 +122,17 @@ namespace AdvanceQuizApp.Map
                     Y1 = currentNode.Latitude,
                     X2 = nextNode.Longitude,
                     Y2 = nextNode.Latitude,
-                    Stroke = Brushes.Blue, // Path edge color
+                    Stroke = GetPathColor(algorithm), // Algorithm-specific path color
                     StrokeThickness = 4
                 };
+
                 MapPanel.Children.Add(edgeLine);
                 AnimateLineDrawing(edgeLine);
 
                 var distanceText = new TextBlock
                 {
                     Text = $"{graph.GetEdgeWeight(currentNode, nextNode)}",
-                    Foreground = Brushes.Blue,
+                    Foreground = GetPathColor(algorithm),
                     Background = Brushes.White,
                     FontSize = 14
                 };
@@ -135,13 +140,14 @@ namespace AdvanceQuizApp.Map
                 Canvas.SetTop(distanceText, (currentNode.Latitude + nextNode.Latitude) / 2);
                 MapPanel.Children.Add(distanceText);
             }
+
             foreach (var node in path)
             {
                 var rect = new Rectangle
                 {
                     Width = 40,
                     Height = 40,
-                    Fill = Brushes.Green, 
+                    Fill = Brushes.Green,
                     Stroke = Brushes.Black,
                     StrokeThickness = 2
                 };
@@ -161,13 +167,28 @@ namespace AdvanceQuizApp.Map
             }
         }
 
+        private Brush GetPathColor(string algorithm)
+        {
+            switch (algorithm)
+            {
+                case "Dijkstra":
+                    return Brushes.Blue;  // Dijkstra paths in blue
+                case "BFS":
+                    return Brushes.Green; // BFS paths in green
+                case "DFS":
+                    return Brushes.Red;   // DFS paths in red
+                default:
+                    return Brushes.Gray;  // Default path color
+            }
+        }
+
         private void AnimateLineDrawing(Line line)
         {
             var animation = new System.Windows.Media.Animation.DoubleAnimation
             {
                 From = 0,
                 To = 1,
-                Duration = TimeSpan.FromSeconds(2), 
+                Duration = TimeSpan.FromSeconds(2),
                 FillBehavior = System.Windows.Media.Animation.FillBehavior.HoldEnd
             };
 
@@ -177,7 +198,6 @@ namespace AdvanceQuizApp.Map
             storyboard.Children.Add(animation);
             storyboard.Begin();
         }
-
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
