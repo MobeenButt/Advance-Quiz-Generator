@@ -29,7 +29,6 @@ namespace AdvanceQuizApp.Admin_Pages
                 {
                     questions.Clear();
                     questions.AddRange(QuizData["questions"]);
-                    //QuestionsListView.ItemsSource = questions;
                 }
             }
         }
@@ -94,31 +93,9 @@ namespace AdvanceQuizApp.Admin_Pages
             File.WriteAllText(filePath, updatedJson);
             MessageBox.Show("Quiz updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             questions.Clear();
-            //QuestionsListView.Items.Refresh();
         }
 
-        //private void SaveButton_Click(object sender, RoutedEventArgs e)
-        //{
-
-        //    string filePath = "quizdata.json";
-        //    var existQustion = new List<Question>();
-        //    if (File.Exists(filePath))
-        //    {
-        //        string json=File.ReadAllText(filePath);
-        //        var data=JsonConvert.DeserializeObject<Dictionary<string, List<Question>>>(json);
-        //        if(data!=null && data.ContainsKey("questions"))
-        //        {
-        //            existQustion = data["questions"];
-        //        }
-        //    }
-        //    existQustion.AddRange(questions);
-        //    var updatedData = new Dictionary<string, List<Question>> { { "questions", existQustion } };
-        //    string updatedjson = JsonConvert.SerializeObject(updatedData, Formatting.Indented);
-        //    File.WriteAllText(filePath, updatedjson);
-        //    MessageBox.Show("Quiz updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-        //    questions.Clear();
-        //    QuestionsListView.Items.Refresh();
-        //   }
+   
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
