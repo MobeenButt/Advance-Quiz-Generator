@@ -196,11 +196,13 @@ namespace AdvanceQuizApp.Map
             }
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        
+
+        private void BackClick(object sender, RoutedEventArgs e)
         {
             this.Hide();
             AdminPanel admin = new AdminPanel();
-                admin.Show();
+            admin.Show();
         }
     }
 }

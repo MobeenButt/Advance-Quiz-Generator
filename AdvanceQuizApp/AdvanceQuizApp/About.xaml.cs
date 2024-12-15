@@ -22,6 +22,7 @@ namespace AdvanceQuizApp
         public About()
         {
             InitializeComponent();
+            WindowState = WindowState.Maximized;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -30,6 +31,18 @@ namespace AdvanceQuizApp
             MainWindow mw = new MainWindow();
             mw.Show();
 
+        }
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                // Close the current window
+                this.Close();
+
+                // Navigate to the Main Window
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+            }
         }
     }
 }

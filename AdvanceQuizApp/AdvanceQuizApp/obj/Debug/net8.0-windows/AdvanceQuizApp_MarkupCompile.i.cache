@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\BG\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
 AdvanceQuizApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\BG\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+G:\My CS\Semester 3\DSA Lab\Mj - Final Project\Advance-Quiz-Generator\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
 17-1372173413
 
 321968573274
-202260151222
+202-1267349479
 About.xaml;Admin Pages\AddQuestion.xaml;Admin Pages\DeletePanel.xaml;Admin Pages\ManageUsers.xaml;Admin Pages\Report.xaml;Admin Pages\Statistics.xaml;AdminPanel.xaml;BrowseQuestions.xaml;CreateQuiz.xaml;CreateTest.xaml;FavouriteQuestions.xaml;Logins.xaml;MainWindow.xaml;Map\MapDisplay.xaml;PreviousQuizes.xaml;Settings.xaml;TestResult.xaml;
 
 False

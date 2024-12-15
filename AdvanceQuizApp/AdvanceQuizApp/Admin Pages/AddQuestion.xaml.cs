@@ -155,5 +155,18 @@ namespace AdvanceQuizApp.Admin_Pages
         {
 
         }
+
+        
+
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Window m = new MainWindow();
+                m.Show();
+                m.WindowState = WindowState.Maximized;
+                this.Close();
+            }
+        }
     }
 }

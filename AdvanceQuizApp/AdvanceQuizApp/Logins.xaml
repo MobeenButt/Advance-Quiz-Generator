@@ -8,7 +8,9 @@
         WindowState="Maximized"
         Title="Login" Height="450" Width="800"
         Background="#F8F9FA"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        
+        >
     <Window.Resources>
 
         <!-- Button Style -->

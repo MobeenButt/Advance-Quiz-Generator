@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace AdvanceQuizApp.Admin_Pages
 {
@@ -103,6 +104,19 @@ namespace AdvanceQuizApp.Admin_Pages
             this.Hide();
             AdminPanel admin = new AdminPanel();
             admin.Show();
+        }
+
+        
+
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Window m = new MainWindow();
+                m.Show();
+                m.WindowState = WindowState.Maximized;
+                this.Close();
+            }
         }
     }
 

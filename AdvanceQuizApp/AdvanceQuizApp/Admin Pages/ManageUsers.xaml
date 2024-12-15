@@ -2,7 +2,9 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Manage Users" Height="450" Width="800"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        KeyDown="WindowKeyDown"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>

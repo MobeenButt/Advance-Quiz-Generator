@@ -3,37 +3,107 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
-        Title="About" Height="450" Width="800" WindowState="Maximized"
+        Title="About" Height="600" Width="1000" Background="#F0F8FF"
+        KeyDown = "WindowKeyDown" 
         >
-    <Grid>
-        <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
-                Margin="10,10,0,0" Width="75" Click="BackButton_Click" Background="#4CAF50" Foreground="White" BorderBrush="Green"/>
-        <TextBlock FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
-            About the Application
-        </TextBlock>
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,20,10" FontSize="16">
-            Welcome to the **Advance Quiz App**! This application is designed to help users create and take quizzes, track progress, and generate reports based on quiz performance.
-
-            Key Features:
-            - Create and manage custom quizzes.
-            - Track progress and view performance statistics.
-            - Save favorite questions for future reference.
-            - Admin panel for managing users and reports.
-        </TextBlock>
-        <TextBlock FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,170,0,0">
-            How to Use:
-        </TextBlock>
-
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,200,20,10" FontSize="14"><Run Text="1. To create a quiz, navigate to the &quot;Quiz Creation&quot; section. "/><LineBreak/><Run Text="2. Fill in the quiz details and add questions."/><LineBreak/><Run Text=" 3. After saving, users can take the quiz from the &quot;Quiz&quot; section. "/><LineBreak/><Run Text="4. You can track your progress in the &quot;Statistics&quot; section. "/><LineBreak/><Run Text="5. Admin users can manage user data and view reports in the &quot;Admin Panel&quot;."/></TextBlock>
         
-        <TextBlock FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,20,20">
-            Version 1.0.0 - Developed by Our Team
-        </TextBlock>
 
-        <TextBlock FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,20,40">
-            For support, please contact: support@advancequizapp.com
-        </TextBlock>
+    <Grid>
+        <!-- Back Button -->
+        <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Margin="10" Width="75" Click="BackButton_Click" Background="#4CAF50" 
+                Foreground="White" BorderBrush="Green" FontWeight="Bold" Cursor="Hand"/>
+
+        <!-- Title -->
+        <TextBlock Text="About the Advance Quiz App" FontWeight="Bold" FontSize="28" 
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" 
+                   Foreground="#333" TextDecorations="Underline"/>
+
+        <!-- Content Section -->
+        <ScrollViewer Margin="20,80,20,20">
+            <StackPanel>
+                <!-- General Description -->
+                <TextBlock Text="The Advance Quiz App provides a comprehensive platform for users to prepare, review, and test their knowledge with interactive quizzes and features." 
+                           TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A" Margin="0,10,0,20"/>
+
+                <!-- Browse Questions Section -->
+                <TextBlock Text="Browse Questions Page:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,10,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
+                    - Users can search for questions by topic. If the entered topic matches one in the question bank, its questions are displayed in the right panel.
+                    <LineBreak />
+                    - If no exact match is found, the program suggests the closest matches, showing the first matched topic’s questions by default.
+                    <LineBreak />
+                    - Users can view answers by clicking "Show Answer," add questions to favorites, and access them later in the "Favourite Questions" window.
+                </TextBlock>
+
+                <!-- Favourite Questions Section -->
+                <TextBlock Text="Favourite Questions Window:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
+                    - View the list of favorited questions and see details in the right panel.
+                    <LineBreak />
+                    - Access hints, click "Show Answer," or remove questions from the favorite list using the "Remove From Favourites" button.
+                </TextBlock>
+
+                <!-- Quiz Creation Section -->
+                <TextBlock Text="Test Creation and Results:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
+                    - Create tests by selecting topics and difficulty levels.
+                    <LineBreak />
+                    - During the test, navigate using '&lt;' and '&gt;' Arrow buttons for previous and next questions.
+                    <LineBreak />
+                    - Save your quiz at runtime and resume later from the "My Quizzes" window.
+                    <LineBreak />
+                    - Stop the quiz to view results, including score, attempted questions, and total time taken.
+                </TextBlock>
+
+                <!-- Saved Quizzes Section -->
+                <TextBlock Text="My Quizzes Window:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
+                    - Review and continue previously saved quizzes.
+                    <LineBreak />
+                    - Note: Only saved quizzes are accessible in this section.
+                </TextBlock>
+
+                <!-- Settings Section -->
+                <TextBlock Text="Settings and Logout:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
+                    - Users can change their password in the Settings.
+                    <LineBreak />
+                    - Logout anytime by clicking the "Logout" button in the sidebar.
+                </TextBlock>
+
+                <!-- Footer Section -->
+                <TextBlock Text="Version 1.0.0 - Developed by Our Team" FontSize="14" 
+                           Foreground="#808080" Margin="0,40,0,0" HorizontalAlignment="Center"/>
+                <TextBlock Text="For support, contact: support@advancequizapp.com" FontSize="14" 
+                           Foreground="#808080" Margin="0,10,0,20" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Rotating Decoration -->
+        <Ellipse Width="250" Height="250" Fill="#87CEFA" Opacity="0.3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-50,0,0,-50">
+            <Ellipse.RenderTransform>
+                <RotateTransform x:Name="RotatingEllipse" CenterX="125" CenterY="125"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Width="298" Height="297" Fill="#87CEFA" Opacity="0.3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="742,0,0,-50">
+            <Ellipse.RenderTransform>
+                <RotateTransform x:Name="RotatingEllipse1" CenterX="125" CenterY="125"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
     </Grid>
+
+    <!-- Animation Trigger -->
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="RotatingEllipse" Storyboard.TargetProperty="Angle" 
+                                     From="0" To="360" Duration="0:0:10" RepeatBehavior="Forever"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
 </Window>

@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 namespace AdvanceQuizApp
 {
     public partial class PreviousQuizes : Window
@@ -182,6 +183,19 @@ namespace AdvanceQuizApp
             window.Show();
             this.Close();
 
+        }
+
+        
+
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Window m = new MainWindow();
+                m.Show();
+                m.WindowState = WindowState.Maximized;
+                this.Close();
+            }
         }
     }
 }

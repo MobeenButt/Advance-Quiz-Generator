@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Windows;
+using System.Windows.Input;
 using AdvanceQuizApp.ADT;
 namespace AdvanceQuizApp.Admin_Pages
 {
@@ -82,6 +83,17 @@ namespace AdvanceQuizApp.Admin_Pages
                 SaveToFile(); 
                 UsersDataGrid.ItemsSource = null;
                 UsersDataGrid.ItemsSource = users.ToList();
+            }
+        }
+
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Window m = new MainWindow();
+                m.Show();
+                m.WindowState = WindowState.Maximized;
+                this.Close();
             }
         }
     }

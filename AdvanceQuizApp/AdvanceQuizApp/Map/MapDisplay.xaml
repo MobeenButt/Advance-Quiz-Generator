@@ -8,8 +8,6 @@
         Title="MapDisplay" Height="450" Width="800" WindowState="Maximized">
     <Grid>
         <!-- Back Button -->
-        
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="658,31,0,0" Click="BackButton_Click" RenderTransformOrigin="5.83,3.519" />
         <!-- Pathfinding Algorithm Dropdown -->
         <TextBlock Text="Algorithm" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,15,0,0" />
         <ComboBox Name="AlgorithmSelector" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="428,62,0,0">
@@ -23,12 +21,12 @@
         <TextBlock Text="End Location" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,83,0,0" />
         <TextBox Name="EndLocation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="16,103,0,0" />
 
-        <Button Content="Find Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="226,53,0,0" Click="FindPathButton_Click" />
+        <Button Content="Find Path" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="226,53,0,0" Click="FindPathButton_Click" />
         <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="226,93,0,0" Click="RefreshButton_Click" />
 
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,180,10,10">
             <Canvas Name="MapPanel" Background="LightGray" Width="2000" Height="2000"/>
         </ScrollViewer>
-        <Button x:Name="Back" Click="BackClick" Content="Go Back" HorizontalAlignment="Left" Margin="712,30,0,150" VerticalAlignment="Top" RenderTransformOrigin="-0.41,-0.016" Height="21" Width="61"/>
+        <Button x:Name="Back" Click="BackClick" Content="Go Back" HorizontalAlignment="Left" Margin="712,30,0,150" VerticalAlignment="Top"  Height="21" Width="61"/>
     </Grid>
 </Window>

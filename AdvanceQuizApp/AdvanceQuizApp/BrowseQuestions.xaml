@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
-        Title="BrowseQuestions" Height="650" Width="1000">
+        Title="BrowseQuestions" Height="650" Width="1000"
+        KeyDown = "WindowKeyDown">
     <Window.Resources>
         <Style x:Key="SidebarButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#34495E"/>
