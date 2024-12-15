@@ -65,9 +65,9 @@
             <Button Content="Browse Questions" 
                 Style="{StaticResource SidebarButtonStyle}" 
                 Click="Button_BrowseQuestions_Click"/>
-            <Button Content="Manage Quizzes" 
+            <Button Content="My Quizes" 
                 Style="{StaticResource SidebarButtonStyle}" 
-                Click="Button_ManageQuizzes_Click"/>
+                Click="Button_SavedQuestions_Click"/>       
             <Button Content="Favourite Questions" 
                 Style="{StaticResource SidebarButtonStyle}" 
                 Click="Button_FavouriteQuestions_Click"/>
@@ -77,6 +77,9 @@
             <Button Content="About" 
                 Style="{StaticResource SidebarButtonStyle}" 
                 Click="Button_About_Click"/>
+            <Button Content="Go Home" 
+                Style="{StaticResource SidebarButtonStyle}" 
+                Click="Button_Back_Click"/>
             <Button Content="Logout" 
                 Style="{StaticResource SidebarButtonStyle}" 
                 Click="Button_Logout_Click"/>

@@ -1,88 +1,114 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace AdvanceQuizApp.ADT
+﻿public class TopicBST
 {
-    public class TopicBST
+    private class Node
     {
-        private class Node
-        {
-            public string Topic;
-            public Node Left, Right;
+        public string Topic;
+        public Node Left, Right;
 
-            public Node(string topic)
+        public Node(string topic)
+        {
+            Topic = topic;
+            Left = Right = null;
+        }
+    }
+
+    private Node root;
+
+    public TopicBST()
+    {
+        root = null;
+    }
+
+    // Insert a topic into the BST
+    public void Insert(string topic)
+    {
+        root = InsertRec(root, topic);
+    }
+
+    private Node InsertRec(Node node, string topic)
+    {
+        if (node == null)
+            return new Node(topic);
+
+        if (string.Compare(topic, node.Topic, StringComparison.OrdinalIgnoreCase) < 0)
+            node.Left = InsertRec(node.Left, topic);
+        else if (string.Compare(topic, node.Topic, StringComparison.OrdinalIgnoreCase) > 0)
+            node.Right = InsertRec(node.Right, topic);
+
+        return node;
+    }
+
+    // Search for an exact topic in the BST
+    public bool Search(string topic)
+    {
+        return SearchRec(root, topic);
+    }
+
+    private bool SearchRec(Node node, string topic)
+    {
+        if (node == null)
+            return false;
+
+        if (string.Equals(node.Topic, topic, StringComparison.OrdinalIgnoreCase))
+            return true;
+
+        if (string.Compare(topic, node.Topic, StringComparison.OrdinalIgnoreCase) < 0)
+            return SearchRec(node.Left, topic);
+
+        return SearchRec(node.Right, topic);
+    }
+
+    // Find closest match for a topic (case-insensitive)
+    public List<string> FindClosestMatches(string query)
+    {
+        List<string> allTopics = GetSortedTopics();
+        List<string> matches = new List<string>();
+
+        string lowerQuery = query.ToLower();
+
+        // Add topics that contain the query string
+        matches.AddRange(allTopics.Where(topic => topic.ToLower().Contains(lowerQuery)));
+
+        // If no matches found, find lexicographically close topics
+        if (matches.Count == 0)
+        {
+            foreach (var topic in allTopics)
             {
-                Topic = topic;
-                Left = Right = null;
+                if (string.Compare(topic.ToLower(), lowerQuery) > 0)
+                {
+                    matches.Add(topic);
+                    break;
+                }
+            }
+
+            for (int i = allTopics.Count - 1; i >= 0; i--)
+            {
+                if (string.Compare(allTopics[i].ToLower(), lowerQuery) < 0)
+                {
+                    matches.Insert(0, allTopics[i]);
+                    break;
+                }
             }
         }
 
-        private Node root;
+        return matches;
+    }
 
-        public TopicBST()
-        {
-            root = null;
-        }
+    // In-order traversal to get sorted topics
+    public List<string> GetSortedTopics()
+    {
+        List<string> topics = new List<string>();
+        InOrderRec(root, topics);
+        return topics;
+    }
 
-        // Insert a topic into the BST
-        public void Insert(string topic)
-        {
-            root = InsertRec(root, topic);
-        }
+    private void InOrderRec(Node node, List<string> topics)
+    {
+        if (node == null)
+            return;
 
-        private Node InsertRec(Node node, string topic)
-        {
-            if (node == null)
-                return new Node(topic);
-
-            if (string.Compare(topic, node.Topic) < 0)
-                node.Left = InsertRec(node.Left, topic);
-            else if (string.Compare(topic, node.Topic) > 0)
-                node.Right = InsertRec(node.Right, topic);
-
-            return node;
-        }
-
-        // Search for a topic in the BST
-        public bool Search(string topic)
-        {
-            return SearchRec(root, topic);
-        }
-
-        private bool SearchRec(Node node, string topic)
-        {
-            if (node == null)
-                return false;
-
-            if (node.Topic == topic)
-                return true;
-
-            if (string.Compare(topic, node.Topic) < 0)
-                return SearchRec(node.Left, topic);
-
-            return SearchRec(node.Right, topic);
-        }
-
-        // In-order traversal to get sorted topics
-        public List<string> GetSortedTopics()
-        {
-            List<string> topics = new List<string>();
-            InOrderRec(root, topics);
-            return topics;
-        }
-
-        private void InOrderRec(Node node, List<string> topics)
-        {
-            if (node == null)
-                return;
-
-            InOrderRec(node.Left, topics);
-            topics.Add(node.Topic);
-            InOrderRec(node.Right, topics);
-        }
+        InOrderRec(node.Left, topics);
+        topics.Add(node.Topic);
+        InOrderRec(node.Right, topics);
     }
 }
