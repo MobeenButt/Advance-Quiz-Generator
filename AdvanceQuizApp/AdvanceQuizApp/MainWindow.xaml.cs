@@ -53,7 +53,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            Login loginPanel = new Login();
+            Logins loginPanel = new Logins();
             loginPanel.Show();
         }
         

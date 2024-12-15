@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="About" Height="450" Width="800">
     <Grid>
+        <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Margin="10,10,0,0" Width="75" Click="BackButton_Click" Background="#4CAF50" Foreground="White" BorderBrush="Green"/>
+
         <!-- Title of the About Section -->
         <TextBlock FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
             About the Application
