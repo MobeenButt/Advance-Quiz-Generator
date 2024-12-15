@@ -2,7 +2,6 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using AdvanceQuizApp;
 using Newtonsoft.Json;
 namespace AdvanceQuizApp.Admin_Pages
 {
@@ -42,7 +41,7 @@ namespace AdvanceQuizApp.Admin_Pages
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Question newquestion = new Question
-                {
+            {
                 id = questions.Count + 1,
                 text = QuestionTextBox.Text,
 
@@ -52,15 +51,14 @@ namespace AdvanceQuizApp.Admin_Pages
                 Option3TextBox.Text,
                 Option4TextBox.Text
                 },
-                
+
                 correctAnswer = CorrectAnswerTextBox.Text,
                 topic = TopicTextBox.Text,
                 difficulty = (DifficultyComboBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
                 favourite = 0
 
-                };
+            };
             questions.Add(newquestion);
-            //QuestionsListView.Items.Refresh();
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
@@ -95,7 +93,7 @@ namespace AdvanceQuizApp.Admin_Pages
             questions.Clear();
         }
 
-   
+
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -132,10 +130,7 @@ namespace AdvanceQuizApp.Admin_Pages
                 favourite = 0
             };
 
-            // Add the new question to the list and update UI
             questions.Add(newQuestion);
-            //QuestionsListView.Items.Refresh();
-
             // Clear the input fields
             QuestionTextBox.Clear();
             Option1TextBox.Clear();
@@ -146,7 +141,7 @@ namespace AdvanceQuizApp.Admin_Pages
             TopicTextBox.Clear();
             DifficultyComboBox.SelectedIndex = -1;
 
-            }
+        }
 
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -156,9 +151,9 @@ namespace AdvanceQuizApp.Admin_Pages
             admin.Show();
         }
 
-        private void DifficultyTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-            {
+        private void DifficultyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
-            }
         }
+    }
 }
