@@ -46,7 +46,7 @@
 
         <!-- Header with Dark Blue Background -->
         <DockPanel Background="#2C3E50" Height="80">
-            <TextBlock x:Name="HeaderText" Text="Quiz App - Login" VerticalAlignment="Center" HorizontalAlignment="Center" 
+            <TextBlock x:Name="HeaderText" Text="Welcome to Quiz and Preparation - App" VerticalAlignment="Center" HorizontalAlignment="Center" 
                        Foreground="White" FontSize="24" FontWeight="Bold" Margin="10">
                 <TextBlock.Triggers>
                     <EventTrigger RoutedEvent="TextBlock.Loaded">
