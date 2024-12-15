@@ -30,7 +30,9 @@ namespace AdvanceQuizApp
 
         private void Button_About_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Navigating to About page...");
+            this.Hide();
+            About about = new About();
+            about.Show();
         }
         private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
         {
@@ -51,7 +53,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            Login loginPanel = new Login();
+            Logins loginPanel = new Logins();
             loginPanel.Show();
         }
         
