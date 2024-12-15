@@ -5,14 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
 
 namespace AdvanceQuizApp.Admin_Pages
 {
     public partial class Report : Window
     {
-        private string filepath = "avltree.json"; // Path to user data JSON file
+        private string filepath = "avltree.json";
         private Dictionary<string, List<QuizData>> data;
 
         public Report()
@@ -20,6 +18,7 @@ namespace AdvanceQuizApp.Admin_Pages
             InitializeComponent();
             LoadUsersFromJson();
         }
+
         private void LoadUsersFromJson()
         {
             try
@@ -27,12 +26,22 @@ namespace AdvanceQuizApp.Admin_Pages
                 if (File.Exists(filepath))
                 {
                     string jsonContent = File.ReadAllText(filepath);
-                    data = JsonSerializer.Deserialize<Dictionary<string, List<QuizData>>>(jsonContent) ?? new Dictionary<string, List<QuizData>>();
+                    var rootNode = JsonSerializer.Deserialize<TreeNode>(jsonContent);
 
-                    UserComboBox.Items.Clear();
-                    foreach (var user in data.Keys)
+                    if (rootNode != null)
                     {
-                        UserComboBox.Items.Add(user);
+                        data = new Dictionary<string, List<QuizData>>();
+                        TraverseTree(rootNode);
+
+                        UserComboBox.Items.Clear();
+                        foreach (var user in data.Keys)
+                        {
+                            UserComboBox.Items.Add(user);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No data found in the file.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
                 else
@@ -45,6 +54,32 @@ namespace AdvanceQuizApp.Admin_Pages
                 MessageBox.Show($"Error loading user data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void TraverseTree(TreeNode node)
+        {
+            if (node == null) return;
+
+            // Process the current node
+            if (!string.IsNullOrEmpty(node.Key) && node.Data != null)
+            {
+                data[node.Key] = node.Data;
+            }
+
+            // Recursively traverse the left and right nodes
+            TraverseTree(node.Left);
+            TraverseTree(node.Right);
+        }
+
+        // Define a class for the AVL Tree nodes
+        public class TreeNode
+        {
+            public string Key { get; set; }
+            public List<QuizData> Data { get; set; }
+            public int Height { get; set; }
+            public TreeNode Left { get; set; }
+            public TreeNode Right { get; set; }
+        }
+
         private void GenerateReport_Click(object sender, RoutedEventArgs e)
         {
             if (UserComboBox.SelectedItem == null)
@@ -56,6 +91,7 @@ namespace AdvanceQuizApp.Admin_Pages
             string selectedUser = UserComboBox.SelectedItem.ToString();
             GenerateUserReport(selectedUser);
         }
+
         private void GenerateUserReport(string userName)
         {
             if (data.ContainsKey(userName))
@@ -66,14 +102,16 @@ namespace AdvanceQuizApp.Admin_Pages
 
                 foreach (var quiz in quizzes)
                 {
-                    var questions = quiz.Questions;
-                    totalQuestions += questions.Count(q => q.attempted == 1); // Count attempted questions
-                    correctAnswers += questions.Count(q => q.rightOrWrong == 1); // Count correct answers
+                    totalQuestions += quiz.Questions.Count(q => q.Attempted == 1);
+                    correctAnswers += quiz.Questions.Count(q => q.RightOrWrong == 1);
                 }
+
                 int score = totalQuestions > 0 ? (int)((double)correctAnswers / totalQuestions * 100) : 0;
+
                 lblTotalQuestionsValue.Text = totalQuestions.ToString();
                 lblCorrectAnswersValue.Text = correctAnswers.ToString();
                 lblScoreValue.Text = $"{score}%";
+
                 GenerateChart(totalQuestions, correctAnswers);
             }
             else
@@ -81,6 +119,7 @@ namespace AdvanceQuizApp.Admin_Pages
                 MessageBox.Show($"No data found for user: {userName}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
         private void GenerateChart(int totalQuestions, int correctAnswers)
         {
             var plotModel = new PlotModel { Title = "Quiz Report" };
@@ -102,21 +141,7 @@ namespace AdvanceQuizApp.Admin_Pages
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            AdminPanel admin = new AdminPanel();
-            admin.Show();
-        }
-
-        
-
-        private void WindowKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Escape)
-            {
-                Window m = new MainWindow();
-                m.Show();
-                m.WindowState = WindowState.Maximized;
-                this.Close();
-            }
+            new AdminPanel().Show();
         }
     }
 
@@ -125,4 +150,5 @@ namespace AdvanceQuizApp.Admin_Pages
         public string QuizId { get; set; }
         public List<QuestionData> Questions { get; set; }
     }
+
 }

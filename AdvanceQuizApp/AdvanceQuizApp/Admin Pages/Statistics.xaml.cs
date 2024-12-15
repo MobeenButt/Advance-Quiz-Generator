@@ -1,39 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Windows;
-using System.Windows.Input;
 
 namespace AdvanceQuizApp.Admin_Pages
 {
     public partial class Statistics : Window
     {
-        private readonly string _userDataFilePath = "avltree.json"; // Path to user data JSON file
+        private readonly string _filePath = "avltree.json";
 
         public Statistics()
         {
             InitializeComponent();
             LoadStatistics();
         }
+
         private void BtnRefreshStats_Click(object sender, RoutedEventArgs e)
         {
             LoadStatistics();
         }
+
         private void LoadStatistics()
         {
             try
             {
-                var users = LoadUsersFromJson();
+                var users = ExtractUserDataFromTree();
+
                 int totalQuestions = 0;
                 int correctAnswers = 0;
 
-                foreach (var quiz in users.Values.SelectMany(userQuizzes => userQuizzes))
+                foreach (var quizzes in users.Values)
                 {
-                    totalQuestions += quiz.Questions.Count(q => q.attempted == 1); 
-                    correctAnswers += quiz.Questions.Count(q => q.rightOrWrong == 1); 
+                    foreach (var quiz in quizzes)
+                    {
+                        totalQuestions += quiz.Questions.Count(q => q.Attempted == 1);
+                        correctAnswers += quiz.Questions.Count(q => q.RightOrWrong == 1);
+                    }
                 }
+
                 int totalScore = totalQuestions > 0 ? (int)((double)correctAnswers / totalQuestions * 100) : 0;
 
                 lblTotalQuestionsValue.Text = totalQuestions.ToString();
@@ -45,60 +49,80 @@ namespace AdvanceQuizApp.Admin_Pages
                 MessageBox.Show($"Error loading statistics: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-        private Dictionary<string, List<QuizData>> LoadUsersFromJson()
+
+        private Dictionary<string, List<QuizData>> ExtractUserDataFromTree()
         {
+            if (!File.Exists(_filePath))
+            {
+                MessageBox.Show("User data file not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return new Dictionary<string, List<QuizData>>();
+            }
+
             try
             {
-                if (File.Exists(_userDataFilePath))
-                {
-                    string jsonContent = File.ReadAllText(_userDataFilePath);
-                    return JsonSerializer.Deserialize<Dictionary<string, List<QuizData>>>(jsonContent) ?? new Dictionary<string, List<QuizData>>();
-                }
-                else
-                {
-                    MessageBox.Show("User data file not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return new Dictionary<string, List<QuizData>>();
-                }
+                string jsonContent = File.ReadAllText(_filePath);
+                var treeNode = JsonSerializer.Deserialize<AvlTreeNode>(jsonContent);
+
+                var users = new Dictionary<string, List<QuizData>>();
+                TraverseTree(treeNode, users);
+                return users;
             }
             catch (JsonException ex)
             {
                 MessageBox.Show($"Error parsing JSON data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return new Dictionary<string, List<QuizData>>();
             }
-            catch (Exception ex)
+        }
+
+        private void TraverseTree(AvlTreeNode node, Dictionary<string, List<QuizData>> users)
+        {
+            if (node == null) return;
+
+            if (node.Key != null && node.Data != null)
             {
-                MessageBox.Show($"Error loading user data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return new Dictionary<string, List<QuizData>>();
+                users[node.Key] = node.Data;
             }
+
+            TraverseTree(node.Left, users);
+            TraverseTree(node.Right, users);
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-            AdminPanel admin = new AdminPanel();
-            admin.Show();
-
+            Hide();
+            new AdminPanel().Show();
         }
+    }
 
-        
+    public class AvlTreeNode
+    {
+        [JsonPropertyName("Key")]
+        public string Key { get; set; }
 
-        private void WindowKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Escape)
-            {
-                Window m = new MainWindow();
-                m.Show();
-                m.WindowState = WindowState.Maximized;
-                this.Close();
-            }
-        }
+        [JsonPropertyName("Data")]
+        public List<QuizData> Data { get; set; }
+
+        [JsonPropertyName("Height")]
+        public int Height { get; set; }
+
+        [JsonPropertyName("Left")]
+        public AvlTreeNode Left { get; set; }
+
+        [JsonPropertyName("Right")]
+        public AvlTreeNode Right { get; set; }
     }
     public class QuestionData
     {
-        public int id { get; set; }
-        public int attempted { get; set; } 
-        public string selectedOption { get; set; }
-        public int rightOrWrong { get; set; }
-    }
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
 
+        [JsonPropertyName("attempted")]
+        public int Attempted { get; set; } 
+
+        [JsonPropertyName("selectedOption")]
+        public string SelectedOption { get; set; }
+
+        [JsonPropertyName("rightOrWrong")]
+        public int RightOrWrong { get; set; } 
+    }
 }

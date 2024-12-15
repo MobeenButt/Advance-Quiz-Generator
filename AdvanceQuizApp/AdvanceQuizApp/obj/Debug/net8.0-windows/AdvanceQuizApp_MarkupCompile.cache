@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 E:\BG\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
+=======
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\obj\Debug\net8.0-windows\
+>>>>>>> Stashed changes
 AdvanceQuizApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< Updated upstream
 E:\BG\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+=======
+D:\Advance-Quiz-Generator\AdvanceQuizApp\AdvanceQuizApp\App.xaml
+>>>>>>> Stashed changes
 17-1372173413
 
 301328939419

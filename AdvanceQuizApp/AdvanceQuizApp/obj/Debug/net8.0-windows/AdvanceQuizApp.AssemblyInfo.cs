@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvanceQuizApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dd9b5c5891cdda83362be126c9d02dc813d31ae")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a61d46949a6c39e2af10c85de88833602c798e3")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("AdvanceQuizApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvanceQuizApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
