@@ -11,7 +11,7 @@
             Left = Right = null;
         }
     }
-
+    //node
     private Node root;
 
     public TopicBST()
