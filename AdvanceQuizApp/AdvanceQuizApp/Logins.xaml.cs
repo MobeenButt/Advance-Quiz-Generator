@@ -28,7 +28,6 @@ namespace AdvanceQuizApp
             if (name == "admin")
             {
                 priority = 1;
-
             }
             else
             {

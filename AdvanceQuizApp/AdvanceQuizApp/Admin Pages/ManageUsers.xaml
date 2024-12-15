@@ -33,9 +33,9 @@
                 <Button Content="Delete User" Width="150" Height="40" Background="#E74C3C" Foreground="White" Click="DeleteUser_Click"/>
                 <Button Content="Refresh" Width="150" Height="40" Background="#2ECC71" Foreground="White" Click="RefreshButton_Click"/>
             </StackPanel>
+            <TextBlock Text="New Password" Width="200" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox x:Name="NewPasswordTextBox" Width="200" Height="30" HorizontalAlignment="Left"/>
 
-            <!-- TextBox for New Password -->
-            <TextBox x:Name="NewPasswordTextBox" Width="200" Height="30"/>
         </StackPanel>
     </Grid>
 </Window>
