@@ -29,5 +29,6 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,180,10,10">
             <Canvas Name="MapPanel" Background="LightGray" Width="2000" Height="2000"/>
         </ScrollViewer>
+        <Button x:Name="Back" Click="BackClick" Content="Go Back" HorizontalAlignment="Left" Margin="712,30,0,150" VerticalAlignment="Top" RenderTransformOrigin="-0.41,-0.016" Height="21" Width="61"/>
     </Grid>
 </Window>

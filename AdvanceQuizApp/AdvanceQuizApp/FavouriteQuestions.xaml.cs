@@ -44,6 +44,7 @@ namespace AdvanceQuizApp
             }
 
             QuestionList.ItemsSource = favouriteQuestions.Select(q => q.text).ToList();
+            
         }
 
         
@@ -54,6 +55,7 @@ namespace AdvanceQuizApp
             {
                 selectedQuestion = favouriteQuestions[QuestionList.SelectedIndex];
                 DisplayQuestionDetails(selectedQuestion);
+                
                 QuestionDetailsPanel.Visibility = Visibility.Visible;
                 QuestionTopic.Text = $"Question Topic: {selectedQuestion.topic}";
                 QuestionTopic.Visibility = Visibility.Visible;

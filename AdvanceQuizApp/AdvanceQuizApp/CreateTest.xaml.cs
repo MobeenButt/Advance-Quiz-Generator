@@ -127,6 +127,10 @@ namespace AdvanceQuizApp
             QuestionNumberTextBlock.Text = $"Question {currentQuestionNumber} of {questions.Count}";
 
             OptionsStackPanel.Children.Clear();
+
+            
+
+
             for (int i = 0; i < question.options.Count; i++)
             {
                 var optionText = question.options[i];
@@ -142,6 +146,7 @@ namespace AdvanceQuizApp
                 if (question.attempted && question.selectedOption == optionText)
                 {
                     radioButton.IsChecked = true;
+                    
                 }
 
                 int optionIndex = i; // Capture the index for the lambda
@@ -149,6 +154,15 @@ namespace AdvanceQuizApp
                 {
                     question.selectedOption = optionText;
                     question.attempted = true;
+
+                    foreach (var child in OptionsStackPanel.Children)
+                    {
+                        if (child is RadioButton rb)
+                        {
+                            rb.IsEnabled = false;
+                        }
+                    }
+
                 };
 
                 OptionsStackPanel.Children.Add(radioButton);
@@ -160,6 +174,7 @@ namespace AdvanceQuizApp
             // If the question was attempted, show the correct answer
             if (question.attempted)
             {
+
                 var correctAnswer = question.correctAnswer.Trim();
                 if (question.selectedOption == correctAnswer)
                 {
