@@ -24,7 +24,7 @@
         "140"
       ],
       "correctAnswer": "120",
-      "topic": "Basic Concept of Chemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -38,7 +38,7 @@
         "Galvanometer"
       ],
       "correctAnswer": "Ion collector",
-      "topic": "Basic Concepts of Chemitry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -52,7 +52,7 @@
         "MgCl2"
       ],
       "correctAnswer": "Mg(ClO4)2",
-      "topic": "Basic Concepts of C=hemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Hard",
       "favourite": 0
     },
@@ -66,7 +66,7 @@
         "Number of protons"
       ],
       "correctAnswer": "Relative abundance",
-      "topic": "Basic Concepts of C--hemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -80,7 +80,7 @@
         "112 dm3"
       ],
       "correctAnswer": "1.12 dm3",
-      "topic": "Basic Concepts oasf Chemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -94,7 +94,7 @@
         "106"
       ],
       "correctAnswer": "100",
-      "topic": "Basic Concepts of asdaChemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -108,7 +108,7 @@
         "9.8%"
       ],
       "correctAnswer": "88.89%",
-      "topic": "Basic Concepts of Cheasmistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -122,7 +122,7 @@
         "Gives minimum amount of product"
       ],
       "correctAnswer": "Gives minimum amount of product",
-      "topic": "Basic Concepts ofasa Chemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Moderate",
       "favourite": 0
     },
@@ -136,7 +136,7 @@
         "5"
       ],
       "correctAnswer": "9",
-      "topic": "Basic Concepts of saChemistry",
+      "topic": "Basic Concepts of Chemistry",
       "difficulty": "Hard",
       "favourite": 0
     },
@@ -164,7 +164,7 @@
         "Silica gel"
       ],
       "correctAnswer": "Animal charcoal",
-      "topic": "Experimental Techniques asin Chemistry",
+      "topic": "Experimental Techniques in Chemistry",
       "difficulty": "Easy",
       "favourite": 0
     },
@@ -572,7 +572,7 @@
       "correctAnswer": "NH4Cl",
       "topic": "Chemical Bonding",
       "difficulty": "Moderate",
-      "favourite": 1
+      "favourite": 0
     },
     {
       "id": 42,
@@ -852,7 +852,7 @@
       "correctAnswer": "7",
       "topic": "Acids, Bases, and pH",
       "difficulty": "Easy",
-      "favourite": 1
+      "favourite": 0
     },
     {
       "id": 62,
@@ -1525,6 +1525,24 @@
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
       "favourite": 0
+    },
+    {
+      "id": 110,
+      "text": "Which of the following reactions is a first-order reaction?",
+      "options": [
+        "Decomposition of N₂O₅",
+        "Formation of ammonia",
+        "Combustion of methane",
+        "Neutralization of acid and base"
+      ],
+      "correctAnswer": "Decomposition of N₂O₅",
+      "topic": "Chemical Kinetics",
+      "difficulty": "Moderate",
+      "favourite": 0
     }
+
+
+        
+    
   ]
 }
