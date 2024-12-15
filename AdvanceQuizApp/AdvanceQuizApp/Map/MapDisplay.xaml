@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MapDisplay" Height="450" Width="800">
     <Grid>
+        <!-- Back Button -->
+        
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="660,11,0,0" Click="BackButton_Click" RenderTransformOrigin="5.83,3.519" />
         <!-- Pathfinding Algorithm Dropdown -->
         <TextBlock Text="Algorithm" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,15,0,0" />

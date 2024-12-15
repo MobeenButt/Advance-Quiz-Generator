@@ -115,7 +115,6 @@ namespace AdvanceQuizApp.Map
                 MapPanel.Children.Add(edgeLine);
                 AnimateLineDrawing(edgeLine);
 
-                // Display distance on the edge
                 var distanceText = new TextBlock
                 {
                     Text = $"{graph.GetEdgeWeight(currentNode, nextNode)}",
