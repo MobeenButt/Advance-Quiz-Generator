@@ -19,7 +19,6 @@
         root = null;
     }
 
-    // Insert a topic into the BST
     public void Insert(string topic)
     {
         root = InsertRec(root, topic);
@@ -38,7 +37,6 @@
         return node;
     }
 
-    // Search for an exact topic in the BST
     public bool Search(string topic)
     {
         return SearchRec(root, topic);
@@ -58,7 +56,6 @@
         return SearchRec(node.Right, topic);
     }
 
-    // Find closest match for a topic (case-insensitive)
     public List<string> FindClosestMatches(string query)
     {
         List<string> allTopics = GetSortedTopics();
@@ -66,10 +63,10 @@
 
         string lowerQuery = query.ToLower();
 
-        // Add topics that contain the query string
+        
         matches.AddRange(allTopics.Where(topic => topic.ToLower().Contains(lowerQuery)));
 
-        // If no matches found, find lexicographically close topics
+        //sb se karerb kareeb waly topics find kary ga jo characters hoy topic me
         if (matches.Count == 0)
         {
             foreach (var topic in allTopics)
@@ -93,9 +90,7 @@
 
         return matches;
     }
-
-    // In-order traversal to get sorted topics
-    public List<string> GetSortedTopics()
+    public List<string> GetSortedTopics()  //inoder kiya hai
     {
         List<string> topics = new List<string>();
         InOrderRec(root, topics);
