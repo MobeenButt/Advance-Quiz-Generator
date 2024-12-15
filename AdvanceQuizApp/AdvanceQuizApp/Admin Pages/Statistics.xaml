@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:AdvanceQuizApp.Admin_Pages"
         mc:Ignorable="d"
         Title="Statistics" Height="450" Width="800"
-        KeyDown="WindowKeyDown" 
         WindowState="Maximized">
     <Grid Margin="10" Background="#F0F8FF">
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0">
