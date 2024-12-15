@@ -20,29 +20,21 @@ namespace AdvanceQuizApp.Admin_Pages
         {
             LoadStatistics();
         }
-
-        // Method to load statistics from the JSON file
         private void LoadStatistics()
         {
             try
             {
-                // Load user data from JSON file
                 var users = LoadUsersFromJson();
-
                 int totalQuestions = 0;
                 int correctAnswers = 0;
 
-                // Using LINQ to calculate total questions and correct answers
                 foreach (var quiz in users.Values.SelectMany(userQuizzes => userQuizzes))
                 {
-                    totalQuestions += quiz.Questions.Count(q => q.attempted == 1); // Count attempted questions
-                    correctAnswers += quiz.Questions.Count(q => q.rightOrWrong == 1); // Count correct answers
+                    totalQuestions += quiz.Questions.Count(q => q.attempted == 1); 
+                    correctAnswers += quiz.Questions.Count(q => q.rightOrWrong == 1); 
                 }
-
-                // Calculate the score
                 int totalScore = totalQuestions > 0 ? (int)((double)correctAnswers / totalQuestions * 100) : 0;
 
-                // Update UI with statistics
                 lblTotalQuestionsValue.Text = totalQuestions.ToString();
                 lblCorrectAnswersValue.Text = correctAnswers.ToString();
                 lblScoreValue.Text = $"{totalScore}%";
@@ -52,8 +44,6 @@ namespace AdvanceQuizApp.Admin_Pages
                 MessageBox.Show($"Error loading statistics: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-        // Method to load user data from JSON file
         private Dictionary<string, List<QuizData>> LoadUsersFromJson()
         {
             try
@@ -89,14 +79,12 @@ namespace AdvanceQuizApp.Admin_Pages
 
         }
     }
-
-    // Represents a question data object
     public class QuestionData
     {
         public int id { get; set; }
-        public int attempted { get; set; } // 1 if attempted, 0 if not attempted
+        public int attempted { get; set; } 
         public string selectedOption { get; set; }
-        public int rightOrWrong { get; set; } // 1 if correct, 0 if wrong
+        public int rightOrWrong { get; set; }
     }
 
 }
