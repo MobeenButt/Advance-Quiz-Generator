@@ -1,136 +1,230 @@
-﻿namespace AdvanceQuizApp
-{
-    public class AVLTree<T> where T : IComparable<T>
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json;
+using System.IO;
+
+public class AVLTree<T> where T : IComparable<T>
     {
-        public class Node
+    public class Node
         {
-            public T Key
-            { 
-                get; 
-                set; 
-            }
-            public List<object> Data  // Store quizzes or user data
-            { 
-                get; 
-                set; 
-            }
-            public int Height
-            {
-                get;
-                set;
-            }
-            public Node Left
-            {
-                get;
-                set;
-            }
-            public Node Right
-            {
-                get;
-                set;
-            }
+        public T Key { get; set; }
+        public List<object> Data { get; set; } = new List<object>();
+        public int Height { get; set; }
+        public Node Left { get; set; }
+        public Node Right { get; set; }
 
-            public Node(T key, object data)
+        public Node(T key)
             {
-                Key = key;
-                Data = new List<object> { data };
-                Height = 1;
+            Key = key;
             }
         }
 
-        public Node Root { get; private set; }
+    public Node Root { get; private set; }
 
-        private int Height(Node node) => node?.Height ?? 0;
-
-        private int BalanceFactor(Node node) => Height(node.Left) - Height(node.Right);
-
-        private Node RotateRight(Node y)
+    // Insert function with modifications
+    public void Insert(T key, object data)
         {
-            Node x = y.Left;
-            Node T2 = x.Right;
-
-            x.Right = y;
-            y.Left = T2;
-
-            y.Height = Math.Max(Height(y.Left), Height(y.Right)) + 1;
-            x.Height = Math.Max(Height(x.Left), Height(x.Right)) + 1;
-
-            return x;
+        Root = Insert(Root, key, data);
         }
 
-        private Node RotateLeft(Node x)
+    private Node Insert(Node node, T key, object data)
         {
-            Node y = x.Right;
-            Node T2 = y.Left;
+        if (node == null)
+            return new Node(key) { Data = { data } };
 
-            y.Left = x;
-            x.Right = T2;
+        int compare = key.CompareTo(node.Key);
 
-            x.Height = Math.Max(Height(x.Left), Height(x.Right)) + 1;
-            y.Height = Math.Max(Height(y.Left), Height(y.Right)) + 1;
+        if (compare < 0)
+            node.Left = Insert(node.Left, key, data);
+        else if (compare > 0)
+            node.Right = Insert(node.Right, key, data);
+        else
+            node.Data.Add(data); // Add data to the same key
 
-            return y;
+        node.Height = 1 + Math.Max(GetHeight(node.Left), GetHeight(node.Right));
+        return Balance(node);
         }
 
-        public void Insert(T key, object data)
+    // Find function
+    public Node Find(T key)
         {
-            Root = Insert(Root, key, data);
+        return Find(Root, key);
         }
 
-        private Node Insert(Node node, T key, object data)
+    private Node Find(Node node, T key)
         {
-            if (node == null)
-                return new Node(key, data);
+        if (node == null) return null;
 
-            int compare = key.CompareTo(node.Key);
-
-            if (compare < 0)
-                node.Left = Insert(node.Left, key, data);
-            else if (compare > 0)
-                node.Right = Insert(node.Right, key, data);
-            else
-                node.Data.Add(data); // Add data for the same key
-
-            node.Height = 1 + Math.Max(Height(node.Left), Height(node.Right));
-
-            int balance = BalanceFactor(node);
-
-            // Left-Left Case
-            if (balance > 1 && key.CompareTo(node.Left.Key) < 0)
-                return RotateRight(node);
-
-            // Right-Right Case
-            if (balance < -1 && key.CompareTo(node.Right.Key) > 0)
-                return RotateLeft(node);
-
-            // Left-Right Case
-            if (balance > 1 && key.CompareTo(node.Left.Key) > 0)
-            {
-                node.Left = RotateLeft(node.Left);
-                return RotateRight(node);
-            }
-
-            // Right-Left Case
-            if (balance < -1 && key.CompareTo(node.Right.Key) < 0)
-            {
-                node.Right = RotateRight(node.Right);
-                return RotateLeft(node);
-            }
-
+        int compare = key.CompareTo(node.Key);
+        if (compare < 0)
+            return Find(node.Left, key);
+        else if (compare > 0)
+            return Find(node.Right, key);
+        else
             return node;
         }
 
-        public void Traverse(Action<Node> action)
+    // Balancing functions
+    private Node Balance(Node node)
         {
-            void InOrder(Node node)
+        int balance = GetBalance(node);
+
+        if (balance > 1)
             {
-                if (node == null) return;
-                InOrder(node.Left);
-                action(node);
-                InOrder(node.Right);
+            if (GetBalance(node.Left) < 0)
+                node.Left = RotateLeft(node.Left);
+            return RotateRight(node);
             }
 
-            InOrder(Root);
+        if (balance < -1)
+            {
+            if (GetBalance(node.Right) > 0)
+                node.Right = RotateRight(node.Right);
+            return RotateLeft(node);
+            }
+
+        return node;
+        }
+
+    private Node RotateLeft(Node node)
+        {
+        Node newRoot = node.Right;
+        node.Right = newRoot.Left;
+        newRoot.Left = node;
+
+        UpdateHeight(node);
+        UpdateHeight(newRoot);
+
+        return newRoot;
+        }
+
+    private Node RotateRight(Node node)
+        {
+        Node newRoot = node.Left;
+        node.Left = newRoot.Right;
+        newRoot.Right = node;
+
+        UpdateHeight(node);
+        UpdateHeight(newRoot);
+
+        return newRoot;
+        }
+
+    private void UpdateHeight(Node node)
+        {
+        node.Height = 1 + Math.Max(GetHeight(node.Left), GetHeight(node.Right));
+        }
+
+    private int GetHeight(Node node)
+        {
+        return node?.Height ?? 0;
+        }
+
+    private int GetBalance(Node node)
+        {
+        return node == null ? 0 : GetHeight(node.Left) - GetHeight(node.Right);
+        }
+
+    // Traversal functions
+    public List<T> InOrderTraversal()
+        {
+        List<T> result = new List<T>();
+        InOrderTraversal(Root, result);
+        return result;
+        }
+
+    private void InOrderTraversal(Node node, List<T> result)
+        {
+        if (node == null) return;
+        InOrderTraversal(node.Left, result);
+        result.Add(node.Key);
+        InOrderTraversal(node.Right, result);
+        }
+
+    public void Traverse(Action<Node> action)
+        {
+        TraverseInOrder(Root, action);
+        }
+
+    private void TraverseInOrder(Node node, Action<Node> action)
+        {
+        if (node == null) return;
+        TraverseInOrder(node.Left, action);
+        action(node);
+        TraverseInOrder(node.Right, action);
+        }
+
+    // Serialization to JSON file
+    public void SaveToJson(string filePath)
+        {
+        var options = new JsonSerializerOptions
+            {
+            WriteIndented = true
+            };
+
+        string json = JsonSerializer.Serialize(Root, options);
+        File.WriteAllText(filePath, json);
+        }
+
+    // Deserialization from JSON file
+    public void LoadFromJson(string filePath)
+        {
+        if (!File.Exists(filePath))
+            throw new FileNotFoundException("The specified file does not exist.");
+
+        string json = File.ReadAllText(filePath);
+
+        var options = new JsonSerializerOptions
+            {
+            WriteIndented = true
+            };
+
+        Root = JsonSerializer.Deserialize<Node>(json, options);
+        }
+
+    // Utility functions
+    public bool IsEmpty()
+        {
+        return Root == null;
+        }
+
+    public void Clear()
+        {
+        Root = null;
+        }
+
+    public int Size()
+        {
+        return GetSize(Root);
+        }
+
+    private int GetSize(Node node)
+        {
+        if (node == null) return 0;
+        return 1 + GetSize(node.Left) + GetSize(node.Right);
+        }
+
+    public Node GetMinValueNode()
+        {
+        return GetMinValueNode(Root);
+        }
+
+    private Node GetMinValueNode(Node node)
+        {
+        while (node?.Left != null)
+            node = node.Left;
+        return node;
+        }
+
+    public Node GetMaxValueNode()
+        {
+        return GetMaxValueNode(Root);
+        }
+
+    private Node GetMaxValueNode(Node node)
+        {
+        while (node?.Right != null)
+            node = node.Right;
+        return node;
         }
     }
-}
