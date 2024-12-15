@@ -1,109 +1,49 @@
 {
-  "anas": [
-    {
-      "QuizId": "test",
-      "Questions": [
-        {
-          "id": 40,
-          "attempted": 1,
-          "selectedOption": "William Crook",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 62,
-          "attempted": 1,
-          "selectedOption": "Kc",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 39,
-          "attempted": 1,
-          "selectedOption": "6",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 61,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 67,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        }
-      ]
-    },
-    {
-      "QuizId": "kya nam ha ap ka",
-      "Questions": [
-        {
-          "id": 47,
-          "attempted": 1,
-          "selectedOption": "They are very safe",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 67,
-          "attempted": 1,
-          "selectedOption": "1.2",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 101,
-          "attempted": 1,
-          "selectedOption": "Change in concentration per unit time",
-          "rightOrWrong": 1
-        },
-        {
-          "id": 106,
-          "attempted": 1,
-          "selectedOption": "Temperature",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 8,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        }
-      ]
-    },
-    {
-      "QuizId": "phone lagya kis ko ",
-      "Questions": [
-        {
-          "id": 32,
-          "attempted": 1,
-          "selectedOption": "14",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 67,
-          "attempted": 1,
-          "selectedOption": "1.2",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 49,
-          "attempted": 1,
-          "selectedOption": "sp3",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 2,
-          "attempted": 1,
-          "selectedOption": "140",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 8,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        }
-      ]
-    }
-  ]
+  "Key": null,
+  "Data": [],
+  "Height": 1,
+  "Left": null,
+  "Right": {
+    "Key": "anas",
+    "Data": [
+      {
+        "QuizId": "test",
+        "Questions": [
+          {
+            "id": 61,
+            "attempted": 1,
+            "selectedOption": "7",
+            "rightOrWrong": 1
+          },
+          {
+            "id": 115,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          },
+          {
+            "id": 119,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          },
+          {
+            "id": 123,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          },
+          {
+            "id": 69,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          }
+        ]
+      }
+    ],
+    "Height": 0,
+    "Left": null,
+    "Right": null
+  }
 }
