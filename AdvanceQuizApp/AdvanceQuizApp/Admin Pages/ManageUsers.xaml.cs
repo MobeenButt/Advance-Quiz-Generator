@@ -96,5 +96,10 @@ namespace AdvanceQuizApp.Admin_Pages
                 this.Close();
             }
         }
+
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

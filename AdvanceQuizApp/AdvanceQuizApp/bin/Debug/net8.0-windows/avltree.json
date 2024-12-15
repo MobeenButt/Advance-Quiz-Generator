@@ -1,49 +1,37 @@
 {
-  "Key": null,
-  "Data": [],
-  "Height": 1,
+  "Key": "1",
+  "Data": [
+    {
+      "QuizId": "21qwe",
+      "Questions": [
+        {
+          "id": 123,
+          "attempted": 1,
+          "selectedOption": "When the dataset is small",
+          "rightOrWrong": 0
+        },
+        {
+          "id": 125,
+          "attempted": 1,
+          "selectedOption": "Dijkstra\u0027s Algorithm",
+          "rightOrWrong": 0
+        },
+        {
+          "id": 127,
+          "attempted": 0,
+          "selectedOption": null,
+          "rightOrWrong": 0
+        },
+        {
+          "id": 145,
+          "attempted": 0,
+          "selectedOption": null,
+          "rightOrWrong": 0
+        }
+      ]
+    }
+  ],
+  "Height": 0,
   "Left": null,
-  "Right": {
-    "Key": "anas",
-    "Data": [
-      {
-        "QuizId": "test",
-        "Questions": [
-          {
-            "id": 61,
-            "attempted": 1,
-            "selectedOption": "7",
-            "rightOrWrong": 1
-          },
-          {
-            "id": 115,
-            "attempted": 0,
-            "selectedOption": null,
-            "rightOrWrong": 0
-          },
-          {
-            "id": 119,
-            "attempted": 0,
-            "selectedOption": null,
-            "rightOrWrong": 0
-          },
-          {
-            "id": 123,
-            "attempted": 0,
-            "selectedOption": null,
-            "rightOrWrong": 0
-          },
-          {
-            "id": 69,
-            "attempted": 0,
-            "selectedOption": null,
-            "rightOrWrong": 0
-          }
-        ]
-      }
-    ],
-    "Height": 0,
-    "Left": null,
-    "Right": null
-  }
+  "Right": null
 }
