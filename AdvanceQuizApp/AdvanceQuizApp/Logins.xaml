@@ -6,17 +6,19 @@
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
         WindowState="Maximized"
-        Title="Login" Height="450" Width="800">
+        Title="Login" Height="450" Width="800"
+        Background="#F8F9FA"
+        WindowStartupLocation="CenterScreen">
     <Window.Resources>
 
-        <!-- New Button Style -->
+        <!-- Button Style -->
         <Style x:Key="ButtonStyle" TargetType="Button">
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Padding" Value="12,8"/>
             <Setter Property="Margin" Value="10"/>
-            <Setter Property="Background" Value="#1ABC9C"/>
+            <Setter Property="Background" Value="#3498DB"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
@@ -24,30 +26,45 @@
             <Setter Property="Width" Value="200"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="2" Color="#95A5A6"/>
+                </Setter.Value>
+            </Setter>
         </Style>
 
-        <!-- Fade-in Animation for Header Text -->
+        <!-- Header Animation -->
         <Storyboard x:Key="FadeInAnimation">
-            <DoubleAnimation Storyboard.TargetProperty="(TextBlock.Opacity)" From="0" To="1" Duration="0:0:2"/>
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:2"/>
         </Storyboard>
 
-        <!-- Button Hover Animation (Scale Effect) -->
+        <!-- Button Hover Animation -->
         <Storyboard x:Key="ButtonHoverAnimation">
-            <DoubleAnimation Storyboard.TargetProperty="(Button.RenderTransform).(ScaleTransform.ScaleX)" From="1" To="1.1" Duration="0:0:0.2" AutoReverse="True"/>
-            <DoubleAnimation Storyboard.TargetProperty="(Button.RenderTransform).(ScaleTransform.ScaleY)" From="1" To="1.1" Duration="0:0:0.2" AutoReverse="True"/>
+            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" 
+                            To="#1ABC9C" Duration="0:0:0.3" AutoReverse="True"/>
         </Storyboard>
+
+        <!-- Shadow Effect for Border -->
+        <DropShadowEffect x:Key="ShadowEffect" BlurRadius="10" ShadowDepth="2" Color="#BDC3C7"/>
     </Window.Resources>
 
-    <Grid >
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Header with Dark Blue Background -->
-        <DockPanel Background="#2C3E50" Height="80">
-            <TextBlock x:Name="HeaderText" Text="Welcome to Quiz and Preparation - App" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                       Foreground="White" FontSize="24" FontWeight="Bold" Margin="10">
+        <!-- Header Section -->
+        <DockPanel Background="#2C3E50" Height="100">
+            <TextBlock x:Name="HeaderText" 
+                       Text="Welcome to Quiz and Preparation App"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center" 
+                       Foreground="White" 
+                       FontSize="28" 
+                       FontWeight="Bold" 
+                       Margin="10"
+                       Opacity="0">
                 <TextBlock.Triggers>
                     <EventTrigger RoutedEvent="TextBlock.Loaded">
                         <BeginStoryboard Storyboard="{StaticResource FadeInAnimation}"/>
@@ -56,41 +73,42 @@
             </TextBlock>
         </DockPanel>
 
-        <!-- Main Content Area -->
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <!-- Username Field -->
-            <TextBlock Text="Username:" FontSize="14" FontWeight="Bold" Foreground="#2C3E50"/>
-            <TextBox x:Name="UsernameTextBox" Width="300" Margin="0,5,0,15" Padding="10" 
-                     Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" />
+        <!-- Login Form Section -->
+        <Border Grid.Row="1" Margin="50" CornerRadius="10" Background="White" Effect="{StaticResource ShadowEffect}" Padding="20">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="400">
+                <!-- Username -->
+                <TextBlock Text="Username" FontSize="16" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,5"/>
+                <TextBox x:Name="UsernameTextBox" Width="350" Height="40" 
+                         Background="#ECF0F1" BorderBrush="#BDC3C7" 
+                         BorderThickness="1" Margin="0,0,0,20"/>
 
-            <!-- Password Field -->
-            <TextBlock Text="Password:" FontSize="14" FontWeight="Bold" Foreground="#2C3E50"/>
-            <PasswordBox x:Name="PasswordBox" Width="300" Margin="0,5,0,15" Padding="10"
-                         Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" />
+                <!-- Password -->
+                <TextBlock Text="Password" FontSize="16" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,5"/>
+                <PasswordBox x:Name="PasswordBox" Width="350" Height="40" 
+                             Background="#ECF0F1" BorderBrush="#BDC3C7" 
+                             BorderThickness="1" Margin="0,0,0,20"/>
 
-            <!-- Login and Register Buttons -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
-                <Button Content="Login" Style="{StaticResource ButtonStyle}" Click="Login_Click" Width="102">
-                    <Button.RenderTransform>
-                        <ScaleTransform ScaleX="1" ScaleY="1"/>
-                    </Button.RenderTransform>
-                    <Button.Triggers>
-                        <EventTrigger RoutedEvent="Button.MouseEnter">
-                            <BeginStoryboard Storyboard="{StaticResource ButtonHoverAnimation}"/>
-                        </EventTrigger>
-                    </Button.Triggers>
-                </Button>
-                <Button Content="Register" Style="{StaticResource ButtonStyle}" Click="Register_Click" Width="98">
-                    <Button.RenderTransform>
-                        <ScaleTransform ScaleX="1" ScaleY="1"/>
-                    </Button.RenderTransform>
-                    <Button.Triggers>
-                        <EventTrigger RoutedEvent="Button.MouseEnter">
-                            <BeginStoryboard Storyboard="{StaticResource ButtonHoverAnimation}"/>
-                        </EventTrigger>
-                    </Button.Triggers>
-                </Button>
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                    <!-- Login Button -->
+                    <Button Content="Login" Style="{StaticResource ButtonStyle}" Click="Login_Click" Width="120" IsDefault="True">
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="Button.MouseEnter">
+                                <BeginStoryboard Storyboard="{StaticResource ButtonHoverAnimation}"/>
+                            </EventTrigger>
+                        </Button.Triggers>
+                    </Button>
+                    <!-- Register Button -->
+                    <Button Content="Register" Style="{StaticResource ButtonStyle}" Click="Register_Click" Width="120">
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="Button.MouseEnter">
+                                <BeginStoryboard Storyboard="{StaticResource ButtonHoverAnimation}"/>
+                            </EventTrigger>
+                        </Button.Triggers>
+                    </Button>
+                </StackPanel>
             </StackPanel>
-        </StackPanel>
+        </Border>
+
     </Grid>
 </Window>
