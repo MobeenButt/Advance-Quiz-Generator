@@ -17,6 +17,7 @@ namespace AdvanceQuizApp.Map
         {
             InitializeComponent();
             statestack = new MyStack<List<UIElement>>();
+            WindowState = WindowState.Maximized;
             initializeGraph();
         }
 
@@ -164,6 +165,13 @@ namespace AdvanceQuizApp.Map
             {
                 MessageBox.Show("No previous state found.");
             }
+        }
+
+        private void BackClick(object sender, RoutedEventArgs e)
+        {
+            Window AdminPanel = new AdminPanel();
+            AdminPanel.Show();
+            this.Close();
         }
     }
 }

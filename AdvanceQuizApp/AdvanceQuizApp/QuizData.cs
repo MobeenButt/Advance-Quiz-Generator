@@ -5,10 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AdvanceQuizApp
-    {
+{
     public class QuizDataa
+    {
+        public int QuizId
         {
-        public int QuizId { get; set; }  // Add this property
-        public List<Question> Questions { get; set; }
+            get;
+            set;
+        }
+        public List<Question> Questions
+        {
+            get;
+            set;
         }
     }
+}    

@@ -135,7 +135,7 @@ namespace AdvanceQuizApp
                     Margin = new Thickness(0, 0, 0, 10)
                 };
                 favButton.Click += (s, e) => AddToFavourites(UserManager.getCurrentUsername(), question.id);
-
+                
                
                 TextBlock optionsLabel = new TextBlock
                 {
@@ -301,6 +301,7 @@ namespace AdvanceQuizApp
                 File.WriteAllLines(userFile, allUsers);
 
                 MessageBox.Show("Question added to favourites.");
+                
             }
             else
             {
