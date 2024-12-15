@@ -7,6 +7,40 @@
         mc:Ignorable="d"
         Title="About" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Margin="10,10,0,0" Width="75" Click="BackButton_Click" Background="#4CAF50" Foreground="White" BorderBrush="Green"/>
+
+        <!-- Title of the About Section -->
+        <TextBlock FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
+            About the Application
+        </TextBlock>
+
+        <!-- Description Text -->
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,20,10" FontSize="16">
+            Welcome to the **Advance Quiz App**! This application is designed to help users create and take quizzes, track progress, and generate reports based on quiz performance.
+
+            Key Features:
+            - Create and manage custom quizzes.
+            - Track progress and view performance statistics.
+            - Save favorite questions for future reference.
+            - Admin panel for managing users and reports.
+        </TextBlock>
+
+        <!-- How to Use Section -->
+        <TextBlock FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,170,0,0">
+            How to Use:
+        </TextBlock>
+
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,200,20,10" FontSize="14"><Run Text="1. To create a quiz, navigate to the &quot;Quiz Creation&quot; section. "/><LineBreak/><Run Text="2. Fill in the quiz details and add questions."/><LineBreak/><Run Text=" 3. After saving, users can take the quiz from the &quot;Quiz&quot; section. "/><LineBreak/><Run Text="4. You can track your progress in the &quot;Statistics&quot; section. "/><LineBreak/><Run Text="5. Admin users can manage user data and view reports in the &quot;Admin Panel&quot;."/></TextBlock>
+
+        <!-- Version Information -->
+        <TextBlock FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,20,20">
+            Version 1.0.0 - Developed by Our Team
+        </TextBlock>
+
+        <!-- Contact Info -->
+        <TextBlock FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,20,40">
+            For support, please contact: support@advancequizapp.com
+        </TextBlock>
     </Grid>
 </Window>

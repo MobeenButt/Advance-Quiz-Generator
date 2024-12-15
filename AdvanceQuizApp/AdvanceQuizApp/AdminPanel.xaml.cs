@@ -16,7 +16,7 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            Login loginPanel = new Login();
+            Logins loginPanel = new Logins();
             loginPanel.Show();
         }
         private void EditQuiz_Click(object sender, RoutedEventArgs e)
@@ -46,12 +46,16 @@ namespace AdvanceQuizApp
 
         private void GenerateReports_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            Report report = new Report();
+            report.Show();
         }
 
         private void ViewStatistics_Click(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("View Statistics clicked!");
+            this.Hide();
+            Statistics statistics = new Statistics();
+            statistics.Show();
         }
         private void ManageUsers_Click(object sender, RoutedEventArgs e)
         {
@@ -63,7 +67,7 @@ namespace AdvanceQuizApp
         private void Map_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-           MapDisplay display = new MapDisplay();
+            MapDisplay display = new MapDisplay();
             display.Show();
         }
     }

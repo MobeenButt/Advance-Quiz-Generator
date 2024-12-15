@@ -6,11 +6,11 @@ namespace AdvanceQuizApp
     /// <summary>
     /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class Logins : Window
     {
         private LoginManager manager;
         private int priority;
-        public Login()
+        public Logins()
         {
             InitializeComponent();
             manager = new LoginManager();
@@ -20,7 +20,7 @@ namespace AdvanceQuizApp
         {
             string name = UsernameTextBox.Text;
             string password = PasswordBox.Password;
-            if (name=="admin")
+            if (name == "admin")
             {
                 priority = 1;
             }
@@ -64,7 +64,7 @@ namespace AdvanceQuizApp
             {
                 priority = 0;
             }
-            if (manager.RegisterUser(name, password,priority))
+            if (manager.RegisterUser(name, password, priority))
             {
                 MessageBox.Show("Registration successful.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }

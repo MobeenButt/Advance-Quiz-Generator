@@ -1,0 +1,45 @@
+﻿<Window x:Class="AdvanceQuizApp.Admin_Pages.Report"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvanceQuizApp.Admin_Pages"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="User Report" Height="600" Width="800">
+    <Grid Margin="10" Background="#F0F8FF">
+        <!-- Light background color -->
+        <!-- Back Button -->
+        <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Margin="10,10,0,0" Width="75" Click="BackButton_Click" Background="#4CAF50" Foreground="White" BorderBrush="Green"/>
+
+        <!-- Labels and ComboBox for User Selection -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0">
+            <TextBlock x:Name="lblUserName" Text="Select User:" FontWeight="Bold" FontSize="16" Foreground="#333"/>
+            <ComboBox x:Name="UserComboBox" HorizontalAlignment="Left" Width="200" Margin="0,10,0,0" Height="30"/>
+        </StackPanel>
+
+        <!-- Button to generate report -->
+        <Button Content="Generate Report" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="390,136,0,0" Width="150" Height="40" FontSize="14" Background="#4CAF50" Foreground="White" BorderBrush="Green" Click="GenerateReport_Click"/>
+
+        <!-- Report Details -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,180,0,0">
+            <TextBlock x:Name="lblTotalQuestions" Text="Total Questions:" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="lblCorrectAnswers" Text="Correct Answers:" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="lblScore" Text="Score:" FontWeight="Bold" FontSize="16"/>
+        </StackPanel>
+
+        <!-- Labels to display values -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,180,0,0">
+            <TextBlock x:Name="lblTotalQuestionsValue" FontSize="16" Foreground="#4CAF50"/>
+            <TextBlock x:Name="lblCorrectAnswersValue" FontSize="16" Foreground="#4CAF50"/>
+            <TextBlock x:Name="lblScoreValue" FontSize="16" Foreground="#4CAF50"/>
+        </StackPanel>
+
+        <!-- Chart for Visualization (Using OxyPlot) -->
+        <oxy:PlotView x:Name="quizChart" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,254,0,0" Width="760" Height="300"/>
+
+        <!-- Refresh Stats Button -->
+    </Grid>
+</Window>
