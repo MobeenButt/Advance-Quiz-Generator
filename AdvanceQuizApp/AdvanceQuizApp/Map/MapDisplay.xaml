@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp.Map"
         mc:Ignorable="d"
-        Title="MapDisplay" Height="450" Width="800">
+        Title="MapDisplay" Height="450" Width="800" WindowState="Maximized">
     <Grid>
         <!-- Back Button -->
         
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="660,11,0,0" Click="BackButton_Click" RenderTransformOrigin="5.83,3.519" />
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="658,31,0,0" Click="BackButton_Click" RenderTransformOrigin="5.83,3.519" />
         <!-- Pathfinding Algorithm Dropdown -->
         <TextBlock Text="Algorithm" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,15,0,0" />
         <ComboBox Name="AlgorithmSelector" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="428,62,0,0">
@@ -17,20 +17,15 @@
             <ComboBoxItem Content="BFS" />
             <ComboBoxItem Content="DFS" />
         </ComboBox>
-
-        <!-- Start Locations -->
         <TextBlock Text="Start Location" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,33,0,0" />
         <TextBox Name="StartLocation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="16,53,0,0" />
 
-        <!-- End Location -->
         <TextBlock Text="End Location" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,83,0,0" />
         <TextBox Name="EndLocation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="16,103,0,0" />
 
-        <!-- Find Path and Refresh Buttons -->
         <Button Content="Find Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="226,53,0,0" Click="FindPathButton_Click" />
         <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="226,93,0,0" Click="RefreshButton_Click" />
 
-        <!-- Map Area -->
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,180,10,10">
             <Canvas Name="MapPanel" Background="LightGray" Width="2000" Height="2000"/>
         </ScrollViewer>

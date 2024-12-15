@@ -29,9 +29,14 @@ namespace AdvanceQuizApp.Map
             var node5 = new Node { Name = "E", Latitude = 100, Longitude = 300 };
             var node6 = new Node { Name = "F", Latitude = 500, Longitude = 300 };
             var node7 = new Node { Name = "G", Latitude = 700, Longitude = 200 };
+            var node8 = new Node { Name = "H", Latitude = 200, Longitude = 400 };
+            var node9 = new Node { Name = "I", Latitude = 400, Longitude = 400 };
+            var node10 = new Node { Name = "J", Latitude = 600, Longitude = 400 };
+            var node11 = new Node { Name = "K", Latitude = 800, Longitude = 300 };
+            var node12 = new Node { Name = "L", Latitude = 900, Longitude = 200 };
 
             graph = new Graph();
-            graph.Nodes.AddRange(new[] { node1, node2, node3, node4, node5, node6, node7 });
+            graph.Nodes.AddRange(new[] { node1, node2, node3, node4, node5, node6, node7, node8, node9, node10, node11, node12 });
 
             graph.Edges.Add(new Edge { node1 = node1, node2 = node2, Weight = 200 });
             graph.Edges.Add(new Edge { node1 = node2, node2 = node3, Weight = 200 });
@@ -39,11 +44,20 @@ namespace AdvanceQuizApp.Map
             graph.Edges.Add(new Edge { node1 = node5, node2 = node4, Weight = 200 });
             graph.Edges.Add(new Edge { node1 = node2, node2 = node6, Weight = 300 });
             graph.Edges.Add(new Edge { node1 = node6, node2 = node7, Weight = 300 });
+            graph.Edges.Add(new Edge { node1 = node4, node2 = node9, Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = node5, node2 = node8, Weight = 250 });
+            graph.Edges.Add(new Edge { node1 = node8, node2 = node9, Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = node9, node2 = node10, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = node6, node2 = node10, Weight = 250 });
+            graph.Edges.Add(new Edge { node1 = node7, node2 = node11, Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = node11, node2 = node12, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = node10, node2 = node11, Weight = 200 });
 
             graph.display(MapPanel);
 
             savecurrentstate();
         }
+
 
         private void savecurrentstate()
         {
@@ -92,17 +106,12 @@ namespace AdvanceQuizApp.Map
                 MessageBox.Show("No path found.");
                 return;
             }
-
-            // Reset the map to the default state
             graph.display(MapPanel);
-
-            // Highlight nodes and edges along the path
             for (int i = 0; i < path.Count - 1; i++)
             {
                 var currentNode = path[i];
                 var nextNode = path[i + 1];
 
-                // Highlight the edge in a distinct color
                 var edgeLine = new Line
                 {
                     X1 = currentNode.Longitude,
@@ -126,15 +135,13 @@ namespace AdvanceQuizApp.Map
                 Canvas.SetTop(distanceText, (currentNode.Latitude + nextNode.Latitude) / 2);
                 MapPanel.Children.Add(distanceText);
             }
-
-            // Highlight the nodes along the path
             foreach (var node in path)
             {
                 var rect = new Rectangle
                 {
                     Width = 40,
                     Height = 40,
-                    Fill = Brushes.Green, // Highlighted node color
+                    Fill = Brushes.Green, 
                     Stroke = Brushes.Black,
                     StrokeThickness = 2
                 };
@@ -142,7 +149,6 @@ namespace AdvanceQuizApp.Map
                 Canvas.SetTop(rect, node.Latitude - 20);
                 MapPanel.Children.Add(rect);
 
-                // Add label for the node
                 var label = new TextBlock
                 {
                     Text = node.Name,
@@ -161,7 +167,7 @@ namespace AdvanceQuizApp.Map
             {
                 From = 0,
                 To = 1,
-                Duration = TimeSpan.FromSeconds(0.5), // Faster animation for better experience
+                Duration = TimeSpan.FromSeconds(2), 
                 FillBehavior = System.Windows.Media.Animation.FillBehavior.HoldEnd
             };
 
