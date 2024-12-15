@@ -75,7 +75,7 @@ namespace AdvanceQuizApp
 
         private void ShowAnswer_Click(object sender, RoutedEventArgs e)
         {
-            CorrectAnswerText.Text = $"Acha Ye keh rha hai ! > {selectedQuestion.correctAnswer}";
+            CorrectAnswerText.Text = $"Correct Answer :- {selectedQuestion.correctAnswer}";
             CorrectAnswerText.Visibility = Visibility.Visible;
         }
 
