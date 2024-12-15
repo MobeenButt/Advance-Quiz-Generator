@@ -1,19 +1,19 @@
 {
-  "Key": "1",
+  "Key": "anas",
   "Data": [
     {
-      "QuizId": "21qwe",
+      "QuizId": "butt",
       "Questions": [
         {
           "id": 123,
-          "attempted": 1,
-          "selectedOption": "When the dataset is small",
+          "attempted": 0,
+          "selectedOption": null,
           "rightOrWrong": 0
         },
         {
           "id": 125,
-          "attempted": 1,
-          "selectedOption": "Dijkstra\u0027s Algorithm",
+          "attempted": 0,
+          "selectedOption": null,
           "rightOrWrong": 0
         },
         {
@@ -31,7 +31,84 @@
       ]
     }
   ],
-  "Height": 0,
-  "Left": null,
-  "Right": null
+  "Height": 2,
+  "Left": {
+    "Key": "1",
+    "Data": [
+      {
+        "QuizId": "21qwe",
+        "Questions": [
+          {
+            "id": 123,
+            "attempted": 1,
+            "selectedOption": "When the dataset is small",
+            "rightOrWrong": 0
+          },
+          {
+            "id": 125,
+            "attempted": 1,
+            "selectedOption": "Dijkstra\u0027s Algorithm",
+            "rightOrWrong": 0
+          },
+          {
+            "id": 127,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          },
+          {
+            "id": 145,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          }
+        ]
+      }
+    ],
+    "Height": 1,
+    "Left": null,
+    "Right": null
+  },
+  "Right": {
+    "Key": "butt",
+    "Data": [
+      {
+        "QuizId": "butt",
+        "Questions": [
+          {
+            "id": 32,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          },
+          {
+            "id": 33,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          }
+        ]
+      },
+      {
+        "QuizId": "butt",
+        "Questions": [
+          {
+            "id": 32,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          },
+          {
+            "id": 33,
+            "attempted": 0,
+            "selectedOption": null,
+            "rightOrWrong": 0
+          }
+        ]
+      }
+    ],
+    "Height": 1,
+    "Left": null,
+    "Right": null
+  }
 }

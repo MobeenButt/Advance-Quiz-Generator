@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\statistics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\statistics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\report.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\report.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\previousquizes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +19,28 @@
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\previousquizes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\avltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\avltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\manageusers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\manageusers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\map\\mapdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\map\\mapdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\avltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\avltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\manageusers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\manageusers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\map\\mapdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,16 +59,12 @@
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\logins.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\manageusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\deletepanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\deletepanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\statistics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\statistics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\addquestion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -61,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\databank\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\statistics.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\statistics.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\report.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\admin pages\\report.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\admin pages\\deletepanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,10 +149,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\testresult.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\testresult.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|solutionrelative:advancequizapp\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DDD1A6-FAD5-4188-A18B-F47F881C8812}|AdvanceQuizApp\\AdvanceQuizApp.csproj|e:\\bg\\advance-quiz-generator\\advancequizapp\\advancequizapp\\currentuser.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -217,70 +217,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Statistics.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T20:22:06.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Logins.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Logins.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Logins.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Logins.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Logins.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T23:39:41.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ManageUsers.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-15T13:24:03.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MapDisplay.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Map\\MapDisplay.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Map\\MapDisplay.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-15T09:47:17.114Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AVLTree.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AVLTree.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\AVLTree.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AVLTree.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\AVLTree.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAiwA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:07:13.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PreviousQuizes.xaml",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\PreviousQuizes.xaml",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\PreviousQuizes.xaml",
@@ -292,31 +233,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PreviousQuizes.xaml.cs",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\PreviousQuizes.xaml.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\PreviousQuizes.xaml.cs",
               "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\PreviousQuizes.xaml.cs",
               "RelativeToolTip": "AdvanceQuizApp\\PreviousQuizes.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAkwMIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T21:10:14.896Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddQuestion.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
+              "DocumentIndex": 5,
+              "Title": "MapDisplay.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Map\\MapDisplay.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Map\\MapDisplay.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-09T18:26:13.432Z"
+              "WhenOpened": "2024-12-15T09:47:17.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "Report.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Report.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Report.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-14T20:12:05.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Logins.xaml.cs",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Logins.xaml.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\Logins.xaml.cs",
@@ -328,289 +282,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminPanel.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\AdminPanel.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\AdminPanel.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:21:01.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MapDisplay.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAqwOIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Report.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T09:47:22.253Z"
+              "WhenOpened": "2024-12-14T20:12:27.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeletePanel.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ManageUsers.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T13:24:08.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Report.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Report.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Report.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T20:12:05.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "About.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\About.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\About.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-14T18:28:04.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml",
               "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml",
               "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:20:51.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Question.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\DataBank\\Question.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\DataBank\\Question.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:22:18.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\User.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\User.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\User.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T16:21:31.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Statistics.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwFYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:49:10.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Report.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Report.xaml.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAcwGAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:12:27.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DeletePanel.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T13:23:58.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AddQuestion.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAuwJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "About.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\About.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\About.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T23:38:44.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AdminPanel.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\AdminPanel.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\AdminPanel.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:09:34.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Graph.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\Graph.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Map\\Graph.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\Graph.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Map\\Graph.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAmwMsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T12:06:16.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AdvanceQuizApp.csproj",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\AdvanceQuizApp.csproj",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
-              "RelativeToolTip": "AdvanceQuizApp\\AdvanceQuizApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-14T23:39:23.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BrowseQuestions.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\BrowseQuestions.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\BrowseQuestions.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAtwBsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Settings.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Settings.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAlwHIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:29:39.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAlwDcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:32:57.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LoginManager.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginManager.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\LoginManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:39.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "App.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\App.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:18:39.072Z",
+              "WhenOpened": "2024-12-06T16:20:51.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CreateTest.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateTest.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T16:29:56.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CreateQuiz.xaml.cs",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateQuiz.xaml.cs",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateQuiz.xaml.cs",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateQuiz.xaml.cs",
-              "RelativeToolTip": "AdvanceQuizApp\\CreateQuiz.xaml.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAgwG4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:27:33.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\AssemblyInfo.cs",
@@ -622,7 +319,86 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 7,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Settings.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-08T18:27:46.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AVLTree.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AVLTree.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\AVLTree.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AVLTree.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\AVLTree.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:07:13.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManageUsers.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T13:24:08.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManageUsers.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\ManageUsers.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-15T13:24:03.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Logins.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Logins.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Logins.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Logins.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Logins.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-14T23:39:41.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Statistics.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-14T20:22:06.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddQuestion.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-09T18:26:13.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "TestResult.xaml.cs",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml.cs",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\TestResult.xaml.cs",
@@ -657,18 +433,243 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Settings.xaml",
-              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
-              "RelativeDocumentMoniker": "AdvanceQuizApp\\Settings.xaml",
-              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml",
-              "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml",
+              "DocumentIndex": 11,
+              "Title": "AdminPanel.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\AdminPanel.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\AdminPanel.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T18:27:46.577Z"
+              "WhenOpened": "2024-12-06T16:21:01.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 10,
+              "Title": "MapDisplay.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Map\\MapDisplay.xaml.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAqwOIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T09:47:22.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DeletePanel.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:18:39.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "About.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\About.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\About.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-14T18:28:04.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Question.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\DataBank\\Question.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\DataBank\\Question.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\DataBank\\Question.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAIBJwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T09:22:18.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\User.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\User.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\User.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T16:21:31.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Statistics.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\Statistics.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwFYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T20:49:10.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DeletePanel.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\DeletePanel.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T13:23:58.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddQuestion.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Admin Pages\\AddQuestion.xaml.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAuwJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:39.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "About.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\About.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\About.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\About.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:38:44.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminPanel.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\AdminPanel.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdminPanel.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\AdminPanel.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:09:34.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Graph.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\Graph.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Map\\Graph.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Map\\Graph.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Map\\Graph.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAmwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T12:06:16.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AdvanceQuizApp.csproj",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\AdvanceQuizApp.csproj",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
+              "RelativeToolTip": "AdvanceQuizApp\\AdvanceQuizApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-14T23:39:23.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BrowseQuestions.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\BrowseQuestions.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\BrowseQuestions.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\BrowseQuestions.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAtwBsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:39.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Settings.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\Settings.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\Settings.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\Settings.xaml.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAlwHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:29:39.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAlwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:32:57.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginManager.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\LoginManager.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\LoginManager.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\LoginManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:18:39.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\App.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\App.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:18:39.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateTest.xaml",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateTest.xaml",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateTest.xaml",
+              "RelativeToolTip": "AdvanceQuizApp\\CreateTest.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:29:56.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CreateQuiz.xaml.cs",
+              "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateQuiz.xaml.cs",
+              "RelativeDocumentMoniker": "AdvanceQuizApp\\CreateQuiz.xaml.cs",
+              "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\CreateQuiz.xaml.cs",
+              "RelativeToolTip": "AdvanceQuizApp\\CreateQuiz.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAgwG4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T12:27:33.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "TestResult.xaml",
               "DocumentMoniker": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\TestResult.xaml",
               "RelativeDocumentMoniker": "AdvanceQuizApp\\TestResult.xaml",
@@ -773,7 +774,7 @@
               "RelativeDocumentMoniker": "AdvanceQuizApp\\ADT\\TopicBST.cs",
               "ToolTip": "E:\\BG\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\ADT\\TopicBST.cs",
               "RelativeToolTip": "AdvanceQuizApp\\ADT\\TopicBST.cs",
-              "ViewState": "AgIAADYAAABAAAAAAAAmwBQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAABAAAAAAAAmwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T12:11:44.162Z"
             },

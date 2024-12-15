@@ -12,32 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< Updated upstream
-      "C:\\Users\\HP\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\HP\\.nuget\\packages"
-=======
-<<<<<<< Updated upstream
-      "C:\\Users\\Talha\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Talha\\.nuget\\packages"
-=======
-<<<<<<< Updated upstream
       "C:\\Users\\Mobeen Butt\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Mobeen Butt\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-=======
-      "C:\\Users\\Talha\\.dotnet\\store\\|arch|\\|tfm|",
-<<<<<<< Updated upstream
-      "C:\\Users\\Talha\\.nuget\\packages"
-=======
-      "C:\\Users\\Mobeen Butt\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
