@@ -17,31 +17,47 @@ namespace AdvanceQuizApp.Map
         {
             InitializeComponent();
             statestack = new MyStack<List<UIElement>>();
-            WindowState = WindowState.Maximized;
             initializeGraph();
         }
 
         private void initializeGraph()
         {
-            var node1 = new Node { Name = "Building A", Latitude = 100, Longitude = 100 };
-            var node2 = new Node { Name = "Building B", Latitude = 300, Longitude = 100 };
-            var node3 = new Node { Name = "Building C", Latitude = 500, Longitude = 100 };
-            var node4 = new Node { Name = "Building D", Latitude = 300, Longitude = 300 };
+            var node1 = new Node { Name = "A", Latitude = 100, Longitude = 100 };
+            var node2 = new Node { Name = "B", Latitude = 300, Longitude = 100 };
+            var node3 = new Node { Name = "C", Latitude = 500, Longitude = 100 };
+            var node4 = new Node { Name = "D", Latitude = 300, Longitude = 300 };
+            var node5 = new Node { Name = "E", Latitude = 100, Longitude = 300 };
+            var node6 = new Node { Name = "F", Latitude = 500, Longitude = 300 };
+            var node7 = new Node { Name = "G", Latitude = 700, Longitude = 200 };
+            var node8 = new Node { Name = "H", Latitude = 200, Longitude = 400 };
+            var node9 = new Node { Name = "I", Latitude = 400, Longitude = 400 };
+            var node10 = new Node { Name = "J", Latitude = 600, Longitude = 400 };
+            var node11 = new Node { Name = "K", Latitude = 800, Longitude = 300 };
+            var node12 = new Node { Name = "L", Latitude = 900, Longitude = 200 };
 
             graph = new Graph();
-            graph.Nodes.Add(node1);
-            graph.Nodes.Add(node2);
-            graph.Nodes.Add(node3);
-            graph.Nodes.Add(node4);
+            graph.Nodes.AddRange(new[] { node1, node2, node3, node4, node5, node6, node7, node8, node9, node10, node11, node12 });
 
             graph.Edges.Add(new Edge { node1 = node1, node2 = node2, Weight = 200 });
             graph.Edges.Add(new Edge { node1 = node2, node2 = node3, Weight = 200 });
-            graph.Edges.Add(new Edge { node1 = node1, node2 = node4, Weight = 300 });
-            graph.Edges.Add(new Edge { node1 = node4, node2 = node3, Weight = 300 });
+            graph.Edges.Add(new Edge { node1 = node1, node2 = node5, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = node5, node2 = node4, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = node2, node2 = node6, Weight = 300 });
+            graph.Edges.Add(new Edge { node1 = node6, node2 = node7, Weight = 300 });
+            graph.Edges.Add(new Edge { node1 = node4, node2 = node9, Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = node5, node2 = node8, Weight = 250 });
+            graph.Edges.Add(new Edge { node1 = node8, node2 = node9, Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = node9, node2 = node10, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = node6, node2 = node10, Weight = 250 });
+            graph.Edges.Add(new Edge { node1 = node7, node2 = node11, Weight = 150 });
+            graph.Edges.Add(new Edge { node1 = node11, node2 = node12, Weight = 200 });
+            graph.Edges.Add(new Edge { node1 = node10, node2 = node11, Weight = 200 });
 
             graph.display(MapPanel);
+
             savecurrentstate();
         }
+
 
         private void savecurrentstate()
         {
@@ -51,30 +67,37 @@ namespace AdvanceQuizApp.Map
 
         private void FindPathButton_Click(object sender, RoutedEventArgs e)
         {
-            savecurrentstate();
-            var startLocation = StartLocation.Text;
-            var endLocation = EndLocation.Text;
+            string selectedAlgorithm = (AlgorithmSelector.SelectedItem as ComboBoxItem)?.Content.ToString();
+            var startNode = graph.Nodes.FirstOrDefault(n => n.Name == StartLocation.Text);
+            var endNode = graph.Nodes.FirstOrDefault(n => n.Name == EndLocation.Text);
 
-            if (graph != null && graph.Nodes != null)
+            if (startNode == null || endNode == null)
             {
-                var startNode = graph.Nodes.FirstOrDefault(n => n.Name == startLocation);
-                var endNode = graph.Nodes.FirstOrDefault(n => n.Name == endLocation);
+                MessageBox.Show("Invalid start or end location.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
-                if (startNode != null && endNode != null)
-                {
-                    var path = graph.FindShortestPath(startNode, endNode);
-                    DisplayPath(path);
-                }
-                else
-                {
-                    MessageBox.Show("One or both locations not found.");
-                }
-            }
-            else
+            List<Node> path = null;
+
+            switch (selectedAlgorithm)
             {
-                MessageBox.Show("Graph not initialized.");
+                case "Dijkstra":
+                    path = graph.FindShortestPathDijkstra(startNode, endNode);
+                    break;
+                case "BFS":
+                    path = graph.FindPathBFS(startNode, endNode);
+                    break;
+                case "DFS":
+                    path = graph.FindPathDFS(startNode, endNode);
+                    break;
+                default:
+                    MessageBox.Show("Please select a valid algorithm.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
             }
+
+            DisplayPath(path);
         }
+
 
         private void DisplayPath(List<Node> path)
         {
@@ -83,45 +106,49 @@ namespace AdvanceQuizApp.Map
                 MessageBox.Show("No path found.");
                 return;
             }
-
-            // Draw the entire graph again with default colors
             graph.display(MapPanel);
-
-            // Highlight edges and nodes in the path
             for (int i = 0; i < path.Count - 1; i++)
             {
                 var currentNode = path[i];
                 var nextNode = path[i + 1];
 
-                // Highlight the edge in a distinct color
                 var edgeLine = new Line
                 {
                     X1 = currentNode.Longitude,
                     Y1 = currentNode.Latitude,
                     X2 = nextNode.Longitude,
                     Y2 = nextNode.Latitude,
-                    Stroke = Brushes.Red, // Highlighted edge color
+                    Stroke = Brushes.Blue, // Path edge color
                     StrokeThickness = 4
                 };
                 MapPanel.Children.Add(edgeLine);
-            }
+                AnimateLineDrawing(edgeLine);
 
-            // Highlight nodes in the path
+                var distanceText = new TextBlock
+                {
+                    Text = $"{graph.GetEdgeWeight(currentNode, nextNode)}",
+                    Foreground = Brushes.Blue,
+                    Background = Brushes.White,
+                    FontSize = 14
+                };
+                Canvas.SetLeft(distanceText, (currentNode.Longitude + nextNode.Longitude) / 2);
+                Canvas.SetTop(distanceText, (currentNode.Latitude + nextNode.Latitude) / 2);
+                MapPanel.Children.Add(distanceText);
+            }
             foreach (var node in path)
             {
                 var rect = new Rectangle
                 {
                     Width = 40,
                     Height = 40,
-                    Fill = Brushes.Green, // Path node color
+                    Fill = Brushes.Green, 
                     Stroke = Brushes.Black,
                     StrokeThickness = 2
                 };
-                Canvas.SetLeft(rect, node.Longitude - 20); // Center the rectangle
+                Canvas.SetLeft(rect, node.Longitude - 20);
                 Canvas.SetTop(rect, node.Latitude - 20);
                 MapPanel.Children.Add(rect);
 
-                // Add label for the node
                 var label = new TextBlock
                 {
                     Text = node.Name,
@@ -140,15 +167,17 @@ namespace AdvanceQuizApp.Map
             {
                 From = 0,
                 To = 1,
-                Duration = TimeSpan.FromSeconds(1),
+                Duration = TimeSpan.FromSeconds(2), 
                 FillBehavior = System.Windows.Media.Animation.FillBehavior.HoldEnd
             };
 
             var storyboard = new System.Windows.Media.Animation.Storyboard();
             System.Windows.Media.Animation.Storyboard.SetTarget(animation, line);
+            System.Windows.Media.Animation.Storyboard.SetTargetProperty(animation, new PropertyPath(Line.StrokeDashOffsetProperty));
             storyboard.Children.Add(animation);
             storyboard.Begin();
         }
+
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
@@ -167,11 +196,11 @@ namespace AdvanceQuizApp.Map
             }
         }
 
-        private void BackClick(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Window AdminPanel = new AdminPanel();
-            AdminPanel.Show();
-            this.Close();
+            this.Hide();
+            AdminPanel admin = new AdminPanel();
+                admin.Show();
         }
     }
 }
