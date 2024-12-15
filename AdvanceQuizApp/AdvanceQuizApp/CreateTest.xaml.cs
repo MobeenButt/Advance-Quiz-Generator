@@ -67,9 +67,9 @@ namespace AdvanceQuizApp
         }
 
         private void LoadQuizState()
-        {
-            try
             {
+            try
+                {
                 string currentUserFile = "CurrentUser.txt";
                 if (!File.Exists(currentUserFile))
                     throw new FileNotFoundException("Current user file not found!");
@@ -84,32 +84,45 @@ namespace AdvanceQuizApp
                 var userQuizzes = JsonSerializer.Deserialize<Dictionary<string, List<JsonElement>>>(json);
 
                 if (userQuizzes == null || !userQuizzes.ContainsKey(currentUser))
-                    throw new InvalidOperationException("No quizzes found for the current user.");
+                    {
+                    MessageBox.Show($"No quizzes found for the user '{currentUser}'.");
+                    return;
+                    }
 
                 var userQuizList = userQuizzes[currentUser];
                 var quizData = userQuizList.FirstOrDefault(q =>
                     q.GetProperty("QuizId").GetString() == quizid);
 
                 if (quizData.ValueKind == JsonValueKind.Undefined)
-                    throw new InvalidOperationException($"Quiz with ID {quizid} not found.");
+                    {
+                    MessageBox.Show($"Quiz with ID '{quizid}' not found. Starting a new quiz.");
+                    // Initialize quiz state for a new quiz
+                    foreach (var question in questions)
+                        {
+                        question.attempted = false;
+                        question.selectedOption = null;
+                        question.rightOrWrong = false;
+                        }
+                    return;
+                    }
 
                 foreach (var questionState in quizData.GetProperty("Questions").EnumerateArray())
-                {
+                    {
                     var questionId = questionState.GetProperty("id").GetInt32();
                     var matchingQuestion = questions.FirstOrDefault(q => q.id == questionId);
                     if (matchingQuestion != null)
-                    {
+                        {
                         matchingQuestion.attempted = questionState.GetProperty("attempted").GetInt32() == 1;
                         matchingQuestion.selectedOption = questionState.GetProperty("selectedOption").GetString();
                         matchingQuestion.rightOrWrong = questionState.GetProperty("rightOrWrong").GetInt32() == 1;
+                        }
                     }
                 }
-            }
             catch (Exception ex)
-            {
+                {
                 MessageBox.Show($"Error loading quiz state: {ex.Message}");
+                }
             }
-        }
 
         private void DisplayQuestion(int index)
         {
