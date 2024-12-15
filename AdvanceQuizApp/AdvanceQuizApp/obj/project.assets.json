@@ -169,19 +169,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Talha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
+      "projectUniqueName": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
       "projectName": "AdvanceQuizApp",
-      "projectPath": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\A for study\\3rd Semester\\DSA(Lab)\\Final project\\1\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\",
+      "projectPath": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\AdvanceQuizApp.csproj",
+      "packagesPath": "C:\\Users\\Talha\\.nuget\\packages\\",
+      "outputPath": "G:\\My CS\\Semester 3\\DSA Lab\\Mj - Final Project\\Advance-Quiz-Generator\\Advance-Quiz-Generator\\AdvanceQuizApp\\AdvanceQuizApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Talha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -240,7 +240,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
