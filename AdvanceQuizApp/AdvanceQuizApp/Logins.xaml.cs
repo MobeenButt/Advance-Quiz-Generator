@@ -20,6 +20,11 @@ namespace AdvanceQuizApp
         {
             string name = UsernameTextBox.Text;
             string password = PasswordBox.Password;
+            if(name == "" || password == "")
+            {
+                MessageBox.Show("Please enter username and password.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             if (name == "admin")
             {
                 priority = 1;
