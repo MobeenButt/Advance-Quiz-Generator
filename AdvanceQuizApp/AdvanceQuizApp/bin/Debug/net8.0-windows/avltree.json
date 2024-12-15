@@ -1,34 +1,29 @@
 {
-  "anas": [
+  "Key": "1",
+  "Data": [
     {
-      "QuizId": "test",
+      "QuizId": "21qwe",
       "Questions": [
         {
-          "id": 40,
+          "id": 123,
           "attempted": 1,
-          "selectedOption": "William Crook",
+          "selectedOption": "When the dataset is small",
           "rightOrWrong": 0
         },
         {
-          "id": 62,
+          "id": 125,
           "attempted": 1,
-          "selectedOption": "Kc",
+          "selectedOption": "Dijkstra\u0027s Algorithm",
           "rightOrWrong": 0
         },
         {
-          "id": 39,
-          "attempted": 1,
-          "selectedOption": "6",
-          "rightOrWrong": 0
-        },
-        {
-          "id": 61,
+          "id": 127,
           "attempted": 0,
           "selectedOption": null,
           "rightOrWrong": 0
         },
         {
-          "id": 67,
+          "id": 145,
           "attempted": 0,
           "selectedOption": null,
           "rightOrWrong": 0
@@ -36,65 +31,7 @@
       ]
     }
   ],
-  "3": [
-    {
-      "QuizId": "4",
-      "Questions": [
-        {
-          "id": 115,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 119,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 121,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 126,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 131,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 135,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 142,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 147,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        },
-        {
-          "id": 151,
-          "attempted": 0,
-          "selectedOption": null,
-          "rightOrWrong": 0
-        }
-      ]
-    }
-  ]
+  "Height": 0,
+  "Left": null,
+  "Right": null
 }

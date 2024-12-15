@@ -5,27 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
-        Title="Create Quiz" Height="557" Width="961">
-    <Grid Margin="20">
+        KeyDown="WindowKeyDown"
+        Title="Create Quiz" Height="600" Width="1000" Background="#F7F7F7" BorderBrush="#D5DBDB" BorderThickness="2">
+
+    <Grid Margin="30">
+        
         <!-- Heading -->
-        <TextBlock Text="Create Quiz" FontWeight="Bold" FontSize="24" 
-                   HorizontalAlignment="Center" Margin="0,10,0,20" />
+        <TextBlock Text="Create Your Quiz" FontWeight="Bold" FontSize="28" 
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,30" Foreground="#2C3E50"/>
 
         <!-- Top-Right Section for Total Questions -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,10,0">
-            <TextBlock Text="Total Questions: " FontSize="14" Foreground="Gray" Opacity="0.8" VerticalAlignment="Center" />
-            <TextBox x:Name="TotalQuestionsTextBox" Text="0" FontSize="14" Width="50" 
-                     Foreground="Gray" Opacity="0.8" IsReadOnly="True" HorizontalAlignment="Center" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,30,0">
+            <TextBlock Text="Total Questions: " FontSize="14" Foreground="Gray" VerticalAlignment="Center" />
+            <TextBox x:Name="TotalQuestionsTextBox" Text="0" FontSize="14" Width="60" 
+                     Foreground="#BDC3C7" Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" IsReadOnly="True" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <!-- ComboBox and ListBox Section -->
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Height="324" Width="483" Margin="0,50,0,0">
-            <TextBlock Text="Enter the Quiz Id/Name:"  FontWeight="Bold" Margin="0,10,0,5"/>
-            <TextBox x:Name="QuizID" Width="200"  
-     Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" Height="22" />
+        <!-- Form Section -->
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Height="380" Width="500" Margin="0,70,0,0">
 
-            <TextBlock Text="Select Number of Questions:" FontWeight="Bold" Margin="0,10,0,5"/>
-            <ComboBox x:Name="QuestionsComboBox" Width="200" HorizontalAlignment="Center">
+            <!-- Quiz ID TextBox -->
+            <TextBlock Text="Enter the Quiz Id/Name:" FontWeight="Bold" Margin="0,10,0,5" FontSize="14" Foreground="#34495E"/>
+            <TextBox x:Name="QuizID" Width="250" Height="35" FontSize="14" 
+                     Background="#FFFFFF" BorderBrush="#BDC3C7" BorderThickness="1" HorizontalAlignment="Center"/>
+
+            <!-- Number of Questions ComboBox -->
+            <TextBlock Text="Select Number of Questions:" FontWeight="Bold" Margin="20,20,0,5" FontSize="14" Foreground="#34495E"/>
+            <ComboBox x:Name="QuestionsComboBox" Width="250" Height="35" FontSize="14" HorizontalAlignment="Center">
                 <ComboBoxItem Content="5" />
                 <ComboBoxItem Content="10" />
                 <ComboBoxItem Content="15" />
@@ -36,31 +42,81 @@
                 <ComboBoxItem Content="40" />
                 <ComboBoxItem Content="45" />
                 <ComboBoxItem Content="50" />
-                
             </ComboBox>
 
-            <!-- ComboBox for Difficulty Level -->
-            <TextBlock Text="Select Difficulty Level:" FontWeight="Bold" Margin="0,20,0,5"/>
-            <ComboBox x:Name="DifficultyComboBox" Width="200" HorizontalAlignment="Center">
+            <!-- Difficulty Level ComboBox -->
+            <TextBlock Text="Select Difficulty Level:" FontWeight="Bold" Margin="20,20,0,5" FontSize="14" Foreground="#34495E"/>
+            <ComboBox x:Name="DifficultyComboBox" Width="250" Height="35" FontSize="14" HorizontalAlignment="Center">
                 <ComboBoxItem Content="Easy" />
                 <ComboBoxItem Content="Moderate" />
                 <ComboBoxItem Content="Difficult" />
             </ComboBox>
 
-            <!-- ComboBox for Subjects -->
-            <TextBlock Text="Select Subjects:" FontWeight="Bold" Margin="0,20,0,5"/>
-            <ListBox x:Name="SubjectsListBox" Width="313" Height="121" HorizontalAlignment="Center" SelectionMode="Multiple">
+            <!-- Subjects ListBox -->
+            <TextBlock Text="Select Subjects:" FontWeight="Bold" Margin="20,20,0,5" FontSize="14" Foreground="#34495E"/>
+            <ListBox x:Name="SubjectsListBox" Width="313" Height="130" HorizontalAlignment="Center" SelectionMode="Multiple" FontSize="14">
                 <!-- Subjects will be dynamically loaded -->
-
             </ListBox>
         </StackPanel>
 
         <!-- Buttons Section -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,60">
-            <Button Content="Create" Width="100" Height="30" Margin="10,0,0,0" Click="CreateButton_Click" Background="GreenYellow" />
-            <Button Content="Check No of Questions" Width="140" Height="30" Margin="10,0,0,0" 
-        Click="CheckNumberOfQuestionsButton_Click" Background="Azure" />
-            <Button Content="Back" Width="100" Height="30" Margin="10,0,0,0" Click="BackButton_Click" Background="SkyBlue" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,50">
+
+            <!-- Create Button -->
+            <Button Content="Create" Width="120" Height="40" Margin="15,0,0,0" 
+                    Background="#1ABC9C" Foreground="White" FontSize="14" BorderBrush="#16A085" BorderThickness="1" IsDefault="True"
+                    Click="CreateButton_Click" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Check Questions Button -->
+            <Button Content="Check No of Questions" Width="180" Height="40" Margin="15,0,0,0" 
+                    Background="#3498DB" Foreground="White" FontSize="14" BorderBrush="#2980B9" BorderThickness="1" 
+                    Click="CheckNumberOfQuestionsButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Back Button -->
+            <Button Content="Back" Width="120" Height="40" Margin="15,0,0,0" 
+                    Background="#E74C3C" Foreground="White" FontSize="14" BorderBrush="#C0392B" BorderThickness="1" 
+                    Click="BackButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
+
     </Grid>
+
+    <!-- Window Styling -->
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" Direction="270" ShadowDepth="3" BlurRadius="4"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 </Window>

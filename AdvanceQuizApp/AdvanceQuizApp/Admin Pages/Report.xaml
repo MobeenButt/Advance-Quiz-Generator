@@ -7,7 +7,9 @@
         xmlns:oxy="http://oxyplot.org/wpf"
         mc:Ignorable="d"
         Title="User Report" Height="600" Width="800"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        KeyDown="WindowKeyDown" 
+        >
     <Grid Margin="10" Background="#F0F8FF">
         <!-- Light background color -->
         <!-- Back Button -->

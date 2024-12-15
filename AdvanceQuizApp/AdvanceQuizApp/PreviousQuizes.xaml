@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
         Title="Previous Quizzes" Height="450" Width="800"
-        Background="#E6F3FF">
+        Background="#E6F3FF"
+        KeyDown="WindowKeyDown" 
+        >
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
