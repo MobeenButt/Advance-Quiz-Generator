@@ -5,29 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp.Admin_Pages"
         mc:Ignorable="d"
-        Title="Statistics" Height="450" Width="800">
+        Title="Statistics" Height="450" Width="800"
+        WindowState="Maximized">
     <Grid Margin="10" Background="#F0F8FF">
-        <!-- Light background color -->
-        <!-- Labels for Titles -->
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20,0,0">
             <TextBlock x:Name="lblTotalQuestions" Text="Total Questions:" FontWeight="Bold" FontSize="16" Foreground="#333"/>
             <TextBlock x:Name="lblCorrectAnswers" Text="Correct Answers:" FontWeight="Bold" FontSize="16" Foreground="#333"/>
             <TextBlock x:Name="lblScore" Text="Score:" FontWeight="Bold" FontSize="16" Foreground="#333"/>
         </StackPanel>
-
-        <!-- Labels to Display Values -->
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,20,0,0">
             <TextBlock x:Name="lblTotalQuestionsValue" FontSize="16" Foreground="#4CAF50"/>
             <TextBlock x:Name="lblCorrectAnswersValue" FontSize="16" Foreground="#4CAF50"/>
             <TextBlock x:Name="lblScoreValue" FontSize="16" Foreground="#4CAF50"/>
         </StackPanel>
-
-        <!-- Button to Refresh Stats -->
         <Button Content="Refresh Stats" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,10,10" Height="30" Click="BtnRefreshStats_Click"/>
 
         <Button Content="Refresh Stats" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,10,10" Height="35" FontSize="14" Background="#2196F3" Foreground="White" BorderBrush="Blue" Click="BtnRefreshStats_Click"/>
-
-        <!-- Back Button -->
         <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
                 Margin="10,5,0,0" Width="75" Height="35" Click="BackButton_Click" Background="#4CAF50" Foreground="White" BorderBrush="Green"/>
     </Grid>

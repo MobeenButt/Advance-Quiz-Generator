@@ -69,6 +69,7 @@
                        FontFamily="Segoe UI" 
                        FontWeight="Bold" 
                        Foreground="#34495E" 
+                       TextWrapping="Wrap"        
                        Margin="10"/>
                 </DataTemplate>
                 </ListBox.ItemTemplate>

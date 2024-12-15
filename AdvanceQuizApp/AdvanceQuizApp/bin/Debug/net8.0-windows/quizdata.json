@@ -1539,6 +1539,623 @@
       "topic": "Chemical Kinetics",
       "difficulty": "Moderate",
       "favourite": 0
+    },
+    {
+      "id": 111,
+      "text": "Which data structure uses FIFO (First In First Out) principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": "Queue",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 112,
+      "text": "What is the time complexity of searching in a hash table in the average case?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(1)",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 113,
+      "text": "Which of the following is a non-linear data structure?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Stack",
+        "Tree"
+      ],
+      "correctAnswer": "Tree",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 114,
+      "text": "In which case is a binary search tree unbalanced?",
+      "options": [
+        "When all nodes have two children",
+        "When all nodes are inserted from smallest to largest",
+        "When nodes are inserted randomly",
+        "When all nodes have one child"
+      ],
+      "correctAnswer": "When all nodes are inserted from smallest to largest",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 115,
+      "text": "Which of the following algorithms is used for sorting an array by repeatedly finding the minimum element?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Bubble Sort",
+        "Selection Sort"
+      ],
+      "correctAnswer": "Selection Sort",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 116,
+      "text": "Which data structure allows you to implement a depth-first search?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": "Stack",
+      "topic": "Algorithms",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 117,
+      "text": "What is the time complexity of inserting an element into a binary heap?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(log n)",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 118,
+      "text": "In which data structure is the 'enqueue' operation used?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Heap",
+        "Array"
+      ],
+      "correctAnswer": "Queue",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 119,
+      "text": "Which of the following sorting algorithms has the best worst-case time complexity?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Bubble Sort",
+        "Heap Sort"
+      ],
+      "correctAnswer": "Merge Sort",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 120,
+      "text": "Which of the following data structures is best suited for implementing a priority queue?",
+      "options": [
+        "Array",
+        "Stack",
+        "Binary Heap",
+        "Queue"
+      ],
+      "correctAnswer": "Binary Heap",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 121,
+      "text": "What is the space complexity of a recursive function that uses a stack for its operations?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(n)",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 122,
+      "text": "Which of the following is the correct order of the Binary Search Tree traversal?",
+      "options": [
+        "Preorder, Inorder, Postorder",
+        "Inorder, Preorder, Postorder",
+        "Inorder, Postorder, Preorder",
+        "Preorder, Postorder, Inorder"
+      ],
+      "correctAnswer": "Preorder, Inorder, Postorder",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 123,
+      "text": "In which situation is the Quick Sort algorithm preferred over Merge Sort?",
+      "options": [
+        "When dealing with large datasets and limited memory",
+        "When the dataset is almost sorted",
+        "When the dataset is small",
+        "When the worst-case performance is critical"
+      ],
+      "correctAnswer": "When dealing with large datasets and limited memory",
+      "topic": "Algorithms",
+      "difficulty": "Difficult",
+      "favourite": 0
+    },
+    {
+      "id": 124,
+      "text": "Which of the following is the correct way to represent a graph with 7 vertices and 10 edges?",
+      "options": [
+        "Adjacency Matrix",
+        "Adjacency List",
+        "Edge List",
+        "Hash Map"
+      ],
+      "correctAnswer": "Adjacency List",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 125,
+      "text": "Which algorithm is best suited for finding the shortest path in a graph with weighted edges?",
+      "options": [
+        "BFS",
+        "DFS",
+        "Dijkstra's Algorithm",
+        "Kruskal's Algorithm"
+      ],
+      "correctAnswer": "Dijkstra's Algorithm",
+      "topic": "Algorithms",
+      "difficulty": "Difficult",
+      "favourite": 0
+    },
+    {
+      "id": 126,
+      "text": "What is the worst-case time complexity of the Merge Sort algorithm?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n^2)",
+        "O(log n)"
+      ],
+      "correctAnswer": "O(n log n)",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 127,
+      "text": "Which of the following is an example of a greedy algorithm?",
+      "options": [
+        "Prim's Algorithm",
+        "Dijkstra's Algorithm",
+        "Merge Sort",
+        "Quick Sort"
+      ],
+      "correctAnswer": "Prim's Algorithm",
+      "topic": "Algorithms",
+      "difficulty": "Difficult",
+      "favourite": 0
+    },
+    {
+      "id": 128,
+      "text": "Which of the following data structures can efficiently implement recursion?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Heap"
+      ],
+      "correctAnswer": "Stack",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 129,
+      "text": "In a hash table, what happens when there are too many collisions?",
+      "options": [
+        "Hash table becomes slow",
+        "Memory usage is reduced",
+        "Collisions are resolved using chaining",
+        "Hash table size increases automatically"
+      ],
+      "correctAnswer": "Hash table becomes slow",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 130,
+      "text": "What is the space complexity of a binary search tree with 'n' nodes?",
+      "options": [
+        "O(1)",
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "correctAnswer": "O(n)",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 131,
+      "text": "What is the average case time complexity of Quick Sort?",
+      "options": [
+        "O(n log n)",
+        "O(n^2)",
+        "O(log n)",
+        "O(n)"
+      ],
+      "correctAnswer": "O(n log n)",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 132,
+      "text": "Which of the following is used to implement a breadth-first search (BFS)?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": "Queue",
+      "topic": "Algorithms",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 133,
+      "text": "Which of the following is NOT a valid tree traversal method?",
+      "options": [
+        "Level Order",
+        "Preorder",
+        "Inorder",
+        "Post-order",
+        "Pre-order"
+      ],
+      "correctAnswer": "Pre-order",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 134,
+      "text": "Which of the following is the worst-case time complexity of Binary Search?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correctAnswer": "O(log n)",
+      "topic": "Algorithms",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 135,
+      "text": "Which of the following sorting algorithms is stable?",
+      "options": [
+        "Selection Sort",
+        "Quick Sort",
+        "Merge Sort",
+        "Heap Sort"
+      ],
+      "correctAnswer": "Merge Sort",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 136,
+      "text": "What is the primary disadvantage of a hash table?",
+      "options": [
+        "Expensive to implement",
+        "Difficulty in resizing",
+        "Handling collisions",
+        "Does not support deletion"
+      ],
+      "correctAnswer": "Handling collisions",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 137,
+      "text": "Which of the following is the correct traversal order for a post-order traversal of a binary tree?",
+      "options": [
+        "Left, Right, Root",
+        "Root, Left, Right",
+        "Right, Left, Root",
+        "Left, Root, Right"
+      ],
+      "correctAnswer": "Left, Right, Root",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 138,
+      "text": "Which data structure is used in Depth First Search?",
+      "options": [
+        "Queue",
+        "Array",
+        "Stack",
+        "Linked List"
+      ],
+      "correctAnswer": "Stack",
+      "topic": "Algorithms",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 139,
+      "text": "What is the time complexity of accessing an element in an array?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(1)",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 140,
+      "text": "Which data structure is used for implementing recursive function calls?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Heap",
+        "Array"
+      ],
+      "correctAnswer": "Stack",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 141,
+      "text": "Which of the following is an example of a self-balancing binary search tree?",
+      "options": [
+        "AVL Tree",
+        "Red-Black Tree",
+        "Splay Tree",
+        "Binary Search Tree"
+      ],
+      "correctAnswer": "Red-Black Tree",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 142,
+      "text": "What is the time complexity of Quick Sort in the best case?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(n log n)",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 143,
+      "text": "Which of the following operations is NOT a common operation on a heap?",
+      "options": [
+        "Insert",
+        "Delete",
+        "Peek",
+        "Sort"
+      ],
+      "correctAnswer": "Sort",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 144,
+      "text": "Which sorting algorithm works by repeatedly swapping adjacent elements if they are in the wrong order?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Quick Sort",
+        "Merge Sort"
+      ],
+      "correctAnswer": "Bubble Sort",
+      "topic": "Algorithms",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 145,
+      "text": "Which of the following algorithms is used for finding the shortest path in a graph with non-negative weights?",
+      "options": [
+        "Floyd-Warshall",
+        "Dijkstra's Algorithm",
+        "Bellman-Ford Algorithm",
+        "A* Search"
+      ],
+      "correctAnswer": "Dijkstra's Algorithm",
+      "topic": "Algorithms",
+      "difficulty": "Difficult",
+      "favourite": 0
+    },
+    {
+      "id": 146,
+      "text": "What is the space complexity of a linked list with 'n' nodes?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(n log n)",
+        "O(log n)"
+      ],
+      "correctAnswer": "O(n)",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 147,
+      "text": "Which of the following is an example of a divide-and-conquer algorithm?",
+      "options": [
+        "Bubble Sort",
+        "Merge Sort",
+        "Selection Sort",
+        "Insertion Sort"
+      ],
+      "correctAnswer": "Merge Sort",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 148,
+      "text": "In which scenario is a circular queue most useful?",
+      "options": [
+        "When the number of elements in the queue is fixed",
+        "When there is a need to efficiently reuse empty space in the queue",
+        "When elements are processed sequentially",
+        "When random access is required"
+      ],
+      "correctAnswer": "When there is a need to efficiently reuse empty space in the queue",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 149,
+      "text": "Which of the following tree types is most commonly used in databases to represent hierarchical relationships?",
+      "options": [
+        "Binary Tree",
+        "AVL Tree",
+        "B-Tree",
+        "Red-Black Tree"
+      ],
+      "correctAnswer": "B-Tree",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 150,
+      "text": "Which of the following statements about a queue is true?",
+      "options": [
+        "A queue uses a LIFO order",
+        "A queue uses a FIFO order",
+        "A queue is implemented using a binary tree",
+        "A queue allows random access to elements"
+      ],
+      "correctAnswer": "A queue uses a FIFO order",
+      "topic": "Data Structures",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 151,
+      "text": "Which algorithm is used for finding the minimum spanning tree of a graph?",
+      "options": [
+        "Kruskal's Algorithm",
+        "Prim's Algorithm",
+        "Dijkstra's Algorithm",
+        "Bellman-Ford Algorithm"
+      ],
+      "correctAnswer": "Kruskal's Algorithm",
+      "topic": "Algorithms",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 152,
+      "text": "What is the time complexity of a linear search algorithm in the worst case?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correctAnswer": "O(n)",
+      "topic": "Algorithms",
+      "difficulty": "Easy",
+      "favourite": 0
+    },
+    {
+      "id": 153,
+      "text": "Which of the following is the key property of a binary search tree?",
+      "options": [
+        "The left child is always larger than the parent",
+        "The right child is always smaller than the parent",
+        "The left child is always smaller than the parent",
+        "The right child is always larger than the parent"
+      ],
+      "correctAnswer": "The left child is always smaller than the parent",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
+    },
+    {
+      "id": 154,
+      "text": "Which of the following data structures is most suitable for implementing an undo feature in a text editor?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Linked List",
+        "Array"
+      ],
+      "correctAnswer": "Stack",
+      "topic": "Data Structures",
+      "difficulty": "Moderate",
+      "favourite": 0
     }
 
 

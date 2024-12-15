@@ -4,11 +4,31 @@
     {
         public class Node
         {
-            public T Key { get; set; }
-            public List<object> Data { get; set; } // Store quizzes or user data
-            public int Height { get; set; }
-            public Node Left { get; set; }
-            public Node Right { get; set; }
+            public T Key
+            { 
+                get; 
+                set; 
+            }
+            public List<object> Data  // Store quizzes or user data
+            { 
+                get; 
+                set; 
+            }
+            public int Height
+            {
+                get;
+                set;
+            }
+            public Node Left
+            {
+                get;
+                set;
+            }
+            public Node Right
+            {
+                get;
+                set;
+            }
 
             public Node(T key, object data)
             {

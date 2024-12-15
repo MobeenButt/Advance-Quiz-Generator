@@ -44,6 +44,7 @@ namespace AdvanceQuizApp
             }
 
             QuestionList.ItemsSource = favouriteQuestions.Select(q => q.text).ToList();
+            
         }
 
         
@@ -54,6 +55,7 @@ namespace AdvanceQuizApp
             {
                 selectedQuestion = favouriteQuestions[QuestionList.SelectedIndex];
                 DisplayQuestionDetails(selectedQuestion);
+                
                 QuestionDetailsPanel.Visibility = Visibility.Visible;
                 QuestionTopic.Text = $"Question Topic: {selectedQuestion.topic}";
                 QuestionTopic.Visibility = Visibility.Visible;
@@ -75,7 +77,7 @@ namespace AdvanceQuizApp
 
         private void ShowAnswer_Click(object sender, RoutedEventArgs e)
         {
-            CorrectAnswerText.Text = $"Acha Ye keh rha hai ! > {selectedQuestion.correctAnswer}";
+            CorrectAnswerText.Text = $"Correct Answer :- {selectedQuestion.correctAnswer}";
             CorrectAnswerText.Visibility = Visibility.Visible;
         }
 

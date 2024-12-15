@@ -1,0 +1,44 @@
+{
+  "locations":[
+    {
+      "name": "Quiz Center",
+      "latitude": 31.578071,
+      "longitude": 74.357863
+    },
+    {
+      "name": "Environmental Engineering Department UET Lahore",
+      "latitude": 31.577497,
+      "longitude": 74.356982
+    },
+    {
+      "name": "Research Centre",
+      "latitude": 31.577201,
+      "longitude": 74.357027
+    },
+    {
+      "name": "Students Parking",
+      "latitude": 31.578005,
+      "longitude": 74.357016
+    },
+    {
+      "name": "Library",
+      "latitude": 31.576897,
+      "longitude": 74.357454
+    },
+    {
+      "name": "Main Entrance",
+      "latitude": 31.578763,
+      "longitude": 74.357231
+    },
+    {
+      "name": "Hostel",
+      "latitude": 31.576439,
+      "longitude": 74.358017
+    },
+    {
+      "name": "Admin Block",
+      "latitude": 31.577022,
+      "longitude": 74.358682
+    }
+  ]
+}

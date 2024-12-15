@@ -79,6 +79,7 @@ namespace AdvanceQuizApp
         {
             Button topicButton = sender as Button;
             string selectedTopic = topicButton.Content.ToString();
+            topicName = selectedTopic;
 
             string filePath = "quizdata.json";
             questions = QuestionLoader.LoadQuestions(filePath)
@@ -92,6 +93,16 @@ namespace AdvanceQuizApp
         {
             StackPanel rightPanel = this.FindName("QuestionsPanel") as StackPanel;
             rightPanel.Children.Clear();
+            TextBlock TopicQuestion = new TextBlock
+            {
+                Text = $"Questions of \"{topicName}\"",
+                FontSize = 18,
+                TextWrapping = TextWrapping.Wrap,
+                FontWeight = FontWeights.Bold,
+                Margin = new Thickness(30,5,0,0),
+                Visibility = Visibility.Visible
+            };
+            rightPanel.Children.Add(TopicQuestion);
 
             int index = 1;
             foreach (var question in questions)
@@ -111,11 +122,11 @@ namespace AdvanceQuizApp
                 {
                     Text = $"Q#{index}: {question.text}",
                     FontWeight = FontWeights.Bold,
-                    FontSize = 16,
+                    FontSize = 14,
+                    TextWrapping = TextWrapping.Wrap,
                     Margin = new Thickness(0, 0, 0, 10)
                 };
 
-                // Add to Favourites button hai
                 Button favButton = new Button
                 {
                     Content = " Add to ♡ ",
@@ -124,7 +135,7 @@ namespace AdvanceQuizApp
                     Margin = new Thickness(0, 0, 0, 10)
                 };
                 favButton.Click += (s, e) => AddToFavourites(UserManager.getCurrentUsername(), question.id);
-
+                
                
                 TextBlock optionsLabel = new TextBlock
                 {
@@ -148,15 +159,18 @@ namespace AdvanceQuizApp
                 Button showAnswerButton = new Button
                 {
                     Content = "Show Answer",
+                    Margin = new Thickness(0, 5, 0, 0),
+
                     HorizontalAlignment = HorizontalAlignment.Left
                 };
-                showAnswerButton.Click += (s, e) => ShowAnswer(question.correctAnswer); // ye function khali rkha hai ta k hidden e rahy tab tak
+                showAnswerButton.Click += (s, e) => ShowAnswer(question.correctAnswer); //ye function khali rkha hai ta k hidden e rahy tab tak
 
                 TextBlock answerText = new TextBlock
                 {
                     Text = $"Answer: {question.correctAnswer}",
                     Foreground = new SolidColorBrush(Colors.Green),
                     Visibility = Visibility.Collapsed,
+                    FontWeight = FontWeights.Bold,
                     Margin = new Thickness(10, 10, 0, 0),
                     Name = $"Answer_{index}"
                 };
@@ -182,36 +196,29 @@ namespace AdvanceQuizApp
 
         private void ShowAnswer(string correctAnswer)
         {
-
+            //jab wo ckick kry ga tab ussy nechy waala code run ho ga
         }
-
-
-        private void Button_Search_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-        private void Button_CreateQuiz_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Navigating to Create Quiz page...");
-        }
-
-        private void Button_ManageQuizzes_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Navigating to Manage Quizzes page...");
-        }
-
         private void Button_Settings_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Navigating to Settings page...");
+            Window br = new Settings();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
         }
 
         private void Button_About_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Navigating to About page...");
+            Window br = new About();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
         }
         private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
         {
-
+            Window br = new BrowseQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
         }
 
         private void Button_Back_Click(object sender, RoutedEventArgs e)
@@ -226,18 +233,41 @@ namespace AdvanceQuizApp
             TextBox searchBox = this.FindName("searchBox") as TextBox;
             string searchTopic = searchBox.Text;
 
-            if (topicBST.Search(searchTopic))
+            if (topicBST.Search(searchTopic)) //exact topic k lia
             {
-                //MessageBox.Show($"Topic '{searchTopic}' found!");
                 string filePath = "quizdata.json";
                 questions = QuestionLoader.LoadQuestions(filePath)
-                                          .Where(q => q.topic == searchTopic)
+                                          .Where(q => q.topic.Equals(searchTopic, StringComparison.OrdinalIgnoreCase))
                                           .ToList();
+                topicName = searchTopic;
                 ShowQuestionsRightPanel(questions);
             }
             else
-                MessageBox.Show($"Topic '{searchTopic}' not found!");
+            {
+                //exact nh milaa to kareeb waly is me ay gen
+                var closestMatches = topicBST.FindClosestMatches(searchTopic);
+
+                if (closestMatches.Count > 0)
+                { 
+                    string message = $"Exact topic not found! Did you mean:\n" +
+                                     string.Join("\n", closestMatches);
+                    MessageBox.Show(message);
+
+                    
+                    string filePath = "quizdata.json";
+                    topicName = closestMatches[0];  //sb se pehla closest topic ban jai ga
+                    questions = QuestionLoader.LoadQuestions(filePath)
+                                              .Where(q => closestMatches.Contains(q.topic))
+                                              .ToList();
+                    ShowQuestionsRightPanel(questions);
+                }
+                else
+                {
+                    MessageBox.Show($"No topics found related to '{searchTopic}'!");
+                }
+            }
         }
+
 
         private void AddToFavourites(string username,int questionId)
         {
@@ -271,6 +301,7 @@ namespace AdvanceQuizApp
                 File.WriteAllLines(userFile, allUsers);
 
                 MessageBox.Show("Question added to favourites.");
+                
             }
             else
             {
@@ -303,6 +334,14 @@ namespace AdvanceQuizApp
         }
 
         private void Button_SavedQuizes_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new PreviousQuizes();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
+        }
+
+        private void Button_SavedQuestions_Click(object sender, RoutedEventArgs e)
         {
             Window br = new PreviousQuizes();
             br.Show();
