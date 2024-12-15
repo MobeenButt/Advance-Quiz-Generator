@@ -22,39 +22,41 @@ namespace AdvanceQuizApp
 
         private void Button_Settings_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
             Window br = new Settings();
             br.Show();
             br.WindowState = WindowState.Maximized;
+            this.Close();
         }
 
         private void Button_About_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
             About about = new About();
             about.Show();
+            this.Close();
         }
         private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
         {
             Window br = new BrowseQuestions();
             br.Show();
             br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
+            
+            this.Close();
         }
         private void CreateQuiz_Click(object sender, RoutedEventArgs e)
         {
             Window br = new CreateQuiz();
             br.Show();
             br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
+            
+            this.Close();
         }
 
         private void Button_Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logging out...");
-            this.Hide();
             Logins loginPanel = new Logins();
             loginPanel.Show();
+            this.Close();
         }
         
         private void Button_SavedQuestions_Click(Object sender, RoutedEventArgs e)
@@ -62,8 +64,7 @@ namespace AdvanceQuizApp
             Window br = new PreviousQuizes();
             br.Show();
             br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
-
+            this.Close();
         }
 
         private void Button_FavouriteQuestions_Click(object sender, RoutedEventArgs e)

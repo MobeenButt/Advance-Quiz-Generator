@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
-        Title="FavouriteQuestions" Height="450" Width="800">
+        Title="FavouriteQuestions" Height="450" Width="800"
+        KeyDown="WindowKeyDown"
+        >
 
     <Window.Resources>
         <Style x:Key="SidebarButtonStyle" TargetType="Button">
