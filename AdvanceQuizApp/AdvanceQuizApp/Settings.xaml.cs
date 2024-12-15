@@ -35,10 +35,7 @@ namespace AdvanceQuizApp
 
 
         }
-        private void ClearData(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("sai a");
-        }
+        
 
         private void ChangePassword(object sender, RoutedEventArgs e)
         {
