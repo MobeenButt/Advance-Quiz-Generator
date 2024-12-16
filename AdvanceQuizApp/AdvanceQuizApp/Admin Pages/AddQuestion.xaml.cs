@@ -2,7 +2,6 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using AdvanceQuizApp.DataBank;
 using Newtonsoft.Json;
 namespace AdvanceQuizApp.Admin_Pages
 {
@@ -29,7 +28,6 @@ namespace AdvanceQuizApp.Admin_Pages
                 {
                     questions.Clear();
                     questions.AddRange(QuizData["questions"]);
-                    //QuestionsListView.ItemsSource = questions;
                 }
             }
         }
@@ -43,7 +41,7 @@ namespace AdvanceQuizApp.Admin_Pages
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Question newquestion = new Question
-                {
+            {
                 id = questions.Count + 1,
                 text = QuestionTextBox.Text,
 
@@ -53,15 +51,14 @@ namespace AdvanceQuizApp.Admin_Pages
                 Option3TextBox.Text,
                 Option4TextBox.Text
                 },
-                
+
                 correctAnswer = CorrectAnswerTextBox.Text,
                 topic = TopicTextBox.Text,
                 difficulty = (DifficultyComboBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
                 favourite = 0
 
-                };
+            };
             questions.Add(newquestion);
-            //QuestionsListView.Items.Refresh();
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
@@ -94,31 +91,9 @@ namespace AdvanceQuizApp.Admin_Pages
             File.WriteAllText(filePath, updatedJson);
             MessageBox.Show("Quiz updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             questions.Clear();
-            //QuestionsListView.Items.Refresh();
         }
 
-        //private void SaveButton_Click(object sender, RoutedEventArgs e)
-        //{
 
-        //    string filePath = "quizdata.json";
-        //    var existQustion = new List<Question>();
-        //    if (File.Exists(filePath))
-        //    {
-        //        string json=File.ReadAllText(filePath);
-        //        var data=JsonConvert.DeserializeObject<Dictionary<string, List<Question>>>(json);
-        //        if(data!=null && data.ContainsKey("questions"))
-        //        {
-        //            existQustion = data["questions"];
-        //        }
-        //    }
-        //    existQustion.AddRange(questions);
-        //    var updatedData = new Dictionary<string, List<Question>> { { "questions", existQustion } };
-        //    string updatedjson = JsonConvert.SerializeObject(updatedData, Formatting.Indented);
-        //    File.WriteAllText(filePath, updatedjson);
-        //    MessageBox.Show("Quiz updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-        //    questions.Clear();
-        //    QuestionsListView.Items.Refresh();
-        //   }
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -155,10 +130,7 @@ namespace AdvanceQuizApp.Admin_Pages
                 favourite = 0
             };
 
-            // Add the new question to the list and update UI
             questions.Add(newQuestion);
-            //QuestionsListView.Items.Refresh();
-
             // Clear the input fields
             QuestionTextBox.Clear();
             Option1TextBox.Clear();
@@ -169,7 +141,7 @@ namespace AdvanceQuizApp.Admin_Pages
             TopicTextBox.Clear();
             DifficultyComboBox.SelectedIndex = -1;
 
-            }
+        }
 
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -179,9 +151,22 @@ namespace AdvanceQuizApp.Admin_Pages
             admin.Show();
         }
 
-        private void DifficultyTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-            {
+        private void DifficultyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
+        }
+
+        
+
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Window m = new MainWindow();
+                m.Show();
+                m.WindowState = WindowState.Maximized;
+                this.Close();
             }
         }
+    }
 }

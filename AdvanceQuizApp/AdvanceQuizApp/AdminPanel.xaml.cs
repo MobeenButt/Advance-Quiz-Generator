@@ -1,6 +1,6 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using AdvanceQuizApp.Admin_Pages;
+using AdvanceQuizApp.Map;
 namespace AdvanceQuizApp
 {
     /// <summary>
@@ -12,15 +12,11 @@ namespace AdvanceQuizApp
         {
             InitializeComponent();
         }
-        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
-            {
-            //hsflashfl
-            }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            LoginPanel loginPanel = new LoginPanel();
+            Logins loginPanel = new Logins();
             loginPanel.Show();
         }
         private void EditQuiz_Click(object sender, RoutedEventArgs e)
@@ -33,8 +29,8 @@ namespace AdvanceQuizApp
 
         private void DeleteQuiz_Click(object sender, RoutedEventArgs e)
         {
-           this.Hide();
-            DeletePanel deletePanel = new DeletePanel();   
+            this.Hide();
+            DeletePanel deletePanel = new DeletePanel();
             deletePanel.Show();
         }
 
@@ -48,39 +44,31 @@ namespace AdvanceQuizApp
             MessageBox.Show("View All Quizzes clicked!");
         }
 
-
-        private void ManageQuestionBank_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            ManageQuestionBankPage manageQuestionBankPage = new ManageQuestionBankPage();
-            manageQuestionBankPage.Show();
-
-        }
-
         private void GenerateReports_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            Report report = new Report();
+            report.Show();
         }
 
         private void ViewStatistics_Click(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("View Statistics clicked!");
+            this.Hide();
+            Statistics statistics = new Statistics();
+            statistics.Show();
         }
-        private void Button_ManageQuestions_Click(object sender, RoutedEventArgs e)
+        private void ManageUsers_Click(object sender, RoutedEventArgs e)
         {
-            Window br = new ManageQuestions();
-            br.Show();
-            br.WindowState = WindowState.Maximized;
-            this.Visibility = Visibility.Hidden;
+            this.Hide();
+            ManageUsers manageUsers = new ManageUsers();
+            manageUsers.Show();
         }
-        private void Button_AddQuestion_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("adding qe...");
-        }
-        private void Button_AddTopic_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("adding top...");
 
+        private void Map_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MapDisplay display = new MapDisplay();
+            display.Show();
         }
     }
 }

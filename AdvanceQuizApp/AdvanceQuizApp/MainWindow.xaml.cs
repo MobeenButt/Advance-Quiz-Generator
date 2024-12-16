@@ -18,10 +18,7 @@ namespace AdvanceQuizApp
             MessageBox.Show("Navigating to Create Quiz page...");
         }
 
-        private void Button_ManageQuizzes_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Navigating to Manage Quizzes page...");
-        }
+        
 
         private void Button_Settings_Click(object sender, RoutedEventArgs e)
         {
@@ -33,11 +30,20 @@ namespace AdvanceQuizApp
 
         private void Button_About_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Navigating to About page...");
+            this.Hide();
+            About about = new About();
+            about.Show();
         }
         private void Button_BrowseQuestions_Click(object sender, RoutedEventArgs e)
         {
             Window br = new BrowseQuestions();
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Visibility = Visibility.Hidden;
+        }
+        private void CreateQuiz_Click(object sender, RoutedEventArgs e)
+        {
+            Window br = new CreateQuiz();
             br.Show();
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
@@ -47,34 +53,26 @@ namespace AdvanceQuizApp
         {
             MessageBox.Show("Logging out...");
             this.Hide();
-            LoginPanel loginPanel = new LoginPanel();
+            Logins loginPanel = new Logins();
             loginPanel.Show();
         }
-        private void CreateTest_Click(object sender, RoutedEventArgs e)
+        
+        private void Button_SavedQuestions_Click(Object sender, RoutedEventArgs e)
         {
-            Window br = new CreateTest();
+            Window br = new PreviousQuizes();
             br.Show();
             br.WindowState = WindowState.Maximized;
             this.Visibility = Visibility.Hidden;
+
         }
-        private void Button_SearchQuestions_Click(object sender, RoutedEventArgs e)
+
+        private void Button_FavouriteQuestions_Click(object sender, RoutedEventArgs e)
         {
-            var blurEffect = new BlurEffect
-            {
-                Radius = 10
-            };
-
-            this.Effect = blurEffect;
-
-            Searchwindow searchWindow = new Searchwindow
-            {
-                Owner = this
-            };
-            searchWindow.ShowDialog();
-
-            this.Effect = null;
+            Window br = new FavouriteQuestions(UserManager.getCurrentUsername());
+            br.Show();
+            br.WindowState = WindowState.Maximized;
+            this.Close();
         }
-
     }
 
 }    

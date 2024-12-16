@@ -1,32 +1,39 @@
 ﻿using System.IO;
 using AdvanceQuizApp.ADT;
+using AdvanceQuizApp.Admin_Pages;
 namespace AdvanceQuizApp
 {
     class LoginManager
     {
         private const string filePath = "user.txt";
-        private Dictionary<string, string> credentials;
-        private MyQueue<Tuple<string, string>> loginQueue;
+        private Dictionary<string, User> users;
+        private MyQueue<User> loginQueue;
         public LoginManager()
         {
-            credentials = new Dictionary<string, string>();
-            loginQueue = new MyQueue<Tuple<string, string>>();
+            users = new Dictionary<string, User>();
+            loginQueue = new MyQueue<User>();
             LoadCredentialsFromFile();
 
         }
-        public bool RegisterUser(string name, string pass)
+        public bool RegisterUser(string name, string pass,int priority)
         {
-            if (credentials.ContainsKey(name))
+            if (users.ContainsKey(name))
             {
                 return false;
             }
-            credentials[name] = pass;
+            if(name=="admin")
+            {
+                priority = 1;   
+            }
+            users[name]= new User(name, pass, priority);
             SaveToFile();
             return true;
         }
         public bool AddUser(string name, string pass)
         {
-            loginQueue.Enqueue(new Tuple<string, string>(name, pass));
+            //baki sb ki priority 0 hogi
+            loginQueue.Enqueue(new User(name, pass, 0));
+            SaveToFile();
             return true;
         }
         public string ProcessLogin()
@@ -37,8 +44,8 @@ namespace AdvanceQuizApp
             }
 
             var loginRequest = loginQueue.Dequeue();
-            string username = loginRequest.Item1;
-            string password = loginRequest.Item2;
+            string username = loginRequest.Username;
+            string password = loginRequest.Password;
 
             if (ValidateUser(username, password))
             {
@@ -56,16 +63,22 @@ namespace AdvanceQuizApp
                 return "Invalid username or password.";
             }
         }
-        private void SaveToFile()
+        public void SaveToFile()
         {
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                foreach (var user in credentials)
+                foreach (var user in users)
                 {
-                    writer.WriteLine(user.Key + "," + user.Value);
+                    // Include favorite question IDs if present
+                    string favoriteIds = user.Value.FavoriteQuestions != null && user.Value.FavoriteQuestions.Any()
+                        ? string.Join(",", user.Value.FavoriteQuestions)
+                        : "";
+
+                    writer.WriteLine($"{user.Key},{user.Value.Password},{user.Value.Priority},{favoriteIds}");
                 }
             }
         }
+
         private void LoadCredentialsFromFile()
         {
             if (File.Exists(filePath))
@@ -74,20 +87,42 @@ namespace AdvanceQuizApp
                 foreach (string line in lines)
                 {
                     string[] parts = line.Split(',');
-                    if (parts.Length == 2)
+                    if (parts.Length >= 3)
                     {
-                        credentials[parts[0]] = parts[1];
+                        string name = parts[0];
+                        string pass = parts[1];
+                        int priority = int.Parse(parts[2]);
+
+                        List<int> favoriteIds = new List<int>();
+
+                        for (int i = 3; i < parts.Length; i++)
+                        {
+                            if (!string.IsNullOrEmpty(parts[i]))
+                            {
+                                // Split by the backtick (`) and add all IDs to the favoriteIds list
+                                favoriteIds.AddRange(parts[i].Split(',').Select(int.Parse));
+                            }
+                        }
+
+
+                        // Create and store the user
+                        users[name] = new User(name, pass, priority) { FavoriteQuestions = favoriteIds };
                     }
                 }
             }
         }
+
         public bool ValidateUser(string name, string pass)
         {
-            if (credentials.ContainsKey(name))
+            if (users.ContainsKey(name))
             {
-                return credentials[name] == pass;
+                return users[name].Password == pass;
             }
             return false;
+        }
+        public void EditPassword(string username,string password)
+        {
+            this.users[username].Password = password;
         }
     }
 }

@@ -66,25 +66,21 @@
                        HorizontalAlignment="Center" 
                        Margin="10"/>
             <Separator Margin="10"/>
-            <Button Content="Search Questions" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
 
-            <Button Content="Previous Tests" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
-            <Button Content="Last Test" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_SearchQuestions_Click"/>
-            <Button Content="Create Test" 
-                    Style="{StaticResource SidebarButtonStyle}" 
-                    Click="CreateTest_Click"/>
             <Button Content="Browse Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_BrowseQuestions_Click"/>
-            <Button Content="Manage Quizzes" 
+            
+            <Button Content="Favourite Questions" 
                     Style="{StaticResource SidebarButtonStyle}" 
-                    Click="Button_ManageQuizzes_Click"/>
+                    Click="Button_FavouriteQuestions_Click"/>
+            <Button Content="Create Quiz" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="CreateQuiz_Click"/>
+            <Button Content="My Quizes" 
+                    Style="{StaticResource SidebarButtonStyle}" 
+                    Click="Button_SavedQuestions_Click"/>
+            
             <Button Content="Settings" 
                     Style="{StaticResource SidebarButtonStyle}" 
                     Click="Button_Settings_Click"/>
@@ -96,13 +92,17 @@
                     Click="Button_Logout_Click"/>
         </StackPanel>
 
-        <Grid Grid.Column="1" Background="#ECF0F1">
-            <TextBlock Text="Welcome to the Quiz Generator!" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="24" 
-                       Foreground="#34495E" 
-                       Style="{StaticResource FadeInTextBlockStyle}"/>
+        <Grid Grid.Column="1" >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!-- Add the Image -->
+
+                <!-- Welcome Text -->
+                <TextBlock Text="Welcome to the Quiz Generator!" 
+                   HorizontalAlignment="Center" 
+                   FontSize="24" 
+                   Foreground="#34495E" 
+                   Style="{StaticResource FadeInTextBlockStyle}"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

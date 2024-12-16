@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Windows;
-using AdvanceQuizApp.DataBank;
+using System.Windows.Input;
+using AdvanceQuizApp;
 using Newtonsoft.Json;
 
 namespace AdvanceQuizApp.Admin_Pages
@@ -77,6 +78,17 @@ namespace AdvanceQuizApp.Admin_Pages
         private void Refresh_Click(object sender, RoutedEventArgs e)
         {
             QuestionDataGrid.ItemsSource=LoadQuestions();
+        }
+
+        private void WindowKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                Window m = new MainWindow();
+                m.Show();
+                m.WindowState = WindowState.Maximized;
+                this.Close();
+            }
         }
     }
 

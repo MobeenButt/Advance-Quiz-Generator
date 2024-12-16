@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdvanceQuizApp"
         mc:Ignorable="d"
+        WindowState="Maximized"
         Title="CreateTest" Height="450" Width="800">
     <Grid>
         <!-- Top bar with navigation buttons -->
@@ -24,7 +25,10 @@
                 <Button Width="40" Height="40" ToolTip="Stop Quiz" Click="StopQuizButton_Click">
                     <TextBlock Text="■" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
-                <Button Width="40" Height="40" ToolTip="Return" Click="Button_ReturnButtton_Click">
+                <Button Width="40" Height="40" ToolTip="Save Quiz" Click="SaveQuizButton_Click">
+                    <TextBlock Text="💾" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="40" Height="40" ToolTip="Return" Click="Button_ReturnButton_Click">
                     <TextBlock Text="←" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
             </StackPanel>

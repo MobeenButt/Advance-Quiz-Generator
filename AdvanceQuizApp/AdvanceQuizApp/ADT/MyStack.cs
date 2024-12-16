@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-
-namespace AdvanceQuizApp.ADT { 
+﻿namespace AdvanceQuizApp.ADT
+{
     public class Node<T>
     {
         public T value;
@@ -19,7 +10,8 @@ namespace AdvanceQuizApp.ADT {
             next = null;
         }
     }
-    public class MyStack<T> 
+    
+    public class MyStack<T>
     {
         public Node<T> top;
         public MyStack()
@@ -53,6 +45,17 @@ namespace AdvanceQuizApp.ADT {
                 throw new InvalidOperationException("Stack is empty.");
             }
             return top.value;
+        }
+        public int Count()
+        {
+            int count = 0;
+            Node<T> node = top;
+            while (node != null)
+            {
+                count++;
+                node = node.next;
+            }
+            return count;
         }
     }
 }
