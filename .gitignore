@@ -11,7 +11,7 @@
 *.exe
 *.pdb
 
-# Ignore auto-generated files
+# Ignore auto-generated file
 *.baml
 *.g.i.cs
 *.g.cs
