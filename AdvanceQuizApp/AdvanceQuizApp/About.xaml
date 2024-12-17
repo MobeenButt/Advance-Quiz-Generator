@@ -37,24 +37,19 @@
                     FontWeight="Bold" 
                     Cursor="Hand"/>
         </StackPanel>
-        <!-- Back Button -->
         <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" 
                 Margin="10" Width="75" Click="BackButton_Click" Background="#4CAF50" 
                 Foreground="White" BorderBrush="Green" FontWeight="Bold" Cursor="Hand"/>
 
-        <!-- Title -->
         <TextBlock Text="About the Advance Quiz App" FontWeight="Bold" FontSize="28" 
                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" 
                    Foreground="#333" TextDecorations="Underline"/>
 
-        <!-- Content Section -->
         <ScrollViewer Margin="20,80,20,20">
             <StackPanel>
-                <!-- General Description -->
                 <TextBlock Text="The Advance Quiz App provides a comprehensive platform for users to prepare, review, and test their knowledge with interactive quizzes and features." 
                            TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A" Margin="0,10,0,20"/>
 
-                <!-- Browse Questions Section -->
                 <TextBlock Text="Browse Questions Page:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,10,0,10"/>
                 <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
                     - Users can search for questions by topic. If the entered topic matches one in the question bank, its questions are displayed in the right panel.
@@ -64,7 +59,6 @@
                     - Users can view answers by clicking "Show Answer," add questions to favorites, and access them later in the "Favourite Questions" window.
                 </TextBlock>
 
-                <!-- Favourite Questions Section -->
                 <TextBlock Text="Favourite Questions Window:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
                 <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
                     - View the list of favorited questions and see details in the right panel.
@@ -72,7 +66,6 @@
                     - Access hints, click "Show Answer," or remove questions from the favorite list using the "Remove From Favourites" button.
                 </TextBlock>
 
-                <!-- Quiz Creation Section -->
                 <TextBlock Text="Test Creation and Results:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
                 <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
                     - Create tests by selecting topics and difficulty levels.
@@ -84,7 +77,6 @@
                     - Stop the quiz to view results, including score, attempted questions, and total time taken.
                 </TextBlock>
 
-                <!-- Saved Quizzes Section -->
                 <TextBlock Text="My Quizzes Window:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
                 <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
                     - Review and continue previously saved quizzes.
@@ -92,7 +84,6 @@
                     - Note: Only saved quizzes are accessible in this section.
                 </TextBlock>
 
-                <!-- Settings Section -->
                 <TextBlock Text="Settings and Logout:" FontWeight="Bold" FontSize="18" Foreground="#2F4F4F" Margin="0,20,0,10"/>
                 <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="#4A4A4A">
                     - Users can change their password in the Settings.
@@ -100,7 +91,6 @@
                     - Logout anytime by clicking the "Logout" button in the sidebar.
                 </TextBlock>
 
-                <!-- Footer Section -->
                 <TextBlock Text="Version 1.0.0 - Developed by Our Team" FontSize="14" 
                            Foreground="#808080" Margin="0,40,0,0" HorizontalAlignment="Center"/>
                 <TextBlock Text="For support, contact: support@advancequizapp.com" FontSize="14" 
@@ -108,7 +98,6 @@
             </StackPanel>
         </ScrollViewer>
 
-        <!-- Rotating Decoration -->
         <Ellipse Width="250" Height="250" Fill="#87CEFA" Opacity="0.3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-50,0,0,-50">
             <Ellipse.RenderTransform>
                 <RotateTransform x:Name="RotatingEllipse" CenterX="125" CenterY="125"/>
@@ -122,7 +111,6 @@
 
     </Grid>
 
-    <!-- Animation Trigger -->
     <Window.Triggers>
         <EventTrigger RoutedEvent="Window.Loaded">
             <BeginStoryboard>

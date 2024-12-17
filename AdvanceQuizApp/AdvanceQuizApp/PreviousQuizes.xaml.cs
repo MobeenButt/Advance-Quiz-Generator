@@ -130,7 +130,6 @@ namespace AdvanceQuizApp
                     return;
                     }
 
-                // Update the questions with the saved answers
                 foreach (var question in questions)
                     {
                     var savedQuestion = quiz.Questions.First(q => q.id == question.id);
@@ -177,7 +176,6 @@ namespace AdvanceQuizApp
             this.Close();
             }
 
-        // Helper class to deserialize quiz data
         private class QuizData
             {
             public string QuizId { get; set; }

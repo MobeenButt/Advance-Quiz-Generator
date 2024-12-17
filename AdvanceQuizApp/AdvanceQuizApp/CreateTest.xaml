@@ -8,9 +8,7 @@
         WindowState="Maximized"
         Title="CreateTest" Height="450" Width="800">
     <Grid>
-        <!-- Top bar with navigation buttons -->
         <DockPanel Height="55" VerticalAlignment="Top" Background="RoyalBlue">
-            <!-- Buttons aligned to the right -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5,10,0">
                 <Button Width="40" Height="40" ToolTip="Previous Question" Click="PreviousQuestion_Click">
                     <TextBlock Text="&lt;" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -18,9 +16,7 @@
                 <Button Width="40" Height="40" ToolTip="Next Question" Click="NextQuestion_Click">
                     <TextBlock Text="&gt;" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
-                <Button Width="40" Height="40" ToolTip="Mark Favourite Question" Click="MarkFavorite_Click">
-                    <TextBlock Name="FavouriteIcon" Text="♡" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                </Button>
+                
 
                 <Button Width="40" Height="40" ToolTip="Stop Quiz" Click="StopQuizButton_Click">
                     <TextBlock Text="■" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -34,23 +30,19 @@
             </StackPanel>
         </DockPanel>
 
-        <!-- Topic and Difficulty -->
-        <TextBlock Name="TopicDifficultyTextBlock" FontSize="14" FontWeight="Bold" Margin="10,60,10,0" HorizontalAlignment="Left" Text="Topic: N/A | Difficulty: N/A" />
-
-        <!-- Question Number Display -->
+        <StackPanel Orientation="Horizontal" Margin="10,60,10,0">
+            <TextBlock Name="TopicDifficultyTextBlock" FontSize="14" FontWeight="Bold" Text="Topic: N/A | Difficulty: N/A" />
+            <TextBlock Text=" | " FontSize="14" FontWeight="Bold"/>
+            <TextBlock Name="TimerTextBlock" FontSize="14" FontWeight="Bold" Text="Time: 00:00:00"/>
+        </StackPanel>
         <TextBlock Name="QuestionNumberTextBlock" FontSize="16" FontWeight="Bold" Margin="10,85,10,0" HorizontalAlignment="Center" />
 
-        <!-- Question Text -->
         <TextBlock Name="QuestionTextBlock" FontSize="18" TextWrapping="Wrap" Margin="20,120,20,0" TextAlignment="Left" />
 
-        <!-- Answer Options -->
         <StackPanel Name="OptionsStackPanel" VerticalAlignment="Top" Margin="20,180,20,0" />
 
-        <!-- Footer for Check Answer Button and Correct Answer -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,20">
-            <!-- "Check Answer" Button -->
             <Button Name="CheckAnswerButton" Content="Check Answer" Width="150" Height="40" Click="CheckAnswerButton_Click" />
-            <!-- Correct Answer Display -->
             <TextBlock Name="CorrectAnswerTextBlock" FontSize="16" FontWeight="Bold" Margin="10,0,0,0" Visibility="Collapsed" />
         </StackPanel>
     </Grid>
