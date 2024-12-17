@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
-using System.Diagnostics;  // For Process and ProcessStartInfo
+using System.Diagnostics;  
 
 
 namespace AdvanceQuizApp
@@ -39,7 +39,7 @@ namespace AdvanceQuizApp
             {
             try
                 {
-                string reportPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FinalReport.docx");
+                string reportPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FinalReport.pdf");
 
                 if (System.IO.File.Exists(reportPath))
                     {
@@ -65,10 +65,7 @@ namespace AdvanceQuizApp
         {
             if (e.Key == Key.Escape)
             {
-                // Close the current window
                 this.Close();
-
-                // Navigate to the Main Window
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
             }

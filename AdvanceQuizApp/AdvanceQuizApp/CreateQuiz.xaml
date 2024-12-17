@@ -10,26 +10,21 @@
 
     <Grid Margin="30">
         
-        <!-- Heading -->
         <TextBlock Text="Create Your Quiz" FontWeight="Bold" FontSize="28" 
                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,30" Foreground="#2C3E50"/>
 
-        <!-- Top-Right Section for Total Questions -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,30,0">
             <TextBlock Text="Total Questions: " FontSize="14" Foreground="Gray" VerticalAlignment="Center" />
             <TextBox x:Name="TotalQuestionsTextBox" Text="0" FontSize="14" Width="60" 
                      Foreground="#BDC3C7" Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" IsReadOnly="True" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <!-- Form Section -->
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Height="380" Width="500" Margin="0,70,0,0">
 
-            <!-- Quiz ID TextBox -->
             <TextBlock Text="Enter the Quiz Id/Name:" FontWeight="Bold" Margin="0,10,0,5" FontSize="14" Foreground="#34495E"/>
             <TextBox x:Name="QuizID" Width="250" Height="35" FontSize="14" 
                      Background="#FFFFFF" BorderBrush="#BDC3C7" BorderThickness="1" HorizontalAlignment="Center"/>
 
-            <!-- Number of Questions ComboBox -->
             <TextBlock Text="Select Number of Questions:" FontWeight="Bold" Margin="20,20,0,5" FontSize="14" Foreground="#34495E"/>
             <ComboBox x:Name="QuestionsComboBox" Width="250" Height="35" FontSize="14" HorizontalAlignment="Center">
                 <ComboBoxItem Content="5" />
@@ -44,7 +39,6 @@
                 <ComboBoxItem Content="50" />
             </ComboBox>
 
-            <!-- Difficulty Level ComboBox -->
             <TextBlock Text="Select Difficulty Level:" FontWeight="Bold" Margin="20,20,0,5" FontSize="14" Foreground="#34495E"/>
             <ComboBox x:Name="DifficultyComboBox" Width="250" Height="35" FontSize="14" HorizontalAlignment="Center">
                 <ComboBoxItem Content="Easy" />
@@ -52,17 +46,13 @@
                 <ComboBoxItem Content="Difficult" />
             </ComboBox>
 
-            <!-- Subjects ListBox -->
             <TextBlock Text="Select Subjects:" FontWeight="Bold" Margin="20,20,0,5" FontSize="14" Foreground="#34495E"/>
             <ListBox x:Name="SubjectsListBox" Width="313" Height="130" HorizontalAlignment="Center" SelectionMode="Multiple" FontSize="14">
-                <!-- Subjects will be dynamically loaded -->
             </ListBox>
         </StackPanel>
 
-        <!-- Buttons Section -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,50">
 
-            <!-- Create Button -->
             <Button Content="Create" Width="120" Height="40" Margin="15,0,0,0" 
                     Background="#1ABC9C" Foreground="White" FontSize="14" BorderBrush="#16A085" BorderThickness="1" IsDefault="True"
                     Click="CreateButton_Click" >
@@ -75,7 +65,6 @@
                 </Button.Template>
             </Button>
 
-            <!-- Check Questions Button -->
             <Button Content="Check No of Questions" Width="180" Height="40" Margin="15,0,0,0" 
                     Background="#3498DB" Foreground="White" FontSize="14" BorderBrush="#2980B9" BorderThickness="1" 
                     Click="CheckNumberOfQuestionsButton_Click">
@@ -88,7 +77,6 @@
                 </Button.Template>
             </Button>
 
-            <!-- Back Button -->
             <Button Content="Back" Width="120" Height="40" Margin="15,0,0,0" 
                     Background="#E74C3C" Foreground="White" FontSize="14" BorderBrush="#C0392B" BorderThickness="1" 
                     Click="BackButton_Click">
@@ -104,7 +92,6 @@
 
     </Grid>
 
-    <!-- Window Styling -->
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontFamily" Value="Segoe UI"/>

@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace AdvanceQuizApp
     {
@@ -13,6 +14,8 @@ namespace AdvanceQuizApp
         private DateTime quizStartTime;
         private int correctAnswers = 0;
         private string quizid;
+        private DispatcherTimer timer;
+
         //
         public CreateTest(List<AdvanceQuizApp.Question> quizQuestions, string QuizId)
             {
@@ -21,8 +24,8 @@ namespace AdvanceQuizApp
             currentQuestionIndex = 0;
             quizStartTime = DateTime.Now;
             quizid = QuizId;
+            InitializeTimer();
 
-            // Load quiz state from AVL tree
             LoadQuizState();
 
             if (questions != null && questions.Count > 0)
@@ -80,11 +83,9 @@ namespace AdvanceQuizApp
                 if (!File.Exists(avlFilePath))
                     throw new FileNotFoundException("AVL tree file not found!");
 
-                // Load the AVL tree from the file
                 AVLTree<string> quizTree = new AVLTree<string>();
                 quizTree.LoadFromJson(avlFilePath);
 
-                // Search for the user's data in the AVL tree
                 var userNode = quizTree.Find(currentUser);
 
                 if (userNode == null || userNode.Data == null || userNode.Data.Count == 0)
@@ -93,7 +94,6 @@ namespace AdvanceQuizApp
                     return;
                     }
 
-                // Find the quiz data for the specific quiz ID
 
                 var quizData = userNode.Data
                     .Cast<JsonElement>()
@@ -102,7 +102,6 @@ namespace AdvanceQuizApp
                 if (quizData.ValueKind == JsonValueKind.Undefined)
                     {
                     MessageBox.Show($"Quiz with ID '{quizid}' not found. Starting a new quiz.");
-                    // Initialize quiz state for a new quiz
                     foreach (var question in questions)
                         {
                         question.attempted = false;
@@ -112,7 +111,6 @@ namespace AdvanceQuizApp
                     return;
                     }
 
-                // Load the state of each question from the quiz data
                 foreach (var questionState in quizData.GetProperty("Questions").EnumerateArray())
                     {
                     var questionId = questionState.GetProperty("id").GetInt32();
@@ -142,7 +140,6 @@ namespace AdvanceQuizApp
                     return;
                     }
 
-                // Fetch and display the question details
                 var question = questions[index];
 
                 TopicDifficultyTextBlock.Text = $"Topic: {question.topic} | Difficulty: {question.difficulty}";
@@ -164,34 +161,37 @@ namespace AdvanceQuizApp
                         Margin = new Thickness(5)
                         };
 
-                    // Check if this question was attempted and this option was selected
-                    if (question.attempted && question.selectedOption == optionText)
+                    if (question.attempted)
                         {
-                        radioButton.IsChecked = true;
-                        }
-
-                    int optionIndex = i; // Capture the index for the lambda
-                    radioButton.Checked += (s, e) =>
-                    {
-                        question.selectedOption = optionText;
-                        question.attempted = true;
-
-                        foreach (var child in OptionsStackPanel.Children)
+                        radioButton.IsEnabled = false;
+                        if (question.selectedOption == optionText)
                             {
-                            if (child is RadioButton rb)
-                                {
-                                rb.IsEnabled = false;
-                                }
+                            radioButton.IsChecked = true;
                             }
-                    };
+                        }
+                    else
+                        {
+                        int optionIndex = i;
+                        radioButton.Checked += (s, e) =>
+                        {
+                            question.selectedOption = optionText;
+                            question.attempted = true;
+
+                            foreach (var child in OptionsStackPanel.Children)
+                                {
+                                if (child is RadioButton rb)
+                                    {
+                                    rb.IsEnabled = false;
+                                    }
+                                }
+                        };
+                        }
 
                     OptionsStackPanel.Children.Add(radioButton);
                     }
 
-                // Update favorite icon
-                FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
+                //FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
 
-                // If the question was attempted, show the correct answer
                 if (question.attempted)
                     {
                     var correctAnswer = question.correctAnswer.Trim();
@@ -205,13 +205,15 @@ namespace AdvanceQuizApp
                         CorrectAnswerTextBlock.Text = $"Incorrect. Correct Answer: {correctAnswer}";
                         CorrectAnswerTextBlock.Foreground = Brushes.Red;
                         }
-
                     CorrectAnswerTextBlock.Visibility = Visibility.Visible;
+
+                    CheckAnswerButton.IsEnabled = false;
                     }
                 else
                     {
                     CorrectAnswerTextBlock.Text = "";
                     CorrectAnswerTextBlock.Visibility = Visibility.Collapsed;
+                    CheckAnswerButton.IsEnabled = true;
                     }
                 }
             catch (Exception ex)
@@ -244,7 +246,6 @@ namespace AdvanceQuizApp
 
                 string userName = File.ReadAllText(currentUserFile).Split(',')[0];
 
-                // Create quiz data
                 var quizData = new
                     {
                     QuizId = quizid,
@@ -257,19 +258,15 @@ namespace AdvanceQuizApp
                         }).ToList()
                     };
 
-                // Load existing AVLTree or create a new one
                 string avlFilePath = "avltree.json";
                 AVLTree<string> avlTree = new AVLTree<string>();
 
                 if (File.Exists(avlFilePath))
                     {
-                    avlTree.LoadFromJson(avlFilePath); // Load the AVLTree from the JSON file
+                    avlTree.LoadFromJson(avlFilePath); 
                     }
 
-                // Insert the new quiz data into the AVLTree under the username
                 avlTree.Insert(userName, quizData);
-
-                // Save the updated AVLTree back to the JSON file
                 avlTree.SaveToJson(avlFilePath);
 
                 MessageBox.Show("Quiz saved successfully!");
@@ -284,67 +281,66 @@ namespace AdvanceQuizApp
 
 
 
-        private void MarkFavorite_Click(object sender, RoutedEventArgs e)
-            {
-            if (questions == null || currentQuestionIndex < 0 || currentQuestionIndex >= questions.Count)
-                {
-                MessageBox.Show("Invalid question index.");
-                return;
-                }
+        //private void MarkFavorite_Click(object sender, RoutedEventArgs e)
+        //    {
+        //    //if (questions == null || currentQuestionIndex < 0 || currentQuestionIndex >= questions.Count)
+        //    //    {
+        //    //    MessageBox.Show("Invalid question index.");
+        //    //    return;
+        //    //    }
 
-            var question = questions[currentQuestionIndex];
+        //    //var question = questions[currentQuestionIndex];
 
-            // Toggle the favourite value
-            question.favourite = question.favourite == 0 ? 1 : 0;
+        //    //// Toggle the favourite value
+        //    //question.favourite = question.favourite == 0 ? 1 : 0;
 
-            // Update the icon
-            FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
+        //    //// Update the icon
+        //    //FavouriteIcon.Text = question.favourite == 1 ? "♥" : "♡";
 
-            // Save changes back to the JSON file without affecting other questions
-            try
-                {
-                // Read the existing JSON file
-                string jsonPath = "quizdata.json";
-                string jsonString = File.ReadAllText(jsonPath);
+        //    //// Save changes back to the JSON file without affecting other questions
+        //    //try
+        //    //    {
+        //    //    // Read the existing JSON file
+        //    //    string jsonPath = "quizdata.json";
+        //    //    string jsonString = File.ReadAllText(jsonPath);
 
-                // Deserialize into a list of questions
-                var questionData = JsonSerializer.Deserialize<QuestionData>(jsonString);
-                if (questionData == null)
-                    {
-                    throw new Exception("Failed to deserialize the question data.");
-                    }
+        //    //    // Deserialize into a list of questions
+        //    //    var questionData = JsonSerializer.Deserialize<QuestionData>(jsonString);
+        //    //    if (questionData == null)
+        //    //        {
+        //    //        throw new Exception("Failed to deserialize the question data.");
+        //    //        }
 
-                // Debugging: Check if the question exists in the data
-                var existingQuestion = questionData.questions.FirstOrDefault(q => q.id == question.id); // Assuming 'id' is a unique identifier
-                if (existingQuestion != null)
-                    {
-                    // Update the favourite status for the specific question
-                    existingQuestion.favourite = question.favourite;
-                    }
-                else
-                    {
-                    // If the question is not found, show an error message
-                    MessageBox.Show("Question not found in the data.");
-                    return;
-                    }
+        //    //    // Debugging: Check if the question exists in the data
+        //    //    var existingQuestion = questionData.questions.FirstOrDefault(q => q.id == question.id); // Assuming 'id' is a unique identifier
+        //    //    if (existingQuestion != null)
+        //    //        {
+        //    //        // Update the favourite status for the specific question
+        //    //        existingQuestion.favourite = question.favourite;
+        //    //        }
+        //    //    else
+        //    //        {
+        //    //        // If the question is not found, show an error message
+        //    //        MessageBox.Show("Question not found in the data.");
+        //    //        return;
+        //    //        }
 
-                // Serialize the updated data and save it back to the file
-                string updatedJson = JsonSerializer.Serialize(questionData, new JsonSerializerOptions { WriteIndented = true });
-                File.WriteAllText(jsonPath, updatedJson);
+        //    //    // Serialize the updated data and save it back to the file
+        //    //    string updatedJson = JsonSerializer.Serialize(questionData, new JsonSerializerOptions { WriteIndented = true });
+        //    //    File.WriteAllText(jsonPath, updatedJson);
 
-                MessageBox.Show("Favorite status updated successfully!");
-                }
-            catch (Exception ex)
-                {
-                MessageBox.Show($"Error saving favorite status: {ex.Message}");
-                }
-            }
-
-
+        //    //    MessageBox.Show("Favorite status updated successfully!");
+        //    //    }
+        //    //catch (Exception ex)
+        //    //    {
+        //    //    MessageBox.Show($"Error saving favorite status: {ex.Message}");
+        //    //    }
+        //    }
 
 
 
-        // Event Handler for Previous Button
+
+
         private void PreviousQuestion_Click(object sender, RoutedEventArgs e)
             {
             if (currentQuestionIndex > 0)
@@ -379,39 +375,58 @@ namespace AdvanceQuizApp
                 return;
                 }
 
-            // Update selectedOption (in case it's not handled yet)
             question.selectedOption = selectedOption.Content.ToString().Trim();
-            question.attempted = true; // Mark question as attempted
+            question.attempted = true; 
 
-            // Update rightOrWrong based on the selected answer
             if (question.selectedOption == correctAnswer)
                 {
                 CorrectAnswerTextBlock.Text = $"Correct Answer: {correctAnswer}";
                 CorrectAnswerTextBlock.Foreground = Brushes.Green;
-                question.rightOrWrong = true; // Correct answer
+                question.rightOrWrong = true; 
                 correctAnswers++;
                 }
             else
                 {
                 CorrectAnswerTextBlock.Text = $"Incorrect. Correct Answer: {correctAnswer}";
                 CorrectAnswerTextBlock.Foreground = Brushes.Red;
-                question.rightOrWrong = false; // Incorrect answer
+                question.rightOrWrong = false; 
                 }
 
             CorrectAnswerTextBlock.Visibility = Visibility.Visible;
             }
         private void StopQuizButton_Click(object sender, RoutedEventArgs e)
             {
-            // Calculate elapsed time
             TimeSpan elapsedTime = DateTime.Now - quizStartTime;
 
-            // Show the results window
             int totalQuestions = questions?.Count ?? 0;
             TestResult endTestWindow = new TestResult(totalQuestions, correctAnswers, elapsedTime);
             endTestWindow.ShowDialog();
 
-            // Close the quiz window after showing results
             this.Close();
+            }
+        private void InitializeTimer()
+            {
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+            UpdateTimeDisplay(); 
+            }
+
+        private void Timer_Tick(object sender, EventArgs e)
+            {
+            UpdateTimeDisplay();
+            }
+
+        private void UpdateTimeDisplay()
+            {
+            TimeSpan elapsed = DateTime.Now - quizStartTime;
+            TimerTextBlock.Text = $"Time: {elapsed:hh\\:mm\\:ss}";
+            }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+            {
+            timer?.Stop();
             }
         }
     public class QuestionData
