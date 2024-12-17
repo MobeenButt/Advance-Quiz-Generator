@@ -16,7 +16,7 @@ namespace AdvanceQuizApp
         private string quizid;
         private DispatcherTimer timer;
 
-        //
+
         public CreateTest(List<AdvanceQuizApp.Question> quizQuestions, string QuizId)
             {
             InitializeComponent();
@@ -365,7 +365,6 @@ namespace AdvanceQuizApp
             var question = questions[currentQuestionIndex];
             var correctAnswer = question.correctAnswer.Trim();
 
-            // Check if an option is selected
             RadioButton selectedOption = OptionsStackPanel.Children.OfType<RadioButton>()
                 .FirstOrDefault(r => r.IsChecked == true);
 
