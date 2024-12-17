@@ -16,10 +16,9 @@ namespace AdvanceQuizApp
         public string difficulty { get; set; }
         public int favourite { get; set; }
 
-        // New properties
-        public bool attempted { get; set; } // Indicates if the question has been attempted
-        public string selectedOption { get; set; } // Stores the user's selected answer
-        public bool rightOrWrong { get; set; } // Indicates if the answer was correct or not
+        public bool attempted { get; set; } 
+        public string selectedOption { get; set; }
+        public bool rightOrWrong { get; set; } 
         }
 
     public class Topic
@@ -98,11 +97,11 @@ namespace AdvanceQuizApp
 
                             return favouriteIds;
                         }
-                        return new List<int>(); // ye empty Rahe gi agr Nj i mili koi
+                        return new List<int>(); 
                     }
                 }
             }
-            return new List<int>(); // ye bhi
+            return new List<int>(); 
         }
 
         public static void RemoveFromFavourites(string username, int questionId)

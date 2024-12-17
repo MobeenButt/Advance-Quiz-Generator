@@ -3,9 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 namespace AdvanceQuizApp
 {
-    /// <summary>
-    /// Interaction logic for Login.xaml
-    /// </summary>
+    
     public partial class Logins : Window
     {
         private LoginManager manager;

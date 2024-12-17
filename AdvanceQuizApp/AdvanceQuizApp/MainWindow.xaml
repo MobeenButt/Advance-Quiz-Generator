@@ -94,9 +94,7 @@
 
         <Grid Grid.Column="1" >
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <!-- Add the Image -->
-
-                <!-- Welcome Text -->
+                
                 <TextBlock Text="Welcome to the Quiz Generator!" 
                    HorizontalAlignment="Center" 
                    FontSize="24" 
