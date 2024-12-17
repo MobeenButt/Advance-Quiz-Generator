@@ -16,38 +16,31 @@ using AdvanceQuizApp;
 
 namespace AdvanceQuizApp
 {
-    /// <summary>
-    /// Interaction logic for CreateQuiz.xaml
-    /// </summary>
     public partial class CreateQuiz : Window
     {
-        private TopicBST topicBST; // Binary Search Tree for topics
-        private List<string> topics; // List to hold sorted topics
+        private TopicBST topicBST; 
+        private List<string> topics; 
 
         public CreateQuiz()
         {
             InitializeComponent();
-            topicBST = new TopicBST(); // Initialize the BST
-            LoadSubjects(); // Load topics into the list box during initialization
+            topicBST = new TopicBST(); 
+            LoadSubjects(); 
         }
 
         private void LoadSubjects()
         {
-            // Load questions from the JSON file
-            string filePath = "quizdata.json"; // Ensure this path is correct
+            string filePath = "quizdata.json"; 
             var questions = QuestionLoader.LoadQuestions(filePath);
 
-            // Add topics to the BST
             foreach (var question in questions)
             {
                 if (!string.IsNullOrWhiteSpace(question.topic))
                     topicBST.Insert(question.topic);
             }
 
-            // Retrieve sorted topics from the BST
             topics = topicBST.GetSortedTopics();
 
-            // Add topics to the ListBox
             foreach (var topic in topics)
             {
                 SubjectsListBox.Items.Add(new ListBoxItem { Content = topic });
@@ -56,7 +49,6 @@ namespace AdvanceQuizApp
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            // Logic to go back to the previous window
             this.Close();
             Window br = new MainWindow();
             br.Show();
@@ -85,21 +77,17 @@ namespace AdvanceQuizApp
                 return;
             }
 
-            // Get the selected difficulty level
             string selectedDifficulty = ((ComboBoxItem)DifficultyComboBox.SelectedItem)?.Content.ToString();
 
-            // Filter questions based on selected difficulty, if any
             if (!string.IsNullOrEmpty(selectedDifficulty))
             {
                 questions = questions.Where(q => q.difficulty == selectedDifficulty).ToList();
             }
 
-            // Only modify questions if a number is selected
             var selectedItem = QuestionsComboBox.SelectedItem as ComboBoxItem;
             if (selectedItem != null)
             {
                 int selectedQuestionCount = int.Parse(selectedItem.Content.ToString());
-                // If more questions are available than selected, shuffle and take subset
                 if (questions.Count > selectedQuestionCount)
                 {
                     ShuffleQuestions(questions);
@@ -107,7 +95,6 @@ namespace AdvanceQuizApp
                 }
             }
             string quizId = QuizID.Text.ToString();
-            // Pass the questions to the CreateTest window
             CreateTest testWindow = new CreateTest(questions, quizId);
             testWindow.Show();
             this.Close();
@@ -130,7 +117,6 @@ namespace AdvanceQuizApp
             string filePath = "quizdata.json";
             var allQuestions = QuestionLoader.LoadQuestions(filePath);
 
-            // Filter questions based on selected topics
             var topicQuestions = allQuestions.Where(q => selectedTopics.Contains(q.topic)).ToList();
 
             return topicQuestions;
@@ -149,22 +135,18 @@ namespace AdvanceQuizApp
 
             var questions = GetQuestionsForTopics(selectedTopics);
 
-            // Get the selected difficulty level
             string selectedDifficulty = ((ComboBoxItem)DifficultyComboBox.SelectedItem)?.Content.ToString();
 
-            // Apply difficulty filter if selected
             if (!string.IsNullOrEmpty(selectedDifficulty))
             {
                 questions = questions.Where(q => q.difficulty == selectedDifficulty).ToList();
             }
 
-            // Get the selected number of questions
             var selectedItem = QuestionsComboBox.SelectedItem as ComboBoxItem;
             if (selectedItem != null)
             {
                 int selectedQuestionCount = int.Parse(selectedItem.Content.ToString());
 
-                // If more questions are available than selected, shuffle and take the subset
                 if (questions.Count > selectedQuestionCount)
                 {
                     ShuffleQuestions(questions);
@@ -172,7 +154,6 @@ namespace AdvanceQuizApp
                 }
             }
 
-            // Display the total number of questions that will be used in the test
             TotalQuestionsTextBox.Text = questions.Count.ToString();
         }
 

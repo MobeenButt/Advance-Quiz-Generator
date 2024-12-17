@@ -21,7 +21,6 @@ public class AVLTree<T> where T : IComparable<T>
 
     public Node Root { get; private set; }
 
-    // Insert function with modifications
     public void Insert(T key, object data)
         {
         Root = Insert(Root, key, data);
@@ -39,13 +38,12 @@ public class AVLTree<T> where T : IComparable<T>
         else if (compare > 0)
             node.Right = Insert(node.Right, key, data);
         else
-            node.Data.Add(data); // Add data to the same key
+            node.Data.Add(data); 
 
         node.Height = 1 + Math.Max(GetHeight(node.Left), GetHeight(node.Right));
         return Balance(node);
         }
 
-    // Find function
     public Node Find(T key)
         {
         return Find(Root, key);
@@ -64,7 +62,6 @@ public class AVLTree<T> where T : IComparable<T>
             return node;
         }
 
-    // Balancing functions
     private Node Balance(Node node)
         {
         int balance = GetBalance(node);
@@ -125,7 +122,6 @@ public class AVLTree<T> where T : IComparable<T>
         return node == null ? 0 : GetHeight(node.Left) - GetHeight(node.Right);
         }
 
-    // Traversal functions
     public List<T> InOrderTraversal()
         {
         List<T> result = new List<T>();
@@ -154,7 +150,6 @@ public class AVLTree<T> where T : IComparable<T>
         TraverseInOrder(node.Right, action);
         }
 
-    // Serialization to JSON file
     public void SaveToJson(string filePath)
         {
         var options = new JsonSerializerOptions
@@ -166,7 +161,6 @@ public class AVLTree<T> where T : IComparable<T>
         File.WriteAllText(filePath, json);
         }
 
-    // Deserialization from JSON file
     public void LoadFromJson(string filePath)
         {
         if (!File.Exists(filePath))
@@ -182,7 +176,6 @@ public class AVLTree<T> where T : IComparable<T>
         Root = JsonSerializer.Deserialize<Node>(json, options);
         }
 
-    // Utility functions
     public bool IsEmpty()
         {
         return Root == null;

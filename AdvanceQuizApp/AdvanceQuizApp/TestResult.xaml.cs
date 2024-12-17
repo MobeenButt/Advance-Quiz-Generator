@@ -33,7 +33,6 @@ namespace AdvanceQuizApp
             }
         private void LoadResults()
             {
-            // Set the values of the TextBlocks
             TotalQuestionsTextBlock.Text = $"Total Questions: {totalquestion}";
             CorrectAnswersTextBlock.Text = $"Correct Answers: {correctanswer}";
             TotalScoreTextBlock.Text = $"Total Score: {correctanswer}/{totalquestion}";
@@ -42,7 +41,6 @@ namespace AdvanceQuizApp
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
             {
-            // Close the results window
             MainWindow t = new MainWindow();
             t.Show();
             this.Close();

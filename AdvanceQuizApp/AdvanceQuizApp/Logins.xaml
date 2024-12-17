@@ -13,7 +13,6 @@
         >
     <Window.Resources>
 
-        <!-- Button Style -->
         <Style x:Key="ButtonStyle" TargetType="Button">
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="White"/>
@@ -35,18 +34,15 @@
             </Setter>
         </Style>
 
-        <!-- Header Animation -->
         <Storyboard x:Key="FadeInAnimation">
             <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:2"/>
         </Storyboard>
 
-        <!-- Button Hover Animation -->
         <Storyboard x:Key="ButtonHoverAnimation">
             <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" 
                             To="#1ABC9C" Duration="0:0:0.3" AutoReverse="True"/>
         </Storyboard>
 
-        <!-- Shadow Effect for Border -->
         <DropShadowEffect x:Key="ShadowEffect" BlurRadius="10" ShadowDepth="2" Color="#BDC3C7"/>
     </Window.Resources>
 
@@ -56,7 +52,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Header Section -->
         <DockPanel Background="#2C3E50" Height="100">
             <TextBlock x:Name="HeaderText" 
                        Text="Welcome to Quiz and Preparation App"
@@ -75,24 +70,19 @@
             </TextBlock>
         </DockPanel>
 
-        <!-- Login Form Section -->
-        <Border Grid.Row="1" Margin="50" CornerRadius="10" Background="White" Effect="{StaticResource ShadowEffect}" Padding="20">
+        <Border Grid.Row="1" Margin="57,10,50,10" CornerRadius="10" Background="White" Effect="{StaticResource ShadowEffect}" Padding="20">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="400">
-                <!-- Username -->
                 <TextBlock Text="Username" FontSize="16" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,5"/>
-                <TextBox x:Name="UsernameTextBox" Width="350" Height="40" 
+                <TextBox x:Name="UsernameTextBox" Width="350" Height="23" 
                          Background="#ECF0F1" BorderBrush="#BDC3C7" 
                          BorderThickness="1" Margin="0,0,0,20"/>
 
-                <!-- Password -->
                 <TextBlock Text="Password" FontSize="16" FontWeight="Bold" Foreground="#2C3E50" Margin="0,0,0,5"/>
-                <PasswordBox x:Name="PasswordBox" Width="350" Height="40" 
+                <PasswordBox x:Name="PasswordBox" Width="350" Height="21" 
                              Background="#ECF0F1" BorderBrush="#BDC3C7" 
                              BorderThickness="1" Margin="0,0,0,20"/>
 
-                <!-- Buttons -->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
-                    <!-- Login Button -->
                     <Button Content="Login" Style="{StaticResource ButtonStyle}" Click="Login_Click" Width="120" IsDefault="True">
                         <Button.Triggers>
                             <EventTrigger RoutedEvent="Button.MouseEnter">
@@ -100,7 +90,6 @@
                             </EventTrigger>
                         </Button.Triggers>
                     </Button>
-                    <!-- Register Button -->
                     <Button Content="Register" Style="{StaticResource ButtonStyle}" Click="Register_Click" Width="120">
                         <Button.Triggers>
                             <EventTrigger RoutedEvent="Button.MouseEnter">
